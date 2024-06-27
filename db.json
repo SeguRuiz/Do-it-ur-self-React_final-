@@ -1,5 +1,13 @@
 {
   "users": [
-    
+    {
+      "id": "f92a",
+      "info": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "password": "123"
+      },
+      "tasks": []
+    }
   ]
 }

@@ -1,12 +1,11 @@
-import Inpts from "../components/Inpts";
+import Inpts from "../../components/Inpts";
 import { useRef, useState } from "react";
-import { Posts_Tools } from "../../utils/Fetchs/classes";
+import { Posts_Tools } from "../../../utils/Fetchs/classes";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
-
+import Navbar from "../../components/Navbar";
 
 const Register = () => {
-  const go_To_Login = useNavigate()
+  const go_To_Login = useNavigate();
 
   let [registered_User, set_Registered_User] = useState({
     user: null,
@@ -64,8 +63,6 @@ const Register = () => {
       find_User_Name == false &&
       find_User_Email == false
     ) {
-      
-
       let new_User = new Posts_Tools(user_Value, email_Value, pass_Value);
 
       (await new_User.post_The_Data(new_User.data_For_Posts))
@@ -85,13 +82,13 @@ const Register = () => {
       set_User_Value("");
       set_Pass_Value("");
 
-      go_To_Login('/')
+      go_To_Login("/");
     }
   };
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div id="register_Container">
         <h1>{registered_User.info_To_User}</h1>
       </div>
@@ -131,7 +128,9 @@ const Register = () => {
           />
           <br />
           <br />
-          <button className='submit_Btn' type="submit">sing in</button>
+          <button className="submit_Btn" type="submit">
+            sing in
+          </button>
         </form>
       </div>
     </>

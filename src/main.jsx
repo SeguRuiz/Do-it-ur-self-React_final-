@@ -1,12 +1,12 @@
+import ReactDOM from "react-dom/client";
+import App from "./routes/App";
+import { BrowserRouter } from "react-router-dom";
+import { ContextProvider } from "./context/ContextProvider";
 
-import ReactDOM from 'react-dom/client'
-import App from './routes/App'
-import { BrowserRouter } from 'react-router-dom'
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <App />
+    <ContextProvider>
+      <App />
+    </ContextProvider>
   </BrowserRouter>
- 
-)
+);
