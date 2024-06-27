@@ -14,7 +14,7 @@ import { ContextProvider } from "../context/ContextProvider";
 
 const App = () => {
   const { thisState } = useTheContext();
-  console.log(thisState);
+  
   return (
     
     <Routes>

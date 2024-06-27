@@ -7,16 +7,26 @@
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "posts": []
+      "posts": [
+        {
+          "Description": "endndkef"
+        },
+        {
+          "Description": "endndkef"
+        },
+        {
+          "Description": "olaaa"
+        },
+        {
+          "Description": "yuqwuvcbebc"
+        },
+        {
+          "Description": "hello"
+        }
+      ]
     },
     {
-      "id": "4eac",
-      "info": {
-        "name": "Maria",
-        "email": "Maria@gmail.com",
-        "password": "123"
-      },
-      "posts": []
+      "id": "4eac"
     }
   ],
   "Public": []

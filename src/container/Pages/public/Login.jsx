@@ -24,7 +24,7 @@ const Login = () => {
     x.preventDefault();
 
     const see_Data = new Posts_Tools();
-    const data = await see_Data.post_The_Data(true);
+    const data = await see_Data.post_The_Data();
 
     data
       ? console.log("no hubo errores en el fetch")

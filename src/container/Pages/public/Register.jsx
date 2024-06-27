@@ -38,7 +38,7 @@ const Register = () => {
     o.preventDefault();
     const see_Data = new Posts_Tools();
 
-    const data = await see_Data.post_The_Data(true);
+    const data = await see_Data.post_The_Data();
 
     let user_Value = user_Inp.current.value.trim();
     let email_Value = email_Inp.current.value.trim();
@@ -65,7 +65,7 @@ const Register = () => {
     ) {
       let new_User = new Posts_Tools(user_Value, email_Value, pass_Value);
 
-      (await new_User.post_The_Data(true, new_User.data_For_Posts))
+      (await new_User.post_The_Data(new_User.data_For_Posts))
         ? set_Registered_User((userState) => ({
             ...userState,
             user: user_Value,
