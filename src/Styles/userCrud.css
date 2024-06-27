@@ -1,0 +1,27 @@
+.profile_page_Container{
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    height: 700px;
+}
+
+.user_Area{
+    display: grid;
+    grid-template-rows: auto 70%;
+}
+
+.Img_Area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.edit_Area{
+ border: solid black 1px;
+}
+
+.form_User{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}

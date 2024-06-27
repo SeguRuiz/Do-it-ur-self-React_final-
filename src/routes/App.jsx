@@ -5,14 +5,18 @@ import Register from "../container/Pages/public/Register";
 import Comunnity from "../container/Pages/Private/Comunnity";
 import UserCrud from "../container/Pages/Private/UserCrud";
 import Products from "../container/Pages/public/Products";
+import NotFound from "../container/Pages/public/NotFound";
 import "../Styles/index.css";
 import "../Styles/Navbar_Home.css";
+import "../Styles/userCrud.css"
 import { useTheContext } from "../context/ContextProvider";
+import { ContextProvider } from "../context/ContextProvider";
 
 const App = () => {
   const { thisState } = useTheContext();
   console.log(thisState);
   return (
+    
     <Routes>
       <Route path="/Home" element={<Home />} />
       <Route path="/Home/Profile" element={<UserCrud />} />
@@ -20,8 +24,9 @@ const App = () => {
       <Route path="/Home/Products" element={<Products/>}/>
       <Route path="/Register" element={<Register />} />
       <Route path="/" element={<Login />} />
-      
+      <Route path="/*" element={<NotFound/>}/>
     </Routes>
+    
   );
 };
 

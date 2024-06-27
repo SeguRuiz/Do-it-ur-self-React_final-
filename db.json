@@ -1,13 +1,23 @@
 {
   "users": [
     {
-      "id": "f92a",
+      "id": "15c9",
       "info": {
         "name": "Luis",
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "tasks": []
+      "posts": []
+    },
+    {
+      "id": "4eac",
+      "info": {
+        "name": "Maria",
+        "email": "Maria@gmail.com",
+        "password": "123"
+      },
+      "posts": []
     }
-  ]
+  ],
+  "Public": []
 }

@@ -9,9 +9,10 @@ const userValidate = localStorage.getItem('user_Sesion') ?? false
 useEffect(()=>{
 const comprobate_User = async() =>{
   const see_Data = new Posts_Tools();
-  const data = await see_Data.post_The_Data();
+  const data = await see_Data.post_The_Data(true);
 
   const find_User = await data.find(users => users.id == userValidate) ?? false
+  console.log(find_User);
 
   if (find_User != false) {
     setState(true)

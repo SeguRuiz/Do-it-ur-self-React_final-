@@ -1,9 +1,11 @@
-
+const public_Posts = 'http://localhost:3002/Public'
+const users_Post = 'http://localhost:3002/users'
 export class Posts_Tools {
   
-  post_The_Data = async (the_Data,) => {
+  post_The_Data = async (link ,the_Data) => {
+    let fetchLink = link ? users_Post : public_Posts
     try {
-      const response = await fetch("http://localhost:3002/users/", the_Data);
+      const response = await fetch(fetchLink, the_Data);
       const data = await response.json() 
       return data
     } catch (error) {
@@ -27,7 +29,7 @@ export class Posts_Tools {
         email,
         password,
       },
-      tasks:[]
+      posts:[]
     });
   }
 }
@@ -53,9 +55,9 @@ export class Put_Tools {
     body: null,
   };
 
-  constructor(tasks) {
+  constructor(posts) {
     this.data_For_Puts.body = JSON.stringify(
-      tasks,
+      posts,
     );
   }
 }
