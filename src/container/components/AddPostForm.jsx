@@ -1,11 +1,13 @@
-import { useRef, useState } from "react";
-import { Put_Tools, Posts_Tools } from "../../utils/Fetchs/classes";
+import { useId, useRef, useState } from "react";
+import { Put_Tools } from "../../utils/Fetchs/classes";
 import { useTheContext } from "../../context/ContextProvider";
+import uuid from "react-uuid";
+import ShowUserPosts from "./ShowUserPosts";
 import Inpts from "./Inpts";
 
 const AddPostForm = () => {
   const info_Inp = useRef();
-  const { userInSesion, data, updateData } = useTheContext();
+  const { userInfo, data, updateData } = useTheContext();
 
   const [info_Inp_Value, set_InfoValue] = useState("");
 
@@ -19,19 +21,23 @@ const AddPostForm = () => {
     let info_Inp_Value = info_Inp.current.value.trim();
 
     if (info_Inp_Value != "") {
+      let id = uuid();
       let post = {
-        Description: info_Inp_Value
-      }
-      let copyUser = { ...userInSesion };
+        Description: info_Inp_Value,
+        State: "Private",
+        id: id,
+      };
+      let copyUser = { ...userInfo };
 
-      copyUser.posts.push(post)
+      copyUser.posts.push(post);
 
       console.log(copyUser);
 
-      let new_User_Update = new Put_Tools(copyUser)
-      new_User_Update.put_The_Data(copyUser.id ,new_User_Update.data_For_Puts)
+      let new_User_Update = new Put_Tools(copyUser);
+      new_User_Update.put_The_Data(copyUser.id, new_User_Update.data_For_Puts);
 
-      updateData(data + 1)
+      updateData(data + 1);
+      set_InfoValue("");
     }
   };
   return (
@@ -46,6 +52,8 @@ const AddPostForm = () => {
         />
         <button type="submit">Add</button>
       </form>
+      <br />
+      <ShowUserPosts />
     </>
   );
 };

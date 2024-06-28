@@ -4,7 +4,8 @@ export const theContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [thisState, setState] = useState(false);
-  const [userInSesion , setUser] = useState(null)
+  const [user_Posts , setUser] = useState([])
+  const [userInfo, setUserInfo] = useState('')
   const [data, updateData] = useState(0)
   const userValidate = localStorage.getItem("user_Sesion") ?? false;
 
@@ -19,17 +20,16 @@ export const ContextProvider = ({ children }) => {
 
       if (find_User != false) {
         setState(true);
-        setUser(find_User)
-        console.log(find_User);
+        setUser(find_User.posts)
+        setUserInfo(find_User)
       }
     };
     comprobate_User();
   }, [data, userValidate]);
 
-  
 
   return (
-    <theContext.Provider value={{ thisState, setState, userInSesion, data, updateData}}>
+    <theContext.Provider value={{ thisState, setState, user_Posts, data, updateData, userInfo,}}>
       {children}
     </theContext.Provider>
   );

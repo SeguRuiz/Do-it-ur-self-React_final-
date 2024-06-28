@@ -52,17 +52,17 @@ export class Public_Posts_Tools {
     body: null,
   };
 
-  constructor(description) {
+  constructor(user, post, ) {
     this.data_For_Posts.body = JSON.stringify({
-      info: {
-        description,
-      },
+      user,
+      post,
       comments: [],
     });
   }
 }
 
 export class Put_Tools {
+
   put_The_Data = async (id, the_Data) => {
     try {
       const response = await fetch(
@@ -85,7 +85,7 @@ export class Put_Tools {
     body: null,
   };
 
-  constructor(posts) {
-    this.data_For_Puts.body = JSON.stringify(posts);
+  constructor(Update) {
+    this.data_For_Puts.body = JSON.stringify(Update);
   }
 }
