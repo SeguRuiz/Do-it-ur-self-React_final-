@@ -6,27 +6,31 @@ import Comunnity from "../container/Pages/Private/Comunnity";
 import UserCrud from "../container/Pages/Private/UserCrud";
 import Products from "../container/Pages/public/Products";
 import NotFound from "../container/Pages/public/NotFound";
+import About_Us from "../container/Pages/public/About_Us";
+
 import "../Styles/index.css";
 import "../Styles/Navbar_Home.css";
-import "../Styles/userCrud.css"
+import "../Styles/userCrud.css";
+import "../Styles/Posts.css";
+import "../Styles/Community.css";
+import "../Styles/Products.css";
 import { useTheContext } from "../context/ContextProvider";
 import { ContextProvider } from "../context/ContextProvider";
 
 const App = () => {
-  const { thisState } = useTheContext();
   
+
   return (
-    
     <Routes>
       <Route path="/Home" element={<Home />} />
       <Route path="/Home/Profile" element={<UserCrud />} />
       <Route path="/Home/Community" element={<Comunnity />} />
-      <Route path="/Home/Products" element={<Products/>}/>
+      <Route path="/Home/Products" element={<Products />} />
+      <Route path="/Home/AboutUs" element={<About_Us/>}/>
       <Route path="/Register" element={<Register />} />
       <Route path="/" element={<Login />} />
-      <Route path="/*" element={<NotFound/>}/>
+      <Route path="/*" element={<NotFound />} />
     </Routes>
-    
   );
 };
 

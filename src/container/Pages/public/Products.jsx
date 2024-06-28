@@ -1,10 +1,17 @@
 import Navbar_Ho from "../../components/Navbar_Ho"
 
+
 const Products = () => {
   return (
     <>
     <Navbar_Ho/>
-    <h1>Products</h1>
+    <div className="products_Container">
+      <div></div>
+      <div className="Products_Area">
+      <h1>products area </h1>
+      </div>
+      <div></div>
+    </div>
     </>
   )
 }

@@ -53,7 +53,7 @@ const AddPostForm = () => {
         <button type="submit">Add</button>
       </form>
       <br />
-      <ShowUserPosts />
+      
     </>
   );
 };
