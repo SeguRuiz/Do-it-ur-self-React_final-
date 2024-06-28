@@ -1,0 +1,10 @@
+.navbar_Home{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid black 2px;
+}
+
+.navigationa_Area, .User_Area{
+    display: flex;
+    gap: 20px;
+}

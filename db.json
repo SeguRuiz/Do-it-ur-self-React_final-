@@ -1,5 +1,36 @@
 {
   "users": [
-    
+    {
+      "id": "0148",
+      "info": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "password": "123"
+      },
+      "posts": [
+        {
+          "Description": "hola",
+          "State": "Public",
+          "id": "04bca2f8-84ed-64ff-33f5-23c3111c72a5"
+        },
+        {
+          "Description": "hola 2",
+          "State": "Public",
+          "id": "59ba5dd5-ee32-7d19-fcc9-6b7b741ac852"
+        }
+      ]
+    }
+  ],
+  "Public": [
+    {
+      "id": "0906",
+      "user": "0148",
+      "post": {
+        "Description": "hola 2",
+        "State": "Public",
+        "id": "59ba5dd5-ee32-7d19-fcc9-6b7b741ac852"
+      },
+      "comments": []
+    }
   ]
 }

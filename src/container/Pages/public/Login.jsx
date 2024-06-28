@@ -1,9 +1,13 @@
-import Inpts from "../components/Inpts";
-import { Posts_Tools } from "../../utils/Fetchs/classes";
+import Inpts from "../../components/Inpts";
+import { Posts_Tools } from "../../../utils/Fetchs/classes";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
+import { useTheContext } from "../../../context/ContextProvider";
+
 const Login = () => {
+  const { setState } = useTheContext();
+
   const go_To_Home = useNavigate();
 
   let [validate_State, set_Validate_State] = useState({
@@ -45,6 +49,8 @@ const Login = () => {
       data != false
     ) {
       localStorage.setItem("user_Sesion", find_User_Name.id);
+      setState(true);
+
       set_Validate_State((state) => ({
         ...state,
         info_To_User: "Bienvenido " + user_Value,
@@ -92,7 +98,9 @@ const Login = () => {
           />
           <br />
           <br />
-          <button  className='submit_Btn'type="submit">log in</button>
+          <button className="submit_Btn" type="submit">
+            log in
+          </button>
         </form>
       </div>
     </>
