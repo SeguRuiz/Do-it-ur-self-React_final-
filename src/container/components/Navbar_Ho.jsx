@@ -9,7 +9,7 @@ const Navbar_Ho = () => {
   const go_To_Home = useNavigate();
   const go_To_Login = useNavigate();
   const got_To_Profile = useNavigate();
-  const go_About_Us = useNavigate()
+  const go_About_Us = useNavigate();
 
   return (
     <div className="navbar_Home">
@@ -37,20 +37,21 @@ const Navbar_Ho = () => {
       <div className="User_Area">
         {thisState ? (
           <>
-          <h3
-            onClick={() => {
-              got_To_Profile("/Home/Profile");
-            }}
-          >
-            Profile
-          </h3>
+            <h3
+              onClick={() => {
+                got_To_Profile("/Home/Profile");
+              }}
+            >
+              Profile
+            </h3>
 
-          <h3 onClick={() => {
-              got_To_Profile("/Home/AboutUs");
-            }}>
-           
-           About Us
-          </h3>
+            <h3
+              onClick={() => {
+                got_To_Profile("/Home/AboutUs");
+              }}
+            >
+            About Us
+            </h3>
           </>
         ) : (
           <>
@@ -61,6 +62,8 @@ const Navbar_Ho = () => {
             >
               Log in
             </h3>
+
+            
             <h3>Sing in</h3>
           </>
         )}

@@ -1,10 +1,12 @@
 import Navbar_Ho from "../../components/Navbar_Ho"
 
+
 const About_Us = () => {
-  return (
+  
+  
+    return (
     <>
     <Navbar_Ho/>
-    <div>About_Us</div>
     </>
     
   )
