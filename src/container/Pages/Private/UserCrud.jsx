@@ -13,13 +13,13 @@ const UserCrud = () => {
         <div className="user_Area">
             <div className="Img_Area">img Area</div>
             <div className="edit_Area">
-            {/* <AddPostForm/> */}
+            <AddPostForm/>
             <div className="user_Posts">
-            {/* <ShowUserPosts/> */}
+            <ShowUserPosts/>
             </div>
-            {/* <AddProducts/> */}
+            <AddProducts/>
             <div className="productF">
-            {/* <ShowTheProducst/> */}
+            <ShowTheProducst/>
             </div>
             </div>
             <br />
