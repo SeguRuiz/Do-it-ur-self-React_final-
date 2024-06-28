@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "0148",
+      "id": "db92",
       "info": {
         "name": "Luis",
         "email": "luis@gmail.com",
@@ -9,28 +9,83 @@
       },
       "posts": [
         {
-          "Description": "hola",
+          "Description": "njn",
           "State": "Public",
-          "id": "04bca2f8-84ed-64ff-33f5-23c3111c72a5"
+          "id": "5587e399-4713-6242-1753-2c2f44540849"
         },
         {
-          "Description": "hola 2",
+          "Description": "hola",
           "State": "Public",
-          "id": "59ba5dd5-ee32-7d19-fcc9-6b7b741ac852"
+          "id": "0c106ce5-ea3f-f8c1-95ac-aa5b0dc00260"
+        },
+        {
+          "Description": "Other posts",
+          "State": "Private",
+          "id": "dcc3b552-6bf8-779b-74f0-1ceb73d53538"
+        }
+        
+      ],
+      "products": [
+        {
+          "Description": "A new product",
+          "State": "Private",
+          "id": "af001adc-21fc-3c36-12b1-010bb4e35a88"
+        },
+        {
+          "Description": "another product",
+          "State": "Private",
+          "id": "1da37931-32c9-8b2b-c85c-aa88941b3266"
+        },
+        {
+          "Description": "Other product",
+          "State": "Private",
+          "id": "6ec27352-fefc-1b97-977d-6e8f90bcbb6d"
+        },
+        {
+          "Description": "Final product",
+          "State": "Private",
+          "id": "8840616c-c842-760d-8d95-989882088254"
+        },
+        {
+          "Description": "other",
+          "State": "Private",
+          "id": "eb621463-5167-af47-9697-404f27922a2d"
+        },
+        {
+          "Description": "anothr",
+          "State": "Private",
+          "id": "bfca16ac-26c7-1bac-1152-da12dcc0b19c"
         }
       ]
     }
   ],
   "Public": [
     {
-      "id": "0906",
-      "user": "0148",
+      "id": "0b8c",
+      "user": [
+        "Luis",
+        "db92"
+      ],
       "post": {
-        "Description": "hola 2",
+        "Description": "njn",
         "State": "Public",
-        "id": "59ba5dd5-ee32-7d19-fcc9-6b7b741ac852"
+        "id": "5587e399-4713-6242-1753-2c2f44540849"
+      },
+      "comments": []
+    },
+    {
+      "id": "10f3",
+      "user": [
+        "Luis",
+        "db92"
+      ],
+      "post": {
+        "Description": "hola",
+        "State": "Public",
+        "id": "0c106ce5-ea3f-f8c1-95ac-aa5b0dc00260"
       },
       "comments": []
     }
-  ]
+  ],
+  "Products": []
 }

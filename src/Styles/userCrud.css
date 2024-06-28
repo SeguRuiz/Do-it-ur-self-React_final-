@@ -1,7 +1,8 @@
 .profile_page_Container {
   display: grid;
   grid-template-columns: auto 70% auto;
-  height: 700px;
+  height: 2000px;
+ 
 }
 
 .user_Area {
@@ -17,6 +18,7 @@
 }
 
 .edit_Area {
+  
   border: solid black 1px;
 }
 
@@ -30,10 +32,23 @@
   display: flex;
   align-items: center;
   margin: 5px;
-  border: solid black 1px;
-  height: 20px;
+  
+ 
 }
 
 .posts_info {
   margin-left: 10px;
+}
+
+.user_Posts_Container{
+  display: grid;
+  justify-content: center;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.user_Posts{
+  display: flex;
+  justify-content: center;
+
 }

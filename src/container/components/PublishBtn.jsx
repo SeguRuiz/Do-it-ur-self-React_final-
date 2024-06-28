@@ -25,9 +25,11 @@ const PublishBtn = ({ id, key }) => {
       let post_To_Publicate = postsCopy.find(posts => posts.id == Publish_Ref.current.id)
       console.log(post_To_Publicate);
       
-      let new_Publication = new Public_Posts_Tools(copyUser.id, post_To_Publicate)
+      let new_Publication = new Public_Posts_Tools([copyUser.info.name, copyUser.id], post_To_Publicate)
 
       new_Publication.post_The_Data(new_Publication.data_For_Posts)
+
+      updateData(data + 1)
     }
   };
   return (

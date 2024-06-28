@@ -1,5 +1,6 @@
 const public_Posts = "http://localhost:3002/Public";
 const users_Post = "http://localhost:3002/users";
+const products_Area = "http://localhost:3002/Products"
 export class Posts_Tools {
   post_The_Data = async (the_Data) => {
     try {
@@ -28,6 +29,7 @@ export class Posts_Tools {
         password,
       },
       posts: [],
+      products: []
     });
   }
 }
@@ -57,6 +59,34 @@ export class Public_Posts_Tools {
       user,
       post,
       comments: [],
+    });
+  }
+}
+
+export class Products_Posts_Tools {
+  post_The_Data = async (the_Data) => {
+    try {
+      const response = await fetch(products_Area, the_Data);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  data_For_Posts = {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: null,
+  };
+
+  constructor(title) {
+    this.data_For_Posts.body = JSON.stringify({
+      title
+
     });
   }
 }
