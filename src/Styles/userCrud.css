@@ -1,56 +1,95 @@
-.Container_Father_Profile{
+.Container_Father_Profile {
   display: grid;
-  grid-template-rows: auto 92%;
+  grid-template-rows: 10% auto;
 }
 
 .profile_page_Container {
   display: grid;
-  grid-template-columns: auto 85% ;
-  height: 1000px;
-  
+  grid-template-columns: auto 80%;
+  height: 570px;
+}
+
+.user_Navigation_area {
+  overflow-y: auto;
+}
+
+.User_Navigate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  border-bottom: solid #979da6 0.5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.profile {
+  background-color: #2d2f31;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+}
+
+.greeting {
+  height: 60px;
+  width: 110px;
+}
+
+.navigate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 30px;
+  height: 350px;
  
 }
 
-.user_Navigation_area{
-  overflow-y: auto;
-  
+.option {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2d2f31;
+  color: #979da6;
+  height: 70px;
+  width: 120px;
+  align-self: center;
+  border-radius: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.tittle_G {
+  font-size: 25px;
+  color: white;
+  margin: 0;
 }
 
-.navigate{
-background-color: #2d2f31;
-height: 75px;
-width: 100%;
-margin-top: 10px;
-border-bottom-right-radius: 30px;
-border-top-right-radius: 30px;
+.extra_info {
+  margin-top: 2px;
+  color: #979da6;
 }
 .user_Area {
-   display: grid;
-   grid-template-rows: 25% auto;
-  border: solid black 2px;
+  display: grid;
+  grid-template-rows: 25% auto;
+ 
 }
 
-.img_area{
-background-color: #8bb4f8;
+.img_area {
+  background-color: #8bb4f8;
 }
 
-.info_User_Area{
-  
-}
-
-.user_Circle{
+.user_Circle {
   display: flex;
   justify-content: end;
   align-items: center;
   height: 100px;
-  
- position: absolute;
- 
-  top: 230px;
+
+  position: absolute;
+
+  top: 270px;
   left: 300px;
 }
 
-.user_Imga{
+.user_Imga {
   height: 100px;
   width: 100px;
   background-color: #2d2f31;
@@ -61,4 +100,3 @@ background-color: #8bb4f8;
   border-radius: 100px;
   color: #8bb4f8;
 }
-
