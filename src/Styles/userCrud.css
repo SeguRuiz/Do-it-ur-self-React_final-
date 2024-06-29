@@ -1,21 +1,27 @@
 .Container_Father_Profile {
   display: grid;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 14.2% auto;
 }
 
 .profile_page_Container {
   display: grid;
   grid-template-columns: auto 80%;
-  height: 570px;
+  height: 553px;
 }
 
 .user_Navigation_area {
   overflow-y: auto;
+  background-color: #28292a;
+}
+
+.info_User_Area{
+background-color: #202124;
 }
 
 .User_Navigate {
   display: flex;
   justify-content: space-around;
+  
   align-items: center;
   height: 150px;
   border-bottom: solid #979da6 0.5px;
@@ -41,13 +47,29 @@
   margin-top: 25px;
   gap: 30px;
   height: 350px;
- 
+  background-color: #28292a;
 }
 
 .option {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+  color: #979da6;
+  height: 70px;
+  width: 120px;
+  align-self: center;
+  border-radius: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.option_Info,.option_Posts, .option_Invent{
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2d2f31;
+  cursor: pointer;
   color: #979da6;
   height: 70px;
   width: 120px;
@@ -72,7 +94,7 @@ background-color: #2d2f31;
 }
 .user_Area {
   display: grid;
-  grid-template-rows: 25% auto;
+  grid-template-rows: auto;
  
 }
 
@@ -103,3 +125,5 @@ background-color: #2d2f31;
   border-radius: 100px;
   color: #8bb4f8;
 }
+
+/*Products Styles*/

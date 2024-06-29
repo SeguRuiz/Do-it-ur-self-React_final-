@@ -1,10 +1,26 @@
-import AddPostForm from "../../components/AddPostForm";
-import AddProducts from "../../components/AddProducts";
-import ShowTheProducst from "../../components/ShowTheProducst";
-import ShowUserPosts from "../../components/ShowUserPosts";
+// import AddPostForm from "../../components/AddPostForm";
+// import AddProducts from "../../components/UseCrud/AddProducts";
+// import ShowTheProducst from "../../components/UseCrud/ShowTheProducst";
+// import ShowUserPosts from "../../components/UseCrud/ShowUserPosts";
+import ShowTheProducst from "../../components/UseCrud/ShowTheProducst"
+import { useTheContext } from "../../../context/ContextProvider";
 import Navbar_Ho from "../../components/Navbar_Ho";
 
 const UserCrud = () => {
+const {usersPage, setPage} = useTheContext()
+
+const page_Inventory = () =>{
+setPage('Inventory')
+console.log(usersPage);
+}
+
+const page_Posts = () =>{
+setPage('Posts')
+}
+
+const page_Info = () =>{
+  setPage('Info')
+}
   return (
     <>
       <Navbar_Ho />
@@ -34,7 +50,7 @@ const UserCrud = () => {
                 </div>
                 <p>Log Out</p>
               </div>
-              <div className="option">
+              <div className={usersPage == 'Inventory' ? 'option_Invent' : 'option'} onClick={page_Inventory}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +64,7 @@ const UserCrud = () => {
                 </div>
                 <p>Inventory</p>
               </div>
-              <div className="option">
+              <div className={usersPage == 'Posts' ? 'option_Posts' : 'option'} onClick={page_Posts}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +78,7 @@ const UserCrud = () => {
                 </div>
                 <p>Posts</p>
               </div>
-              <div className="option">
+              <div className={usersPage == 'Info' ? 'option_Info' : 'option'} onClick={page_Info}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +95,11 @@ const UserCrud = () => {
             </div>
           </div>
           <div className="user_Area">
-            <div className="img_area"></div>
-            <div className="info_User_Area"></div>
+            <div className="info_User_Area">
+           {usersPage == 'Inventory' ? <ShowTheProducst/> : <></>}
+           {usersPage == 'Posts' ? <h1>Posts</h1> : <></>}
+           {usersPage == 'Info' ? <h1>Info</h1> : <></>}
+            </div>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { useId, useRef, useState } from "react";
 import { Put_Tools } from "../../utils/Fetchs/classes";
 import { useTheContext } from "../../context/ContextProvider";
 import uuid from "react-uuid";
-import ShowUserPosts from "./ShowUserPosts";
+import ShowUserPosts from "./UseCrud/ShowUserPosts";
 import Inpts from "./Inpts";
 
 const AddPostForm = () => {
@@ -53,7 +53,6 @@ const AddPostForm = () => {
         <button type="submit">Add</button>
       </form>
       <br />
-      
     </>
   );
 };

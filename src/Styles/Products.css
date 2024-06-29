@@ -10,40 +10,93 @@
 
 .Private_Product {
   display: grid;
-  grid-template-columns: 30% auto;
-  height: 150px;
-  width: 600px;
-  border: solid black 1px;
+  grid-template-columns: 65% auto;
+  height: 220px;
+  width: 670px;
+  border-radius: 10px;
+  background-color: #252932;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
-.info_Product {
+.info_Product{
+display: grid;
+grid-template-rows: 60% auto;
+}
+.title_product{
+font-size: 25px;
+margin-top: 10px;
+margin-left: 15px;
+margin-bottom: 0;
+}
+
+.Price_Area{
+display: grid;
+grid-template-rows: 40% auto;
+}
+.price_Info{
+  display: flex;
+  align-items: center;
+}
+.Price{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.Btns_Area{
+display: flex;
+align-items: end;
+padding-bottom: 15px;
+padding-left: 15px;
+}
+
+.textP{
+background-color: #252932;
+resize: none;
+border: none;
+font-size: 15px;
+height: 75px;
+color: #979da6;
+margin-left: 15px;
+margin-right: 10px;
+}
+
+
+.text_Area{
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.imgProduct_Area{
+background-color: #8bb4f8;
+}
+/**/
+
+.Inventory_Page {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 20% auto;
-  border: solid black 1px;
+  grid-template-rows: 25% auto;
+  height: 100%;
 }
 
-.product_Text{
-    resize: none;
-    background-color: white;
+.ProductsContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.products {
+  padding: 5px;
+  overflow-y: auto;
+  background-color: #2d2f31;
+  height: 400px;
+  width: 95%;
+  border-radius: 20px;
 }
 
-.img_Product{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.addProduct_Area {
+  background-color: blue;
 }
 
-.products{
-    display: grid;
-    justify-content: center;
-    gap: 20px;
-    max-height: 600px;
-    padding: 5px;
-    overflow-y: auto;
-}
-
-.productF{
-    display: flex;
-    justify-content: center;
+.product_Container{
+  display: flex;
+  justify-content: center;
 }

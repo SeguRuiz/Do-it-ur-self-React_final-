@@ -1,5 +1,5 @@
 
-const PostContainer = ({key, id, text, user, Btn}) => {
+const PostContainer1 = ({key, id, text, user, Btn}) => {
   return (
     <div key={key} className="Private_Post" id={id}>
         <div className="UserInfo">
@@ -15,4 +15,4 @@ const PostContainer = ({key, id, text, user, Btn}) => {
   )
 }
 
-export default PostContainer
+export default PostContainer1
