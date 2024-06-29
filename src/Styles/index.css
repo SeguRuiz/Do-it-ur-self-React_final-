@@ -12,8 +12,14 @@
 * {
   user-select: none;
   font-family: "Roboto", sans-serif;
+  
 }
 
+body{
+background-color: #202124;
+color: #e6e1e3;
+margin: 0;
+}
 #info_User{
 display: flex;
 justify-content: center;

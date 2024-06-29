@@ -1,71 +1,72 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useTheContext } from "../../context/ContextProvider";
 
 const Navbar_Ho = () => {
   const { thisState } = useTheContext();
-
-  const go_To_Community = useNavigate();
-  const go_To_Products = useNavigate();
-  const go_To_Home = useNavigate();
-  const go_To_Login = useNavigate();
-  const got_To_Profile = useNavigate();
-  const go_About_Us = useNavigate();
+  const go_To = useNavigate();
 
   return (
     <div className="navbar_Home">
+       
       <div className="navigationa_Area">
-        <h3
+        <h2 className="title">Tittle</h2>
+
+        <p className="Community_link"
           onClick={() => {
-            go_To_Home("/Home");
-          }}
-        ></h3>
-        <h3
-          onClick={() => {
-            go_To_Community("/Home/Community");
+            go_To("/Home/Community");
           }}
         >
           Community
-        </h3>
-        <h3
+        </p>
+        <p className="Products_link"
           onClick={() => {
-            go_To_Products("/Home/Products");
+            go_To("/Home/Products");
           }}
         >
           Products
-        </h3>
+        </p>
       </div>
       <div className="User_Area">
         {thisState ? (
-          <>
-            <h3
-              onClick={() => {
-                got_To_Profile("/Home/Profile");
-              }}
-            >
-              Profile
-            </h3>
+          <div className="aboutUs_Profile">
+            <div className="profile_Container">
+              <p
+                onClick={() => {
+                  go_To("/Home/Profile");
+                }}
+              >
+                Profile
+              </p>
+            </div>
 
-            <h3
+            <p className="about_Link"
               onClick={() => {
-                got_To_Profile("/Home/AboutUs");
+                go_To("/Home/AboutUs");
               }}
             >
-            About Us
-            </h3>
-          </>
+              About us
+            </p>
+          </div>
         ) : (
-          <>
-            <h3
+          <div className="aboutUs_Profile">
+            <div className="Log_in">
+              <p
+                onClick={() => {
+                  go_To("/");
+                }}
+              >
+                Log in
+              </p>
+            </div>
+
+            <p className="about_Link"
               onClick={() => {
-                go_To_Login("/");
+                go_To("/Home/AboutUs");
               }}
             >
-              Log in
-            </h3>
-
-            
-            <h3>Sing in</h3>
-          </>
+              About us
+            </p>
+          </div>
         )}
       </div>
     </div>

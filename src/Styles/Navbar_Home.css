@@ -1,10 +1,68 @@
 .navbar_Home{
     display: flex;
-    justify-content: space-around;
-    border-bottom: solid black 2px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252932;
+    width: 100%;
+    padding: 5px;
 }
 
-.navigationa_Area, .User_Area{
+.navigationa_Area{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
+
+.title{
+margin-left: 10px;
+}
+
+.Community_link{
+margin-left: 20px;
+}
+
+.Community_link, .Products_link, .about_Link{
+color: #979da6;
+cursor: pointer;
+}
+
+.Community_link:hover{
+    color: white;
+}
+
+.Products_link:hover{
+    color: white;
+}
+
+.about_Link:hover{
+color: white;
+}
+
+
+
+
+.aboutUs_Profile{
+display: flex;
+align-items: center;
+gap: 10px;
+margin-right: 40px;
+}
+.profile_Container, .Log_in{
+ display: flex;
+ justify-content: center;
+ cursor: pointer;
+ align-items: center;
+ border: #8bb4f8 solid 1.3px;
+ border-radius: 25px;
+ padding-left: 25px;
+ padding-right: 25px;
+ color: #8bb4f8;
+ 
+}
+
+.profile_Container, .Log_in:hover{
+background-color: #282c35;
+}
+
+.
