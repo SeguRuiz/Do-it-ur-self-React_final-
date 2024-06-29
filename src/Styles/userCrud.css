@@ -1,54 +1,64 @@
+.Container_Father_Profile{
+  display: grid;
+  grid-template-rows: auto 92%;
+}
+
 .profile_page_Container {
   display: grid;
-  grid-template-columns: auto 70% auto;
-  height: 2000px;
- 
-}
-
-.user_Area {
-  display: grid;
-  grid-template-rows: auto 70%;
-}
-
-.Img_Area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px black;
-}
-
-.edit_Area {
-  
-  border: solid black 1px;
-}
-
-.form_User {
-  display: flex;
-  justify-content: start;
-  margin: 10px;
-}
-
-.post_Container {
-  display: flex;
-  align-items: center;
-  margin: 5px;
+  grid-template-columns: auto 85% ;
+  height: 1000px;
   
  
 }
 
-.posts_info {
-  margin-left: 10px;
-}
-
-.user_Posts_Container{
-  display: grid;
-  justify-content: center;
-  max-height: 600px;
+.user_Navigation_area{
   overflow-y: auto;
+  
 }
 
-.user_Posts{
+.navigate{
+background-color: #2d2f31;
+height: 75px;
+width: 100%;
+margin-top: 10px;
+border-bottom-right-radius: 30px;
+border-top-right-radius: 30px;
+}
+.user_Area {
+   display: grid;
+   grid-template-rows: 25% auto;
+  border: solid black 2px;
+}
+
+.img_area{
+background-color: #8bb4f8;
+}
+
+.info_User_Area{
+  
+}
+
+.user_Circle{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100px;
+  
+ position: absolute;
+ 
+  top: 230px;
+  left: 300px;
+}
+
+.user_Imga{
+  height: 100px;
+  width: 100px;
+  background-color: #2d2f31;
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  margin-right: 30px;
+  border-radius: 100px;
+  color: #8bb4f8;
 }
+

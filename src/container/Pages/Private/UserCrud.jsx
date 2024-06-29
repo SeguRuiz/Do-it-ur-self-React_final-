@@ -10,24 +10,23 @@ const UserCrud = () => {
   return (
     <>
     <Navbar_Ho/>
+    <div className="Container_Father_Profile">
+      <div></div>
     <div className="profile_page_Container">
-        <div></div>
-        <div className="user_Area">
-            <div className="Img_Area"></div>
-            <div className="edit_Area">
-            <AddPostForm/>
-            <div className="user_Posts">
-            <ShowUserPosts/>
-            </div>
-            <AddProducts/>
-            <div className="productF">
-            <ShowTheProducst/>
-            </div>
-            </div>
-            <br />
-            
+        <div className="user_Navigation_area">
+          <div className="navigate"></div>
+          <div className="navigate"></div>
         </div>
-        <div></div>
+        <div className="user_Area">
+            <div className="img_area"></div>
+            <div className="info_User_Area">
+              <div className="user_Circle">
+                <div className="user_Imga">User</div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
     </div>
     </>
   )
