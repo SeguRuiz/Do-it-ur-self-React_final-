@@ -22,8 +22,12 @@
           "Description": "Other posts",
           "State": "Private",
           "id": "dcc3b552-6bf8-779b-74f0-1ceb73d53538"
+        },
+        {
+          "Description": "Esto fue posteado por luis",
+          "State": "Public",
+          "id": "d98e292b-a7e6-69c1-35f9-d538630e0c2a"
         }
-        
       ],
       "products": [
         {
@@ -57,6 +61,27 @@
           "id": "bfca16ac-26c7-1bac-1152-da12dcc0b19c"
         }
       ]
+    },
+    {
+      "id": "a1ae",
+      "info": {
+        "name": "Maria",
+        "email": "maria@gmail.com",
+        "password": "123"
+      },
+      "posts": [
+        {
+          "Description": "hoaaaalpqpdij2eoifhuiewhnf",
+          "State": "Private",
+          "id": "ef3e02f4-ed1f-b90e-6a3b-3f4957c645a9"
+        },
+        {
+          "Description": "holaaa esto fue mandado por maria",
+          "State": "Public",
+          "id": "2544f519-ef98-a9a1-9df9-092cff38d3e5"
+        }
+      ],
+      "products": []
     }
   ],
   "Public": [
@@ -83,6 +108,32 @@
         "Description": "hola",
         "State": "Public",
         "id": "0c106ce5-ea3f-f8c1-95ac-aa5b0dc00260"
+      },
+      "comments": []
+    },
+    {
+      "id": "c24e",
+      "user": [
+        "Luis",
+        "db92"
+      ],
+      "post": {
+        "Description": "Esto fue posteado por luis",
+        "State": "Public",
+        "id": "d98e292b-a7e6-69c1-35f9-d538630e0c2a"
+      },
+      "comments": []
+    },
+    {
+      "id": "2f39",
+      "user": [
+        "Maria",
+        "a1ae"
+      ],
+      "post": {
+        "Description": "holaaa esto fue mandado por maria",
+        "State": "Public",
+        "id": "2544f519-ef98-a9a1-9df9-092cff38d3e5"
       },
       "comments": []
     }

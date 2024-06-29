@@ -12,7 +12,7 @@ const Comunnity = () => {
   return (
     <>
       <Navbar_Ho />
-      {publicData[0] == undefined ? (
+      {/* {publicData[0] == undefined ? (
         <h1>No hay posteos</h1>
       ) : (
         <div className="Community_page_Container">
@@ -22,7 +22,7 @@ const Comunnity = () => {
           </div>
           <div></div>
         </div>
-      )}
+      )} */}
     </>
   );
 };

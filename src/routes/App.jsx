@@ -7,13 +7,14 @@ import UserCrud from "../container/Pages/Private/UserCrud";
 import Products from "../container/Pages/public/Products";
 import NotFound from "../container/Pages/public/NotFound";
 import About_Us from "../container/Pages/public/About_Us";
-
+import Navbar from "../container/components/Navbar";
 import "../Styles/index.css";
 import "../Styles/Navbar_Home.css";
 import "../Styles/userCrud.css";
 import "../Styles/Posts.css";
 import "../Styles/Community.css";
 import "../Styles/Products.css";
+import "../Styles/AboutUs.css"
 import { useTheContext } from "../context/ContextProvider";
 import { ContextProvider } from "../context/ContextProvider";
 
@@ -21,6 +22,8 @@ const App = () => {
   
 
   return (
+    <>
+    
     <Routes>
       <Route path="/Home" element={<Home />} />
       <Route path="/Home/Profile" element={<UserCrud />} />
@@ -31,6 +34,7 @@ const App = () => {
       <Route path="/" element={<Login />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
+    </>
   );
 };
 
