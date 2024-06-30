@@ -6,6 +6,7 @@ import ShowTheProducst from "../../components/UseCrud/ShowTheProducst"
 import ShowUserPosts from "../../components/UseCrud/ShowUserPosts"
 import { useTheContext } from "../../../context/ContextProvider";
 import Navbar_Ho from "../../components/Navbar_Ho";
+import UserInfo from "../../components/UseCrud/UserInfo";
 
 const UserCrud = () => {
 const {usersPage, setPage} = useTheContext()
@@ -99,7 +100,7 @@ const page_Info = () =>{
             <div className="info_User_Area">
            {usersPage == 'Inventory' ? <ShowTheProducst/> : <></>}
            {usersPage == 'Posts' ? <ShowUserPosts/> : <></>}
-           {usersPage == 'Info' ? <h1>Info</h1> : <></>}
+           {usersPage == 'Info' ? <UserInfo/> : <></>}
             </div>
           </div>
         </div>

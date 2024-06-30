@@ -7,60 +7,35 @@ const About_Us = () => {
       <div className="about_Us_Page">
         <div></div>
         <div className="about_Us_Container">
-          <div className="Team_Info">
-            <div className="Info_Area">
-              <div className="info_InnerText">
-                <h1>Have any questions?</h1>
-                <div className="text_AreasInfo">
-                  <textarea
-                    value={
-                      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
-                    }
-                    className="text1"
-                    disabled
-                  ></textarea>
-                  <textarea
-                    value={
-                      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
-                    }
-                    className="text2"
-                    disabled
-                  ></textarea>
-                </div>
-              </div>
+          <div className="Info_AreaForm">
+            <div className="form">
+            <div className="tittle_Ab">
+              <h1>Contact ME!</h1>
+              <textarea
+                className="text3"
+                value={
+                  "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+                }
+                disabled
+              ></textarea>
             </div>
-            <div className="card_Area"></div>
+            <form action="" className="about_form">
+              <input
+                type="text"
+                placeholder="Email address"
+                className="inpAb"
+              />
+              <textarea
+                className="inAb2"
+                placeholder="Write ur question down here!"
+              ></textarea>
+              <button className="btn_Ab">Submit</button>
+            </form>
           </div>
-          <div className="Form_And_Questions">
-            <div className="card_Area"></div>
-            <div className="Info_AreaForm">
-              <div className="tittle_Ab">
-                <h1>Contact ME!</h1>
-                <textarea
-                  className="text3"
-                  value={
-                    "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
-                  }
-                  disabled
-                ></textarea>
-              </div>
-              <form action="" className="about_form">
-                <input
-                  type="text"
-                  placeholder="Email address"
-                  className="inpAb"
-                />
-                <input
-                  type="text"
-                  placeholder="Ur question"
-                  className="inAb2"
-                />
-                <button className="btn_Ab">Submit</button>
-              </form>
-            </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 };
