@@ -1,15 +1,21 @@
 import { useId, useRef, useState } from "react";
-import { Put_Tools } from "../../utils/Fetchs/classes";
-import { useTheContext } from "../../context/ContextProvider";
+import { Put_Tools } from "../../../utils/Fetchs/classes";
+import { useTheContext } from "../../../context/ContextProvider";
 import uuid from "react-uuid";
-import ShowUserPosts from "./UseCrud/ShowUserPosts";
-import Inpts from "./Inpts";
+import Inpts from "../Inpts";
 
 const AddPostForm = () => {
   const info_Inp = useRef();
   const { userInfo, data, updateData } = useTheContext();
 
   const [info_Inp_Value, set_InfoValue] = useState("");
+  const postsDlg = useRef()
+
+   const OpenModal = () => {
+    updateData(data + 1);
+    postsDlg.current.showModal();
+  };
+
 
   const see_The_value = (o) => {
     set_InfoValue(o.target.value);
@@ -42,6 +48,7 @@ const AddPostForm = () => {
   };
   return (
     <>
+    <dialog ref={postsDlg}>
       <form name="form_User" className="form_User" onSubmit={user_Private_Post}>
         <Inpts
           type={"text"}
@@ -52,7 +59,22 @@ const AddPostForm = () => {
         />
         <button type="submit">Add</button>
       </form>
-      <br />
+      </dialog>
+            <div onClick={OpenModal} className="Open_Modal_Posts">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#8bb4f8"
+            className="iconAdd"
+          >
+            <path d="M446.67-446.67H200v-66.66h246.67V-760h66.66v246.67H760v66.66H513.33V-200h-66.66v-246.67Z" />
+          </svg>
+        </div>
+        <p>Add Posts</p>
+      </div>
     </>
   );
 };

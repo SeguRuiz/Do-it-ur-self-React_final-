@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { useTheContext } from "../../context/ContextProvider";
-import { Public_Posts_Tools, Put_Tools } from "../../utils/Fetchs/classes";
+import { useTheContext } from "../../../context/ContextProvider";
+import { Public_Posts_Tools, Put_Tools } from "../../../utils/Fetchs/classes";
 
 const PublishBtn = ({ id, key }) => {
   const { user_Posts, data, updateData, userInfo } = useTheContext();
@@ -33,7 +33,7 @@ const PublishBtn = ({ id, key }) => {
     }
   };
   return (
-    <button id={id} key={key} onClick={Publish_Action} ref={Publish_Ref}>
+    <button id={id} key={key} onClick={Publish_Action} ref={Publish_Ref} className="Publish_BTN">
       Publish
     </button>
   );

@@ -9,24 +9,14 @@
       },
       "posts": [
         {
-          "Description": "njn",
-          "State": "Public",
-          "id": "5587e399-4713-6242-1753-2c2f44540849"
-        },
-        {
-          "Description": "hola",
-          "State": "Public",
-          "id": "0c106ce5-ea3f-f8c1-95ac-aa5b0dc00260"
-        },
-        {
-          "Description": "Other posts",
+          "Description": "Esto es un nuevo posteo de luis Jose Segura Ruiz",
           "State": "Private",
-          "id": "dcc3b552-6bf8-779b-74f0-1ceb73d53538"
+          "id": "33bf16cc-fa39-e4f2-ad2e-3017f52f681e"
         },
         {
-          "Description": "Esto fue posteado por luis",
-          "State": "Public",
-          "id": "d98e292b-a7e6-69c1-35f9-d538630e0c2a"
+          "Description": "Esto tambien fue posteado por luis Jose segura Ruiz",
+          "State": "Private",
+          "id": "fe9d6630-c932-2adc-3743-47f445c4a164"
         }
       ],
       "products": [
