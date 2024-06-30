@@ -1,12 +1,20 @@
 
+
+
 const ProductContainer = ({key, id, text}) => {
   return (
     <div key={key} className="Private_Product" id={id}>
-        <div className="img_Product">stuff</div>
         <div className="info_Product">
-            <div>title</div>
-            <textarea  value={text} disabled className="product_Text"></textarea>
+          <div className="text_Area">
+           <p className="title_product">Title</p>
+            <textarea disabled value={'Texto de prueba'} className="textP"></textarea>
+          </div>
+          <div className="Price_Area">
+            <h2 className="Price">500$</h2>
+            <div className="Btns_Area">botones(Wip)</div>
+          </div>
         </div>
+        <div className="imgProduct_Area"></div>
     </div>
   )
 }

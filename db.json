@@ -31,34 +31,19 @@
       ],
       "products": [
         {
-          "Description": "A new product",
+          "Description": "m,",
           "State": "Private",
-          "id": "af001adc-21fc-3c36-12b1-010bb4e35a88"
+          "id": "c7c4e502-0410-32f9-2d35-3d8b9141c193"
         },
         {
-          "Description": "another product",
+          "Description": "nxjnxjnx",
           "State": "Private",
-          "id": "1da37931-32c9-8b2b-c85c-aa88941b3266"
+          "id": "5a62410f-c52b-037d-5369-f09ffac89b61"
         },
         {
           "Description": "Other product",
           "State": "Private",
-          "id": "6ec27352-fefc-1b97-977d-6e8f90bcbb6d"
-        },
-        {
-          "Description": "Final product",
-          "State": "Private",
-          "id": "8840616c-c842-760d-8d95-989882088254"
-        },
-        {
-          "Description": "other",
-          "State": "Private",
-          "id": "eb621463-5167-af47-9697-404f27922a2d"
-        },
-        {
-          "Description": "anothr",
-          "State": "Private",
-          "id": "bfca16ac-26c7-1bac-1152-da12dcc0b19c"
+          "id": "63a60c8c-b15e-1f55-35a5-a010847389b1"
         }
       ]
     },

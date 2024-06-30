@@ -1,6 +1,6 @@
-import { useTheContext } from "../../context/ContextProvider";
-import { Put_Tools } from "../../utils/Fetchs/classes";
-import Inpts from "./Inpts";
+import { useTheContext } from "../../../context/ContextProvider";
+import { Put_Tools } from "../../../utils/Fetchs/classes";
+import Inpts from "../Inpts";
 import uuid from "react-uuid";
 import { useRef, useState } from "react";
 const AddProducts = () => {
@@ -39,11 +39,21 @@ const AddProducts = () => {
       updateData(data + 1);
       set_prodValue("");
     }
-    }
+  };
   return (
     <>
-      <form name="form_User" className="form_User" onSubmit={user_Private_Product}>
-        <Inpts type={"text"} placeholder={"Add products"} ref={product_Inp} Change_Value={see_The_value} value={product_Inp_Value}/>
+      <form
+        name="form_User"
+        className="form_User"
+        onSubmit={user_Private_Product}
+      >
+        <Inpts
+          type={"text"}
+          placeholder={"Add products"}
+          ref={product_Inp}
+          Change_Value={see_The_value}
+          value={product_Inp_Value}
+        />
         <button type="submit">Add</button>
       </form>
     </>
