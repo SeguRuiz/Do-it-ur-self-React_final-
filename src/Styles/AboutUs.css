@@ -1,7 +1,104 @@
-.about_Us_Container{
-    display: grid;
-    grid-template-columns: 70% auto;
-    height: 1000px;
+.about_Us_Page {
+  display: grid;
+  grid-template-rows: 7.5% auto;
 }
 
+.about_Us_Container {
+  display: grid;
+  grid-template-columns: auto;
+  height: 600px;
+}
 
+.Team_Info {
+  display: grid;
+  grid-template-rows: 40% auto;
+  padding: 10px;
+  gap: 20px;
+}
+.Info_Area {
+  border: white 1px solid;
+  border-radius: 15px;
+}
+
+.Info_AreaForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.form {
+  background-color: #28292a;
+  padding: 20px;
+  border-radius: 20px;
+}
+.about_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: center;
+  justify-self: center;
+}
+.tittle_Ab {
+  align-self: center;
+}
+.inpAb {
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  background-color: #252932;
+  padding: 5px;
+}
+.inpAb::placeholder {
+  color: #979da6;
+  font-size: 15px;
+}
+
+.inpAb:focus {
+  outline-color: #8bb4f8;
+  outline-style: solid;
+}
+.text3 {
+  height: 50px;
+  color: #979da6;
+  font-size: 20px;
+  width: 500px;
+  border: none;
+  background-color: #28292a;
+  resize: none;
+  margin-bottom: 20px;
+}
+.btn_Ab {
+  display: flex;
+  justify-content: center;
+  background-color: #252932;
+  cursor: pointer;
+  align-items: center;
+  border: #8bb4f8 solid 1.3px;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  color: #8bb4f8;
+}
+
+.inAb2 {
+  height: 150px;
+  border-radius: 15px;
+  border: none;
+  background-color: #252932;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  resize: none;
+}
+.inAb2:focus {
+  outline-color: #8bb4f8;
+  outline-style: solid;
+}
+
+.inAb2::placeholder {
+  color: #979da6;
+  font-size: 15px;
+}

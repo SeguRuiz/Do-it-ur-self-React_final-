@@ -16,6 +16,8 @@
 
 .info_User_Area{
 background-color: #202124;
+height: 553px;
+overflow-y: auto;
 }
 
 .User_Navigate {

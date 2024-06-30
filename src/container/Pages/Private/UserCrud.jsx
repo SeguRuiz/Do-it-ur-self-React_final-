@@ -3,8 +3,10 @@
 // import ShowTheProducst from "../../components/UseCrud/ShowTheProducst";
 // import ShowUserPosts from "../../components/UseCrud/ShowUserPosts";
 import ShowTheProducst from "../../components/UseCrud/ShowTheProducst"
+import ShowUserPosts from "../../components/UseCrud/ShowUserPosts"
 import { useTheContext } from "../../../context/ContextProvider";
 import Navbar_Ho from "../../components/Navbar_Ho";
+import UserInfo from "../../components/UseCrud/UserInfo";
 
 const UserCrud = () => {
 const {usersPage, setPage} = useTheContext()
@@ -97,8 +99,8 @@ const page_Info = () =>{
           <div className="user_Area">
             <div className="info_User_Area">
            {usersPage == 'Inventory' ? <ShowTheProducst/> : <></>}
-           {usersPage == 'Posts' ? <h1>Posts</h1> : <></>}
-           {usersPage == 'Info' ? <h1>Info</h1> : <></>}
+           {usersPage == 'Posts' ? <ShowUserPosts/> : <></>}
+           {usersPage == 'Info' ? <UserInfo/> : <></>}
             </div>
           </div>
         </div>
