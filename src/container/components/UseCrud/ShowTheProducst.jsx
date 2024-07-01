@@ -2,6 +2,7 @@ import { useTheContext } from "../../../context/ContextProvider";
 
 import ProductContainer from "../ProductContainer";
 import AddProducts from "../UseCrud/AddProducts";
+import ElimiPublish from "./ElimiPublish";
 
 const ShowTheProducst = () => {
   const { user_Products } = useTheContext();
@@ -16,7 +17,12 @@ const ShowTheProducst = () => {
           <div className="products">
             {user_Products.map((product, i) => (
               <div key={i} className="product_Container">
-                <ProductContainer description={product.Description} title={product.Title} price={product.Price}/>
+                <ProductContainer
+                  description={product.Description}
+                  title={product.Title}
+                  price={product.Price}
+                  btns={<ElimiPublish id={product.id}/>}
+                />
               </div>
             ))}
           </div>
