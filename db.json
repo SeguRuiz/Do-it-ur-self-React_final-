@@ -29,7 +29,24 @@
           "id": "4d1974b6-a155-8b17-4d49-4f7403641dd8"
         }
       ],
-      "products": []
+      "products": [
+        {
+          "Title": "Hola",
+          "Description": "123",
+          "Price": "123$",
+          "Img": "",
+          "State": "Private",
+          "id": "7c42ab56-3e6a-5223-7af6-e0fe2ce31fb7"
+        },
+        {
+          "Title": "otro producto",
+          "Description": "ijsjidjie3hiedoedkepodkoed",
+          "Price": "112333$",
+          "Img": "",
+          "State": "Private",
+          "id": "6a3a2796-76e3-71d1-97de-db306246f67e"
+        }
+      ]
     },
     {
       "id": "a1ae",
@@ -118,5 +135,14 @@
       "comments": []
     }
   ],
-  "Products": []
+  "Products": [
+    {
+      "id": "7c42ab56-3e6a-5223-7af6-e0fe2ce31fb7",
+      "Title": "Hola",
+      "Description": "123",
+      "Price": "123$",
+      "Img": "",
+      "State": "Public"
+    }
+  ]
 }

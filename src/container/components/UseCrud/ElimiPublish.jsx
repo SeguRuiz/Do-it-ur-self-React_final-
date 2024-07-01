@@ -1,5 +1,5 @@
 import { useTheContext } from "../../../context/ContextProvider";
-import { Put_Tools } from "../../../utils/Fetchs/classes";
+import { Put_Tools, Products_Posts_Tools } from "../../../utils/Fetchs/classes";
 
 const ElimiPublish = ({ id }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
@@ -19,14 +19,32 @@ const ElimiPublish = ({ id }) => {
 
       newUpdate.put_The_Data(userCopy.id, newUpdate.data_For_Puts);
 
-      setTimeout(()=>{
-        updateData(data + 1)
-      }, 200)
+      setTimeout(() => {
+        updateData(data + 1);
+      }, 200);
     }
   };
 
   const publish = () => {
-    console.log(id);
+    if (userInfo != "") {
+      let productsCopy = [...user_Products];
+
+      productsCopy.forEach((e) => {
+        if (e.id == id) {
+          e.State = "Public";
+        }
+      });
+
+      let theProduct = productsCopy.find((products) => products.id == id);
+
+      let newUpdate = new Products_Posts_Tools(theProduct);
+
+      newUpdate.post_The_Data(newUpdate.data_For_Posts);
+
+      setTimeout(() => {
+        updateData(data + 1);
+      }, 200);
+    }
   };
   return (
     <div className="Elim_Pub_Container">

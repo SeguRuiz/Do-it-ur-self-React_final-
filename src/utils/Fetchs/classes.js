@@ -1,6 +1,6 @@
 const public_Posts = "http://localhost:3002/Public";
 const users_Post = "http://localhost:3002/users";
-const products_Area = "http://localhost:3002/Products"
+const products_Area = "http://localhost:3002/Products";
 export class Posts_Tools {
   post_The_Data = async (the_Data) => {
     try {
@@ -29,7 +29,7 @@ export class Posts_Tools {
         password,
       },
       posts: [],
-      products: []
+      products: [],
     });
   }
 }
@@ -54,7 +54,7 @@ export class Public_Posts_Tools {
     body: null,
   };
 
-  constructor(user, post, ) {
+  constructor(user, post) {
     this.data_For_Posts.body = JSON.stringify({
       user,
       post,
@@ -83,16 +83,12 @@ export class Products_Posts_Tools {
     body: null,
   };
 
-  constructor(title) {
-    this.data_For_Posts.body = JSON.stringify({
-      title
-
-    });
+  constructor(Product) {
+    this.data_For_Posts.body = JSON.stringify(Product);
   }
 }
 
 export class Put_Tools {
-
   put_The_Data = async (id, the_Data) => {
     try {
       const response = await fetch(
