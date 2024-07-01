@@ -7,9 +7,11 @@ import ShowUserPosts from "../../components/UseCrud/ShowUserPosts"
 import { useTheContext } from "../../../context/ContextProvider";
 import Navbar_Ho from "../../components/Navbar_Ho";
 import UserInfo from "../../components/UseCrud/UserInfo";
+import { useNavigate } from "react-router-dom";
 
 const UserCrud = () => {
 const {usersPage, setPage} = useTheContext()
+const go_to_Log = useNavigate()
 
 const page_Inventory = () =>{
 setPage('Inventory')
@@ -22,6 +24,11 @@ setPage('Posts')
 
 const page_Info = () =>{
   setPage('Info')
+}
+
+const logOut = () =>{
+localStorage.removeItem('user_Sesion')
+go_to_Log('/')
 }
   return (
     <>
@@ -38,7 +45,7 @@ const page_Info = () =>{
               </div>
             </div>
             <div className="navigate">
-              <div className="option">
+              <div className="option" onClick={logOut}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
