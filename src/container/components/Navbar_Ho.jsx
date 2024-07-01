@@ -7,18 +7,26 @@ const Navbar_Ho = () => {
 
   return (
     <div className="navbar_Home">
-       
       <div className="navigationa_Area">
-        <h2 className="title">Tittle</h2>
+        <h2
+          className="title"
+          onClick={() => {
+            go_To("/Home");
+          }}
+        >
+          Tittle
+        </h2>
 
-        <p className="Community_link"
+        <p
+          className="Community_link"
           onClick={() => {
             go_To("/Home/Community");
           }}
         >
           Community
         </p>
-        <p className="Products_link"
+        <p
+          className="Products_link"
           onClick={() => {
             go_To("/Home/Products");
           }}
@@ -39,7 +47,8 @@ const Navbar_Ho = () => {
               </p>
             </div>
 
-            <p className="about_Link"
+            <p
+              className="about_Link"
               onClick={() => {
                 go_To("/Home/AboutUs");
               }}
@@ -59,7 +68,8 @@ const Navbar_Ho = () => {
               </p>
             </div>
 
-            <p className="about_Link"
+            <p
+              className="about_Link"
               onClick={() => {
                 go_To("/Home/AboutUs");
               }}
