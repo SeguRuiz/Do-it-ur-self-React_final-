@@ -1,16 +1,16 @@
 
 
 
-const ProductContainer = ({key, id, text}) => {
+const ProductContainer = ({key, id, description, title, price}) => {
   return (
     <div key={key} className="Private_Product" id={id}>
         <div className="info_Product">
           <div className="text_Area">
-           <p className="title_product">Title</p>
-            <textarea disabled value={'Texto de prueba'} className="textP"></textarea>
+           <p className="title_product">{title}</p>
+            <textarea disabled value={description} className="textP"></textarea>
           </div>
           <div className="Price_Area">
-            <h2 className="Price">500$</h2>
+            <h2 className="Price">{price}</h2>
             <div className="Btns_Area">botones(Wip)</div>
           </div>
         </div>

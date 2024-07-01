@@ -17,6 +17,7 @@ import "../Styles/Products.css";
 import "../Styles/AboutUs.css"
 import "../Styles/infoUser.css"
 import "../Styles/home.css"
+import "../Styles/proucts_modal/addProducts.css"
 import { useTheContext } from "../context/ContextProvider";
 import { ContextProvider } from "../context/ContextProvider";
 

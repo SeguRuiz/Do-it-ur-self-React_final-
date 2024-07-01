@@ -16,7 +16,7 @@ const ShowTheProducst = () => {
           <div className="products">
             {user_Products.map((product, i) => (
               <div key={i} className="product_Container">
-                <ProductContainer/>
+                <ProductContainer description={product.Description} title={product.Title} price={product.Price}/>
               </div>
             ))}
           </div>

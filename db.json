@@ -31,19 +31,12 @@
       ],
       "products": [
         {
-          "Description": "m,",
+          "Title": "Acuarelas",
+          "Description": "Descripcion super increible eonerjncernvcejrpofkiwfpowko",
+          "Price": "590$",
+          "Img": "",
           "State": "Private",
-          "id": "c7c4e502-0410-32f9-2d35-3d8b9141c193"
-        },
-        {
-          "Description": "nxjnxjnx",
-          "State": "Private",
-          "id": "5a62410f-c52b-037d-5369-f09ffac89b61"
-        },
-        {
-          "Description": "Other product",
-          "State": "Private",
-          "id": "63a60c8c-b15e-1f55-35a5-a010847389b1"
+          "id": "d766dd6c-0a30-8ce5-8d15-eecbb2c0f6c7"
         }
       ]
     },
@@ -64,9 +57,20 @@
           "Description": "holaaa esto fue mandado por maria",
           "State": "Public",
           "id": "2544f519-ef98-a9a1-9df9-092cff38d3e5"
+        },
+        {
+          "Description": "lkm",
+          "State": "Private",
+          "id": "2055e736-466f-d84a-5644-f5e6854f1c5d"
         }
       ],
-      "products": []
+      "products": [
+        {
+          "Description": "klmklkm",
+          "State": "Private",
+          "id": "1dd7a477-e551-5016-a792-a013a7a3cdb3"
+        }
+      ]
     }
   ],
   "Public": [

@@ -65,9 +65,9 @@
   border-radius: 30px;
 }
 
-.big_texthome{
-color: #8bb4f8;
-font-size: 45px;
+.big_texthome {
+  color: #8bb4f8;
+  font-size: 45px;
 }
 
 .general_Information {
@@ -91,13 +91,13 @@ font-size: 45px;
   font-size: 70px;
 }
 
-.community_Link:hover{
-background-color: #8bb4f8;
+.community_Link:hover {
+  background-color: #8bb4f8;
   color: #252932;
   .iconAdd2 {
     fill: #2d2f31;
   }
 }
-.small_TextHome{
-font-size: 30px;
+.small_TextHome {
+  font-size: 30px;
 }
