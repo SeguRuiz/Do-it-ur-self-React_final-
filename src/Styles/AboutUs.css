@@ -3,10 +3,29 @@
   grid-template-rows: 7.5% auto;
 }
 
+
 .about_Us_Container {
   display: grid;
-  grid-template-columns: auto;
-  height: 600px;
+  grid-template-columns: auto auto;
+  height: 550px;
+}
+
+.Developer_Info{
+ height: 100%;
+ overflow-y: auto;
+}
+
+.textts{
+margin-top: 70px;
+}
+
+.big_text{
+color: #8bb4f8;
+font-size: 40px;
+}
+
+.small_Text{
+font-size: 20px;
 }
 
 .Team_Info {
@@ -28,11 +47,13 @@
 }
 
 .form {
+  margin-top: 70px;
   background-color: #28292a;
   padding: 20px;
   border-radius: 20px;
 }
 .about_form {
+  
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -1,0 +1,103 @@
+.home_grid {
+  display: grid;
+  grid-template-rows: 9% auto;
+  height: 800px;
+}
+
+.home_area {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.Tittle_Home {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #8bb4f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.big_textHome {
+  color: #8bb4f8;
+  font-size: 80px;
+}
+.slider_Container {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  justify-content: center;
+  gap: 5px;
+}
+.Categories_Show {
+  height: 400px;
+  width: 400px;
+  background-color: #282c35;
+  border-radius: 30px;
+  color: #8bb4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderBtn {
+  background-color: #282c35;
+  height: 60px;
+  width: 70px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow1 {
+  margin-left: 10px;
+}
+.MainText_Home {
+  background-color: #282c35;
+  padding: 80px;
+  border-radius: 30px;
+}
+
+.big_texthome{
+color: #8bb4f8;
+font-size: 45px;
+}
+
+.general_Information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.community_Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  border: #8bb4f8 solid 1.3px;
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #8bb4f8;
+  font-size: 70px;
+}
+
+.community_Link:hover{
+background-color: #8bb4f8;
+  color: #252932;
+  .iconAdd2 {
+    fill: #2d2f31;
+  }
+}
+.small_TextHome{
+font-size: 30px;
+}
