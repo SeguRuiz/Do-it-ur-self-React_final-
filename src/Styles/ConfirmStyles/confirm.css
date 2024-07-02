@@ -1,0 +1,45 @@
+.confirmDialog{
+    border: none;
+    padding: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.confirmContent{
+    background-color: #202124;
+    height: 150px;
+    width: 350px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto auto;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.titleArea{
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+display: flex;
+justify-content: end;
+
+gap: 10px;
+width: 330px;
+}
+
+.btn{
+padding: 5px 10px 5px 10px;
+font-size: 15px;
+background-color: #202124;
+color: #8bb4f8 ;
+border-radius: 5px;
+border: none;
+}
+
+.btn:hover{
+    background-color: #2d2f31;
+}

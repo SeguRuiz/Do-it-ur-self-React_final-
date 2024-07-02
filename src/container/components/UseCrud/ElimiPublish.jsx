@@ -1,8 +1,12 @@
+import { useRef } from "react";
 import { useTheContext } from "../../../context/ContextProvider";
-import { Put_Tools, Products_Posts_Tools } from "../../../utils/Fetchs/classes";
+import { Put_Tools} from "../../../utils/Fetchs/classes";
+import ConfirmModal from "../Confirm/confirmModal";
+import ProductPublic from "../Publish/ProductPublic";
 
 const ElimiPublish = ({ id }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
+  const confirmModal = useRef();
 
   const eliminate = async () => {
     if (userInfo != "") {
@@ -22,39 +26,30 @@ const ElimiPublish = ({ id }) => {
       setTimeout(() => {
         updateData(data + 1);
       }, 200);
+      confirmModal.current.close();
     }
   };
 
-  const publish = () => {
-    if (userInfo != "") {
-      let productsCopy = [...user_Products];
-
-      productsCopy.forEach((e) => {
-        if (e.id == id) {
-          e.State = "Public";
-        }
-      });
-
-      let theProduct = productsCopy.find((products) => products.id == id);
-
-      let newUpdate = new Products_Posts_Tools(theProduct);
-
-      newUpdate.post_The_Data(newUpdate.data_For_Posts);
-
-      setTimeout(() => {
-        updateData(data + 1);
-      }, 200);
-    }
+  const openModal = () => {
+    confirmModal.current.showModal();
   };
+
   return (
-    <div className="Elim_Pub_Container">
-      <div>
-        <button onClick={publish}>Publish</button>
+    <>
+      <ConfirmModal
+        text={"Quieres eliminarlo?"}
+        ref={confirmModal}
+        acceptFunction={eliminate}
+      />
+      <div className="Elim_Pub_Container">
+        <div>
+          <ProductPublic id={id} />
+        </div>
+        <div>
+          <button onClick={openModal}>Eliminate</button>
+        </div>
       </div>
-      <div>
-        <button onClick={eliminate}>Eliminate</button>
-      </div>
-    </div>
+    </>
   );
 };
 
