@@ -152,6 +152,7 @@ const AddProducts = () => {
         </div>
         <p>Add products</p>
       </div>
+      
     </>
   );
 };

@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import { useTheContext } from "../../../context/ContextProvider";
-import { Put_Tools} from "../../../utils/Fetchs/classes";
+import { Put_Tools } from "../../../utils/Fetchs/classes";
 import ConfirmModal from "../Confirm/confirmModal";
-import ProductPublic from "../Publish/ProductPublic";
+import ProductPublic from "./ProductPublic";
+import "../ElimiPublicar/Eliminar.css"
 
 const ElimiPublish = ({ id }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
@@ -46,7 +47,7 @@ const ElimiPublish = ({ id }) => {
           <ProductPublic id={id} />
         </div>
         <div>
-          <button onClick={openModal}>Eliminate</button>
+          <button onClick={openModal} className="eliminarBtn">Eliminar</button>
         </div>
       </div>
     </>

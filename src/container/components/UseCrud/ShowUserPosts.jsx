@@ -22,6 +22,7 @@ const ShowUserPosts = () => {
 
         <div className="addProduct_Area">
          <AddPostForm/>
+        
         </div>
       </div>
     </>

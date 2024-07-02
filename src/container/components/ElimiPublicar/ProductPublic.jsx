@@ -2,6 +2,7 @@ import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools, Products_Posts_Tools } from "../../../utils/Fetchs/classes";
 import ConfirmModal from "../Confirm/confirmModal";
 import { useRef } from "react";
+import "./Publicar.css";
 
 const ProductPublic = ({ id }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
@@ -35,10 +36,10 @@ const ProductPublic = ({ id }) => {
       setTimeout(() => {
         updateData(data + 1);
       }, 200);
-       confirmModal.current.close()
+      confirmModal.current.close();
     }
   };
-   const openModal = () => {
+  const openModal = () => {
     confirmModal.current.showModal();
   };
   return (
@@ -48,7 +49,9 @@ const ProductPublic = ({ id }) => {
         ref={confirmModal}
         acceptFunction={publish}
       />
-      <button onClick={openModal}>Publicar</button>
+      <button onClick={openModal} className="publicarBtn">
+        Publicar
+      </button>
     </>
   );
 };

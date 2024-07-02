@@ -1,0 +1,30 @@
+.tagsArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagsContainer {
+  height: 70%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.addtags {
+  padding: 5px 10px 5px 10px;
+  font-size: 25px;
+  background-color: #202124;
+  border-radius: 5px;
+  color: #8bb4f8;
+  border: solid #8bb4f8 1px;
+}
+
+.showTags {
+  background-color: #2d2f31;
+  height: 60px;
+  width: 80%;
+  border-radius: 15px;
+}
