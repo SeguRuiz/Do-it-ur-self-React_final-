@@ -1,5 +1,6 @@
 import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools } from "../../../utils/Fetchs/classes";
+import "../tags/tags.css"
 // import Inpts from "../Inpts";
 import uuid from "react-uuid";
 import { useRef, useState } from "react";
@@ -57,7 +58,9 @@ const AddProducts = () => {
         Price: price_value + '$',
         Img: img_value ,
         State: "Private",
+        tags:[],
         id: id,
+        
       };
       let copyUser = { ...userInfo };
 
@@ -134,7 +137,9 @@ const AddProducts = () => {
               </button>
             </div>
           </form>
-          <div className="categoriesSelector">Categories area selector</div>
+          <div className="categoriesSelector">
+          
+          </div>
         </div>
       </dialog>
       <div onClick={OpenModal} className="Open_Modal_P">
@@ -152,6 +157,7 @@ const AddProducts = () => {
         </div>
         <p>Add products</p>
       </div>
+      
     </>
   );
 };

@@ -30,6 +30,7 @@ export class Posts_Tools {
       },
       posts: [],
       products: [],
+      tags:[]
     });
   }
 }

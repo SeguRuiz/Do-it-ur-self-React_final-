@@ -2,7 +2,9 @@ import { useTheContext } from "../../../context/ContextProvider";
 
 import ProductContainer from "../ProductContainer";
 import AddProducts from "../UseCrud/AddProducts";
-import ElimiPublish from "./ElimiPublish";
+import ElimiPublish from "../ElimiPublicar/ElimiPublish";
+import ProductTags from "../tags/ProductTags";
+import "../tags/tags.css"
 
 const ShowTheProducst = () => {
   const { user_Products } = useTheContext();
@@ -21,11 +23,14 @@ const ShowTheProducst = () => {
                   description={product.Description}
                   title={product.Title}
                   price={product.Price}
-                  btns={<ElimiPublish id={product.id}/>}
+                  btns={<ElimiPublish id={product.id} />}
                 />
               </div>
             ))}
           </div>
+        </div>
+        <div className="tagsArea"> 
+          <ProductTags/>
         </div>
       </div>
     </>

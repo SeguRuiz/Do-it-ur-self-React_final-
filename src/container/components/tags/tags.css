@@ -1,0 +1,115 @@
+.tagsArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagsContainer {
+ 
+  height: 85%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+ 
+  gap: 25px;
+}
+
+.addtags {
+  padding: 5px 10px 5px 10px;
+  font-size: 25px;
+  background-color: #202124;
+  border-radius: 5px;
+  color: #8bb4f8;
+  border: solid #8bb4f8 1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/*Iterador de tags area*/
+.showTags {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow-x: auto;
+  margin-top: 20px;
+  gap: 20px;
+  background-color: #2d2f31;
+  height: 90px;
+  width: 900px;
+  border-radius: 15px;
+ 
+}
+
+.addtags:hover {
+  background-color: #8bb4f8;
+  .tagsIcon {
+    fill: #202124;
+  }
+}
+
+
+/**/
+
+.tagsDiv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #202124;
+  padding: 0;
+  color: #202124;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+ 
+}
+
+.tagsText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8bb4f8;
+  width: 170px;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 5px;
+  overflow-x: auto;
+  text-justify: center;
+  resize: none;
+  color: #202124;
+  
+}
+
+.deleteBtn{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202124;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteIcon{
+  fill: #8bb4f8;
+}
+
+/**/
+
+.categoriesSelector {
+  display: flex;
+  align-items: center;
+  border: #8bb4f8 1px solid;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  color: #8bb4f8;
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.categoriesSelector {
+  height: 50px;
+}

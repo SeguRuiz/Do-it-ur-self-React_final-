@@ -37,14 +37,13 @@ const Navbar_Ho = () => {
       <div className="User_Area">
         {thisState ? (
           <div className="aboutUs_Profile">
-            <div className="profile_Container">
-              <p
-                onClick={() => {
-                  go_To("/Home/Profile");
-                }}
-              >
-                Profile
-              </p>
+            <div
+              className="profile_Container"
+              onClick={() => {
+                go_To("/Home/Profile");
+              }}
+            >
+              <p>Profile</p>
             </div>
 
             <p
