@@ -8,7 +8,7 @@ const {producstData} = useTheContext()
   return (
     <>
     {producstData.map((products, i) => (
-     <div key={products.id} className="divProduct">
+     <div key={i} className="divProduct">
        <ProductContPublic title={products.Title} price={products.Price} img={products.Img} description={products.Description}/>
      </div>
     ))}

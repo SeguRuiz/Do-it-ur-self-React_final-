@@ -16,49 +16,46 @@
       ],
       "products": [
         {
-          "Title": "Producto #1",
-          "Description": "Prueba numero 1",
+          "Title": "producto 1",
+          "Description": "prueba 1",
           "Price": "123$",
           "Img": "",
           "State": "Public",
-          "filter": false,
+          "filter": "mostrar",
           "tags": [
             {
               "tagName": "Categoria 1",
               "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-            }
-          ],
-          "id": "c499978d-d8b0-a36f-3cee-c960de27f3bc"
-        },
-        {
-          "Title": "Producto #2",
-          "Description": "prueba numero 2",
-          "Price": "500$",
-          "Img": "",
-          "State": "Public",
-          "filter": false,
-          "tags": [
+            },
             {
               "tagName": "Categoria 2",
               "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
             }
           ],
-          "id": "69aa6057-a608-8d79-29ba-dec26f1fdcee"
+          "id": "fc1246f9-8b11-45bb-a1ea-9db2b21fbdd4"
         },
         {
-          "Title": "producto #3",
-          "Description": "prueba numero 3",
-          "Price": "123$",
+          "Title": "Producto 2",
+          "Description": "Prueba 2",
+          "Price": "500$",
           "Img": "",
-          "State": "Private",
-          "filter": false,
+          "State": "Public",
+          "filter": "mostrar",
           "tags": [
+            {
+              "tagName": "Categoria 2",
+              "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
+            },
+            {
+              "tagName": "Categoria 1",
+              "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
+            },
             {
               "tagName": "categoria 3",
               "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
             }
           ],
-          "id": "9fe345ab-c7bb-041e-89c3-3b722d5c2b9c"
+          "id": "88818a6d-dfc0-894c-1f91-e6c70c29ca84"
         }
       ],
       "tags": [
@@ -171,32 +168,44 @@
   ],
   "Products": [
     {
-      "id": "c499978d-d8b0-a36f-3cee-c960de27f3bc",
-      "Title": "Producto #1",
-      "Description": "Prueba numero 1",
+      "id": "fc1246f9-8b11-45bb-a1ea-9db2b21fbdd4",
+      "Title": "producto 1",
+      "Description": "prueba 1",
       "Price": "123$",
       "Img": "",
       "State": "Public",
-      "filter": false,
+      "filter": "mostrar",
       "tags": [
         {
           "tagName": "Categoria 1",
           "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
+        },
+        {
+          "tagName": "Categoria 2",
+          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
         }
       ]
     },
     {
-      "id": "69aa6057-a608-8d79-29ba-dec26f1fdcee",
-      "Title": "Producto #2",
-      "Description": "prueba numero 2",
+      "id": "88818a6d-dfc0-894c-1f91-e6c70c29ca84",
+      "Title": "Producto 2",
+      "Description": "Prueba 2",
       "Price": "500$",
       "Img": "",
       "State": "Public",
-      "filter": false,
+      "filter": "mostrar",
       "tags": [
         {
           "tagName": "Categoria 2",
           "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
+        },
+        {
+          "tagName": "Categoria 1",
+          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
+        },
+        {
+          "tagName": "categoria 3",
+          "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
         }
       ]
     }
