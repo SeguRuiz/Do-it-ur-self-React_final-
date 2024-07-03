@@ -24,9 +24,10 @@ export const ContextProvider = ({ children }) => {
   //Productos publicos
   const [producstData, setProducts] = useState([]);
   const refProducts = useRef([]);
-   
+
   //Admin tags
-  const [tags, setTags] = useState([])
+  const [tags, setTags] = useState([]);
+  const [activeTag, setActiveTag] = useState("defecto");
   useEffect(() => {
     const comprobate_User = async () => {
       const see_Data = new Posts_Tools();
@@ -47,20 +48,36 @@ export const ContextProvider = ({ children }) => {
         setUser(find_User.posts);
         setUserP(find_User.products);
         setUserInfo(find_User);
-        setTags(find_User.tags)
+        setTags(find_User.tags);
       }
 
       if (public_Data != false) {
         setPuData(public_Data);
       }
-
-      setProducts(Products_Data);
-      refProducts.current = Products_Data;
-      if (refProducts.current[0] == undefined) {
-        console.log('no hay nada');
-      }else{
-      console.log('si hay algo')
+      if (activeTag == "defecto") {
+        refProducts.current = Products_Data;
+        setProducts(Products_Data);
+        console.log("estas en modo defecto");
+      } else {
+        refProducts.current = [];
+        Products_Data.forEach((e) => {
+          e.tags.forEach((x) => {
+            if (x.tagName == activeTag) {
+              refProducts.current.push(e);
+              setProducts(refProducts.current);
+              console.log(e.tags);
+            }
+          });
+        });
+        console.log(refProducts.current);
+        console.log(activeTag);
       }
+
+      // if (refProducts.current[0] == undefined) {
+      //   console.log("no hay nada");
+      // } else {
+      //   console.log("si hay algo");
+      // }
     };
     comprobate_User();
   }, [data, userValidate]);
@@ -80,7 +97,7 @@ export const ContextProvider = ({ children }) => {
         setPage,
         producstData,
         tags,
-        
+        setActiveTag,
       }}
     >
       {children}

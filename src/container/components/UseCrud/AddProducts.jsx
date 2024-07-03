@@ -59,7 +59,7 @@ const AddProducts = () => {
         Price: price_value + "$",
         Img: img_value,
         State: "Private",
-        filter: false,
+        filter: 'mostrar',
         tags: [],
         id: id,
       };
