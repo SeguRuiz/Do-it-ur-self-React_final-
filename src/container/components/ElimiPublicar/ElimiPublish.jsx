@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useTheContext } from "../../../context/ContextProvider";
-import { Put_Tools } from "../../../utils/Fetchs/classes";
+import { Put_Tools, Delete_Tools } from "../../../utils/Fetchs/classes";
 import ConfirmModal from "../Confirm/confirmModal";
 import ProductPublic from "./ProductPublic";
 import "../ElimiPublicar/Eliminar.css"
@@ -8,6 +8,7 @@ import "../ElimiPublicar/Eliminar.css"
 const ElimiPublish = ({ id }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
   const confirmModal = useRef();
+
 
   const eliminate = async () => {
     if (userInfo != "") {
@@ -23,6 +24,9 @@ const ElimiPublish = ({ id }) => {
       let newUpdate = new Put_Tools(userCopy);
 
       newUpdate.put_The_Data(userCopy.id, newUpdate.data_For_Puts);
+
+      let deleteThis = new Delete_Tools();
+      deleteThis.delete_The_Data(id);
 
       setTimeout(() => {
         updateData(data + 1);

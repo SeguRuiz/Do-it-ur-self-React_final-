@@ -55,16 +55,17 @@ const ProductTags = () => {
   };
   return (
     <>
-      <dialog ref={tagModal}>
-        <div>
+      <dialog ref={tagModal} className="addTagModal">
+        <div className="addT_Content">
           <form onSubmit={addTags}>
             <input
               type="text"
               ref={tagText}
               value={value}
               onInput={setThatValue}
+              className="addTagInp"
             />
-            <button type="submit">add</button>
+            <button  className='addTagBtn'type="submit">add</button>
           </form>
           <button onClick={closeModal}>salir</button>
         </div>

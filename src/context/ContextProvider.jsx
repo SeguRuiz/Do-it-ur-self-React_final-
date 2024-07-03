@@ -1,5 +1,5 @@
-import { useContext, createContext, useState, useEffect } from "react";
-import { Posts_Tools, Public_Posts_Tools } from "../utils/Fetchs/classes";
+import { useContext, createContext, useState, useEffect, useRef } from "react";
+import { Posts_Tools, Public_Posts_Tools, Products_Posts_Tools } from "../utils/Fetchs/classes";
 export const theContext = createContext();
 
 export const ContextProvider = ({ children }) => {
@@ -17,7 +17,9 @@ export const ContextProvider = ({ children }) => {
   //Users_Crud Context
   const [usersPage, setPage] = useState('Info')
 
-  //Selected tag
+  //Productos publicos 
+  const [producstData, setProducts] = useState([])
+  const refProducts = useRef([])
  
 
   useEffect(() => {
@@ -25,7 +27,11 @@ export const ContextProvider = ({ children }) => {
       const see_Data = new Posts_Tools();
       const data = await see_Data.post_The_Data();
 
+      const see_Products_Data = new Products_Posts_Tools()
+      const Products_Data = await see_Products_Data.post_The_Data() ?? false
+
       const see_Public_Data = new Public_Posts_Tools();
+      
       const public_Data = (await see_Public_Data.post_The_Data()) ?? false;
 
       const find_User =
@@ -35,7 +41,6 @@ export const ContextProvider = ({ children }) => {
         setState(true);
         setUser(find_User.posts);
         setUserP(find_User.products)
-        
         setUserInfo(find_User);
       }
 
@@ -43,9 +48,18 @@ export const ContextProvider = ({ children }) => {
         setPuData(public_Data);
       }
       
+     
+        setProducts(Products_Data)
+        refProducts.current = Products_Data
+        console.log(refProducts);
+      
+
     };
     comprobate_User();
   }, [data, userValidate]);
+
+
+
 
   return (
     <theContext.Provider
@@ -60,6 +74,7 @@ export const ContextProvider = ({ children }) => {
         user_Products,
         usersPage,
         setPage,
+        producstData
        
       }}
     >

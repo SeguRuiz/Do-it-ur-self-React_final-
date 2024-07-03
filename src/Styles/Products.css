@@ -189,7 +189,7 @@ gap: 10px;
 
 .components_Part {
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 20% auto;
    
   
 }
@@ -216,13 +216,4 @@ gap: 10px;
   justify-content: center;
 }
 
-.products_iterator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2d2f31;
-  width: 60%;
-  height: 700px;
-  border-radius: 15px;
-}
 

@@ -1,6 +1,6 @@
 const public_Posts = "http://localhost:3002/Public";
 const users_Post = "http://localhost:3002/users";
-const products_Area = "http://localhost:3002/Products";
+const products_Area = "http://localhost:3002/Products/";
 export class Posts_Tools {
   post_The_Data = async (the_Data) => {
     try {
@@ -30,7 +30,7 @@ export class Posts_Tools {
       },
       posts: [],
       products: [],
-      tags:[]
+      tags: [],
     });
   }
 }
@@ -115,4 +115,20 @@ export class Put_Tools {
   constructor(Update) {
     this.data_For_Puts.body = JSON.stringify(Update);
   }
+}
+
+export class Delete_Tools {
+  delete_The_Data = async (id) => {
+    try {
+      const response = await fetch(products_Area + id, this.data_For_Puts);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  data_For_Puts = {
+    method: "delete",
+  };
 }

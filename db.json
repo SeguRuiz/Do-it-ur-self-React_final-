@@ -7,61 +7,69 @@
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "posts": [],
+      "posts": [
+        {
+          "Description": "klmalkvmd",
+          "State": "Private",
+          "id": "cf368ea9-cf26-2e6f-95ad-38c0591ca025"
+        }
+      ],
       "products": [
         {
-          "Title": "wknxknecn",
-          "Description": "lkmwxkkqlxnkjn",
-          "Price": "121723821731$",
+          "Title": "Producto # 1",
+          "Description": "Prueba numero #1",
+          "Price": "500$",
           "Img": "",
           "State": "Private",
           "tags": [
             {
-              "tagName": "nueva categoria",
-              "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
-            },
-            {
-              "tagName": "categoria 3",
-              "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+              "tagName": "Categoria 1",
+              "id": "639efb8b-f180-29ad-5111-1a3cd5c30109"
             }
           ],
-          "id": "880304c6-d6c3-2c31-61cf-8c0b7942e0c1"
+          "id": "ec26bed1-ac1f-ec41-faea-756ff8749e33"
         },
         {
-          "Title": "producto 1",
-          "Description": "producto 1 descripcion",
-          "Price": "123$",
+          "Title": "oiowqkdnnew",
+          "Description": "kñwmdkmw",
+          "Price": "98278372384$",
           "Img": "",
           "State": "Private",
           "tags": [
             {
-              "tagName": "categoria 2",
-              "id": "aaeac891-ed2a-f71f-fb67-4595d90df8d2"
-            },
-            {
-              "tagName": "nueva categoria",
-              "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
-            },
-            {
-              "tagName": "categoria 3",
-              "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+              "tagName": "Categoria 3",
+              "id": "6d738719-0ecf-cb08-64e1-2fb2f9bc9bee"
             }
           ],
-          "id": "e24464ce-92f3-2441-3091-9c321d94bb03"
+          "id": "a853e68c-33f0-0230-9e04-566a26408f60"
+        },
+        {
+          "Title": "ijefsij",
+          "Description": "pmskmdkmv",
+          "Price": "38985939$",
+          "Img": "",
+          "State": "Private",
+          "tags": [
+            {
+              "tagName": "Categoria 2",
+              "id": "300862f8-044b-5181-c15f-419817a93367"
+            }
+          ],
+          "id": "512f093c-775c-7610-7968-99ac374d1eaa"
         }
       ],
       "tags": [
         {
-          "tagName": "nueva categoria",
-          "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
+          "tagName": "Categoria 1",
+          "id": "639efb8b-f180-29ad-5111-1a3cd5c30109"
         },
         {
-          "tagName": "categoria 2",
-          "id": "aaeac891-ed2a-f71f-fb67-4595d90df8d2"
+          "tagName": "Categoria 2",
+          "id": "300862f8-044b-5181-c15f-419817a93367"
         },
         {
-          "tagName": "categoria 3",
-          "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+          "tagName": "Categoria 3",
+          "id": "6d738719-0ecf-cb08-64e1-2fb2f9bc9bee"
         }
       ]
     },
@@ -154,54 +162,5 @@
       "comments": []
     }
   ],
-  "Products": [
-    {
-      "id": "7c42ab56-3e6a-5223-7af6-e0fe2ce31fb7",
-      "Title": "Hola",
-      "Description": "123",
-      "Price": "123$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "6a3a2796-76e3-71d1-97de-db306246f67e",
-      "Title": "otro producto",
-      "Description": "ijsjidjie3hiedoedkepodkoed",
-      "Price": "112333$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "6a3a2796-76e3-71d1-97de-db306246f67e",
-      "Title": "otro producto",
-      "Description": "ijsjidjie3hiedoedkepodkoed",
-      "Price": "112333$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "a1027069-27a3-516f-787e-8074716b1a09",
-      "Title": "hoa",
-      "Description": "wjfjwenkfjewik",
-      "Price": "71367246$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "a1027069-27a3-516f-787e-8074716b1a09",
-      "Title": "hoa",
-      "Description": "wjfjwenkfjewik",
-      "Price": "71367246$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "feebe768-8c5e-23cd-ba02-b1be016fdcd1",
-      "Title": "l,eñlel,lñe",
-      "Description": "mkcmmcleñlmec",
-      "Price": "213323$",
-      "Img": "",
-      "State": "Public"
-    }
-  ]
+  "Products": []
 }
