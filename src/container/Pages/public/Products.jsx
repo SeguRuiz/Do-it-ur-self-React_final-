@@ -1,4 +1,9 @@
 import Navbar_Ho from "../../components/Navbar_Ho"
+import ProductsIterator from "../../components/ProductsIterador/ProductsIterator"
+import "../../components/ProductsIterador/seeProducts.css"
+import "../../components/Filter/filter.css"
+import FilterSelector from "../../components/Filter/FilterSelector"
+import ShowFilter from "../../components/Filter/showFilter"
 
 
 const Products = () => {
@@ -10,11 +15,16 @@ const Products = () => {
       <div className="components_Part">
       <div className="filters_Area">
         <div className="btns_Area">
-          btns Area(WIP)
+          <div className="searchBar"></div>
+          <div className="filter">
+          <ShowFilter/>
+          </div>
         </div>
       </div>
       <div className="products_Area">
-        <div className="products_iterator">Aqui ira el area de productos(WIP)</div>
+        <div className="products_iterator">
+        <ProductsIterator/>
+        </div>
       </div>
       </div>
     </div>

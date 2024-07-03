@@ -7,61 +7,76 @@
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "posts": [],
+      "posts": [
+        {
+          "Description": "klmalkvmd",
+          "State": "Private",
+          "id": "cf368ea9-cf26-2e6f-95ad-38c0591ca025"
+        }
+      ],
       "products": [
         {
-          "Title": "wknxknecn",
-          "Description": "lkmwxkkqlxnkjn",
-          "Price": "121723821731$",
+          "Title": "Producto #1",
+          "Description": "Prueba numero 1",
+          "Price": "123$",
           "Img": "",
-          "State": "Private",
+          "State": "Public",
+          "filter": false,
           "tags": [
             {
-              "tagName": "nueva categoria",
-              "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
-            },
-            {
-              "tagName": "categoria 3",
-              "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+              "tagName": "Categoria 1",
+              "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
             }
           ],
-          "id": "880304c6-d6c3-2c31-61cf-8c0b7942e0c1"
+          "id": "c499978d-d8b0-a36f-3cee-c960de27f3bc"
         },
         {
-          "Title": "producto 1",
-          "Description": "producto 1 descripcion",
+          "Title": "Producto #2",
+          "Description": "prueba numero 2",
+          "Price": "500$",
+          "Img": "",
+          "State": "Public",
+          "filter": false,
+          "tags": [
+            {
+              "tagName": "Categoria 2",
+              "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
+            }
+          ],
+          "id": "69aa6057-a608-8d79-29ba-dec26f1fdcee"
+        },
+        {
+          "Title": "producto #3",
+          "Description": "prueba numero 3",
           "Price": "123$",
           "Img": "",
           "State": "Private",
+          "filter": false,
           "tags": [
             {
-              "tagName": "categoria 2",
-              "id": "aaeac891-ed2a-f71f-fb67-4595d90df8d2"
-            },
-            {
-              "tagName": "nueva categoria",
-              "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
-            },
-            {
               "tagName": "categoria 3",
-              "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+              "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
             }
           ],
-          "id": "e24464ce-92f3-2441-3091-9c321d94bb03"
+          "id": "9fe345ab-c7bb-041e-89c3-3b722d5c2b9c"
         }
       ],
       "tags": [
         {
-          "tagName": "nueva categoria",
-          "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
+          "tagName": "Categoria 1",
+          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
         },
         {
-          "tagName": "categoria 2",
-          "id": "aaeac891-ed2a-f71f-fb67-4595d90df8d2"
+          "tagName": "Categoria 2",
+          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
         },
         {
           "tagName": "categoria 3",
-          "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+          "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
+        },
+        {
+          "tagName": "Categoria 5",
+          "id": "d5a9828d-88a4-2f72-917e-eb9d2c418271"
         }
       ]
     },
@@ -156,52 +171,34 @@
   ],
   "Products": [
     {
-      "id": "7c42ab56-3e6a-5223-7af6-e0fe2ce31fb7",
-      "Title": "Hola",
-      "Description": "123",
+      "id": "c499978d-d8b0-a36f-3cee-c960de27f3bc",
+      "Title": "Producto #1",
+      "Description": "Prueba numero 1",
       "Price": "123$",
       "Img": "",
-      "State": "Public"
+      "State": "Public",
+      "filter": false,
+      "tags": [
+        {
+          "tagName": "Categoria 1",
+          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
+        }
+      ]
     },
     {
-      "id": "6a3a2796-76e3-71d1-97de-db306246f67e",
-      "Title": "otro producto",
-      "Description": "ijsjidjie3hiedoedkepodkoed",
-      "Price": "112333$",
+      "id": "69aa6057-a608-8d79-29ba-dec26f1fdcee",
+      "Title": "Producto #2",
+      "Description": "prueba numero 2",
+      "Price": "500$",
       "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "6a3a2796-76e3-71d1-97de-db306246f67e",
-      "Title": "otro producto",
-      "Description": "ijsjidjie3hiedoedkepodkoed",
-      "Price": "112333$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "a1027069-27a3-516f-787e-8074716b1a09",
-      "Title": "hoa",
-      "Description": "wjfjwenkfjewik",
-      "Price": "71367246$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "a1027069-27a3-516f-787e-8074716b1a09",
-      "Title": "hoa",
-      "Description": "wjfjwenkfjewik",
-      "Price": "71367246$",
-      "Img": "",
-      "State": "Public"
-    },
-    {
-      "id": "feebe768-8c5e-23cd-ba02-b1be016fdcd1",
-      "Title": "l,eñlel,lñe",
-      "Description": "mkcmmcleñlmec",
-      "Price": "213323$",
-      "Img": "",
-      "State": "Public"
+      "State": "Public",
+      "filter": false,
+      "tags": [
+        {
+          "tagName": "Categoria 2",
+          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
+        }
+      ]
     }
   ]
 }

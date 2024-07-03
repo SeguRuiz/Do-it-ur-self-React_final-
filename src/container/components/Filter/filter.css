@@ -1,0 +1,26 @@
+.btns_Area {
+  width: 60%;
+  height: 70px;
+  background-color: #252932;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  position: fixed;
+}
+
+.filter {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  height: 50px;
+  width: 300px;
+  background-color: blueviolet;
+}

@@ -7,7 +7,7 @@ const ShowTags = () => {
     <>
       {userInfo.tags.map((tags) => (
         <div key={tags.id} id={tags.id}className="tagsDiv">
-          <textarea id={tags.id} className="tagsText" disabled>{tags.tagName}</textarea> <DeleteTags id={tags.id} />
+          <textarea id={tags.id} className="tagsText" disabled value={tags.tagName}></textarea> <DeleteTags id={tags.id} />
         </div>
       ))}
     </>
