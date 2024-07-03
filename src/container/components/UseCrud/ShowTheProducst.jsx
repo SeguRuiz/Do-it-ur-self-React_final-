@@ -8,7 +8,7 @@ import "../tags/tags.css"
 
 const ShowTheProducst = () => {
   const { user_Products } = useTheContext();
-  console.log(user_Products);
+  
   return (
     <>
       <div className="Inventory_Page">
@@ -23,6 +23,7 @@ const ShowTheProducst = () => {
                   description={product.Description}
                   title={product.Title}
                   price={product.Price}
+                  id={product.id}
                   btns={<ElimiPublish id={product.id} />}
                 />
               </div>
