@@ -17,6 +17,9 @@ export const ContextProvider = ({ children }) => {
   //Users_Crud Context
   const [usersPage, setPage] = useState('Info')
 
+  //Selected tag
+ 
+
   useEffect(() => {
     const comprobate_User = async () => {
       const see_Data = new Posts_Tools();
@@ -56,7 +59,8 @@ export const ContextProvider = ({ children }) => {
         publicData,
         user_Products,
         usersPage,
-        setPage
+        setPage,
+       
       }}
     >
       {children}

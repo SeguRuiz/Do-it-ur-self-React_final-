@@ -1,4 +1,4 @@
-
+import TagsSelector from "./tags/TagsSelector"
 
 
 const ProductContainer = ({key, id, description, title, price, btns}) => {
@@ -15,7 +15,9 @@ const ProductContainer = ({key, id, description, title, price, btns}) => {
               <div className="eliminate_Publish">
                {btns}
               </div>
-              <div className="CategoriesArea">categorias activas</div>
+              <div className="CategoriesArea">
+              <TagsSelector product_id={id} />
+              </div>
             </div>
           </div>
         </div>

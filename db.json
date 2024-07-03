@@ -15,26 +15,87 @@
           "Price": "121723821731$",
           "Img": "",
           "State": "Private",
-          "tags": [],
+          "tags": [
+            {
+              "tagName": "nueva categoria",
+              "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
+            },
+            {
+              "tagName": "categoria 3",
+              "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+            }
+          ],
           "id": "880304c6-d6c3-2c31-61cf-8c0b7942e0c1"
+        },
+        {
+          "Title": "producto 1",
+          "Description": "producto 1 descripcion",
+          "Price": "123$",
+          "Img": "",
+          "State": "Private",
+          "tags": [
+            {
+              "tagName": "categoria 2",
+              "id": "aaeac891-ed2a-f71f-fb67-4595d90df8d2"
+            },
+            {
+              "tagName": "nueva categoria",
+              "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
+            },
+            {
+              "tagName": "categoria 3",
+              "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+            }
+          ],
+          "id": "e24464ce-92f3-2441-3091-9c321d94bb03"
         }
       ],
       "tags": [
         {
-          "tagName": "Categoria 1",
-          "id": "94b43bd4-9cde-f9c2-cd07-b096e59b5867"
+          "tagName": "nueva categoria",
+          "id": "1b393698-ae0e-c78d-c534-caa869b70e63"
         },
         {
-          "tagName": "Categoria 2",
-          "id": "5f3ed9d8-fffb-1926-6e57-e98201bc570e"
+          "tagName": "categoria 2",
+          "id": "aaeac891-ed2a-f71f-fb67-4595d90df8d2"
+        },
+        {
+          "tagName": "categoria 3",
+          "id": "9392ea09-f3c8-b144-e458-cc85d780c1bd"
+        }
+      ]
+    },
+    {
+      "id": "0633",
+      "info": {
+        "name": "FueFranco",
+        "email": "sainex1314@gmail.com",
+        "password": "qwerty"
+      },
+      "posts": [],
+      "products": [
+        {
+          "Title": "pokfksiew",
+          "Description": "pwdfkeofk",
+          "Price": "7376464$",
+          "Img": "",
+          "State": "Private",
+          "tags": [],
+          "id": "4dacc03c-a92b-916d-8b4b-79931e58933f"
+        }
+      ],
+      "tags": [
+        {
+          "tagName": "categoria 1",
+          "id": "4adcb7d1-7ca6-5687-4761-ca3ae2dc6d57"
+        },
+        {
+          "tagName": "categoria 2",
+          "id": "3175ce34-6fff-e097-0940-025fe02f7596"
         },
         {
           "tagName": "Categoria 3",
-          "id": "b902ed24-61ae-7d8f-a6bf-38b2f83bf725"
-        },
-        {
-          "tagName": "Categoria 4",
-          "id": "4b257af1-f346-216a-1d13-5e1732fdcc43"
+          "id": "048c3b2a-642c-d595-a897-52d891a82e16"
         }
       ]
     }

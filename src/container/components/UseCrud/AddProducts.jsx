@@ -1,7 +1,8 @@
 import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools } from "../../../utils/Fetchs/classes";
-import "../tags/tags.css"
+import "../tags/tags.css";
 // import Inpts from "../Inpts";
+import TagsSelector from "../tags/TagsSelector";
 import uuid from "react-uuid";
 import { useRef, useState } from "react";
 const AddProducts = () => {
@@ -18,7 +19,6 @@ const AddProducts = () => {
   const modalRef = useRef();
 
   const OpenModal = () => {
-    updateData(data + 1);
     modalRef.current.showModal();
   };
 
@@ -40,6 +40,7 @@ const AddProducts = () => {
 
   const CloseModal = () => {
     modalRef.current.close();
+    updateData(data + 1);
   };
 
   const user_Private_Product = async (o) => {
@@ -55,12 +56,11 @@ const AddProducts = () => {
       let product = {
         Title: info_Inp_Value,
         Description: descrption_value,
-        Price: price_value + '$',
-        Img: img_value ,
+        Price: price_value + "$",
+        Img: img_value,
         State: "Private",
-        tags:[],
+        tags: [],
         id: id,
-        
       };
       let copyUser = { ...userInfo };
 
@@ -138,7 +138,7 @@ const AddProducts = () => {
             </div>
           </form>
           <div className="categoriesSelector">
-          
+            
           </div>
         </div>
       </dialog>
@@ -157,7 +157,6 @@ const AddProducts = () => {
         </div>
         <p>Add products</p>
       </div>
-      
     </>
   );
 };
