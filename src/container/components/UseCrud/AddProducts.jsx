@@ -59,6 +59,7 @@ const AddProducts = () => {
         Price: price_value + "$",
         Img: img_value,
         State: "Private",
+        filter: false,
         tags: [],
         id: id,
       };
@@ -77,7 +78,6 @@ const AddProducts = () => {
       set_prodValue("");
       setDescription("");
       setPrice(0);
-
       modalRef.current.close();
     }
   };

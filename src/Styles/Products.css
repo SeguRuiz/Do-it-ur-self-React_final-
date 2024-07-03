@@ -201,16 +201,7 @@ gap: 10px;
  
   height: 100%;
 }
-.btns_Area {
-  width: 60%;
-  height: 70px;
-  background-color: #252932;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  position: fixed;
-}
+
 .products_Area {
   display: flex;
   justify-content: center;
