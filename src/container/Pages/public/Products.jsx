@@ -4,6 +4,7 @@ import "../../components/ProductsIterador/seeProducts.css"
 import "../../components/Filter/filter.css"
 import FilterSelector from "../../components/Filter/FilterSelector"
 import ShowFilter from "../../components/Filter/showFilter"
+import SearchBar from "../../components/searchBar/SearchBar"
 
 
 const Products = () => {
@@ -15,7 +16,9 @@ const Products = () => {
       <div className="components_Part">
       <div className="filters_Area">
         <div className="btns_Area">
-          <div className="searchBar"></div>
+          <div className="searchBar">
+          <SearchBar/>
+          </div>
           <div className="filter">
           <ShowFilter/>
           </div>

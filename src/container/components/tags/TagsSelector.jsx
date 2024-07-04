@@ -4,6 +4,8 @@ import Selected from "./Selected";
 const TagsSelector = ({product_id}) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
 
+
+  
   return (
     <>
       {userInfo.tags.map((tags) => (

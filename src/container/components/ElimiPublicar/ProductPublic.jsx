@@ -75,6 +75,7 @@ const ProductPublic = ({ id }) => {
 
   //   }
   // };
+  
   const openModal = () => {
     confirmModal.current.showModal();
   };
