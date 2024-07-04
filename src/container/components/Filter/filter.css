@@ -1,11 +1,11 @@
 .btns_Area {
   width: 60%;
   height: 70px;
-  background-color: #252932;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 185px;
   border-radius: 15px;
   position: fixed;
 }
@@ -19,8 +19,14 @@
   align-items: center;
 }
 
-.searchBar {
-  height: 50px;
-  width: 300px;
-  background-color: blueviolet;
+.searchBarDiv {
+  height: 60px;
+  background-color: #252932;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+
 }

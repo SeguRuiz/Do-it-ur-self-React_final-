@@ -84,6 +84,8 @@ export const ContextProvider = ({ children }) => {
     comprobate_User();
   }, [data, userValidate]);
 
+
+
   useEffect(() => {
     const searchFilter = async () => {
       if (searchValue == "") {
@@ -96,10 +98,14 @@ export const ContextProvider = ({ children }) => {
       } else {
         refProducts.current = [];
         producstData.forEach((e) => {
-          if (e.Title.toUpperCase().includes(searchValue.toUpperCase()) == true) {
+          if (
+            e.Title.toUpperCase().includes(searchValue.toUpperCase()) == true
+          ) {
             refProducts.current.push(e);
-            setProducts(refProducts.current)
+            setProducts(refProducts.current);
+            
           }
+          
         });
       }
     };

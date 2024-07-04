@@ -1,0 +1,42 @@
+.searchBar {
+  background-color: #252932;
+  border: none;
+  font-size: 30px;
+  justify-self: flex-start;
+  height: 60px;
+  color: white;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+.quitSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #252932;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.quitSearch:hover {
+  background-color: #28292a;
+}
+
+.searchBtn {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252932;
+  margin-left: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  background-color: #28292a;
+}
