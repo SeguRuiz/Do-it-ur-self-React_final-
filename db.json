@@ -41,123 +41,82 @@
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "posts": [],
+      "posts": [
+        {
+          "Description": "jqiej",
+          "State": "Private",
+          "id": "18d59efc-5fa2-2a3c-164e-fb657e19a208"
+        }
+      ],
       "products": [
         {
-          "Title": "Lapices",
-          "Description": "esto son unos lapices para carboncillo",
-          "Price": "200",
+          "Title": "Producto 1",
+          "Description": "Producto 1 descripcion",
+          "Price": "400",
           "Img": "",
           "State": "Public",
           "filter": "mostrar",
           "tags": [
             {
-              "tagName": "Lapiz",
-              "id": "40271686-022b-f232-a18c-6bf8ea2791cd"
+              "tagName": "producto x",
+              "id": "f36d4ac5-23ff-3d6f-c908-9e6301f7e6e4"
             }
           ],
-          "id": "73e8af69-615b-483f-70a1-70e3ad8a9458"
+          "id": "2255642a-fcdb-7d28-8e14-96f53fd0911e"
+        },
+        {
+          "Title": "Lapices",
+          "Description": "lapices 1",
+          "Price": "123",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "lapices",
+              "id": "e8ba172e-e47e-f119-cb33-d17ab3593182"
+            }
+          ],
+          "id": "a9a663ce-d63a-a267-6d2a-ed8c150053fd"
         },
         {
           "Title": "Borradores",
-          "Description": "Estos son unos borradores",
-          "Price": "500",
+          "Description": "borradores",
+          "Price": "1000",
           "Img": "",
           "State": "Public",
           "filter": "mostrar",
           "tags": [
             {
-              "tagName": "Borrar",
-              "id": "448562ae-8a8d-3c8e-4433-d7ded3b2ecaf"
+              "tagName": "borrador",
+              "id": "31c8f267-69b3-15fc-b798-9144f757e636"
             }
           ],
-          "id": "cc61ecda-23e0-bad3-f124-41931dfd2e1b"
+          "id": "6a1b14c9-1ed1-3037-43a2-a9ab3616464d"
         },
         {
-          "Title": "Tajadores",
-          "Description": "Tajadores de prueba",
+          "Title": "Acuarelas",
+          "Description": "acuerela 1",
           "Price": "200",
           "Img": "",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "tajadores",
-              "id": "9a792b6d-04d7-45d2-b702-4785d4191cee"
-            }
-          ],
-          "id": "02718ac0-81e2-8a28-8cdf-840b22b34512"
-        },
-        {
-          "Title": "Acuarelas",
-          "Description": "acuearelas de prueba",
-          "Price": "300",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Acuarelas",
-              "id": "9ac3b4fa-e014-3cc2-7419-12e2ddb01714"
-            }
-          ],
-          "id": "ba26e5b7-a2bc-06bd-fe6a-50f6e275b2d0"
-        },
-        {
-          "Title": "Carboncillo",
-          "Description": "Carboncillo de prueba",
-          "Price": "234",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Carboncillos",
-              "id": "74234fac-2d6b-fb7a-0239-6ac45e66edad"
-            }
-          ],
-          "id": "092cb156-6c30-8c58-9b2b-edd7c6305c0a"
-        },
-        {
-          "Title": "Difuminador",
-          "Description": "difuminador de prueba",
-          "Price": "0",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Difuminadores",
-              "id": "c689bb6a-3a98-3b90-b4c0-9ef28b0af5fa"
-            }
-          ],
-          "id": "b8240324-121f-0ade-af0f-1a87a52e8939"
+          "tags": [],
+          "id": "ff881d61-d455-feed-9407-531a8814e2c5"
         }
       ],
       "tags": [
         {
-          "tagName": "Lapiz",
-          "id": "40271686-022b-f232-a18c-6bf8ea2791cd"
+          "tagName": "lapices",
+          "id": "e8ba172e-e47e-f119-cb33-d17ab3593182"
         },
         {
-          "tagName": "Borrar",
-          "id": "448562ae-8a8d-3c8e-4433-d7ded3b2ecaf"
+          "tagName": "borrador",
+          "id": "31c8f267-69b3-15fc-b798-9144f757e636"
         },
         {
-          "tagName": "tajadores",
-          "id": "9a792b6d-04d7-45d2-b702-4785d4191cee"
-        },
-        {
-          "tagName": "Difuminadores",
-          "id": "c689bb6a-3a98-3b90-b4c0-9ef28b0af5fa"
-        },
-        {
-          "tagName": "Carboncillos",
-          "id": "74234fac-2d6b-fb7a-0239-6ac45e66edad"
-        },
-        {
-          "tagName": "Acuarelas",
-          "id": "9ac3b4fa-e014-3cc2-7419-12e2ddb01714"
+          "tagName": "producto x",
+          "id": "f36d4ac5-23ff-3d6f-c908-9e6301f7e6e4"
         }
       ]
     }
@@ -218,92 +177,57 @@
   ],
   "Products": [
     {
-      "id": "73e8af69-615b-483f-70a1-70e3ad8a9458",
-      "Title": "Lapices",
-      "Description": "esto son unos lapices para carboncillo",
-      "Price": "200",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Lapiz",
-          "id": "40271686-022b-f232-a18c-6bf8ea2791cd"
-        }
-      ]
-    },
-    {
-      "id": "cc61ecda-23e0-bad3-f124-41931dfd2e1b",
+      "id": "6a1b14c9-1ed1-3037-43a2-a9ab3616464d",
       "Title": "Borradores",
-      "Description": "Estos son unos borradores",
-      "Price": "500",
+      "Description": "borradores",
+      "Price": "1000",
       "Img": "",
       "State": "Public",
       "filter": "mostrar",
       "tags": [
         {
-          "tagName": "Borrar",
-          "id": "448562ae-8a8d-3c8e-4433-d7ded3b2ecaf"
+          "tagName": "borrador",
+          "id": "31c8f267-69b3-15fc-b798-9144f757e636"
         }
       ]
     },
     {
-      "id": "b8240324-121f-0ade-af0f-1a87a52e8939",
-      "Title": "Difuminador",
-      "Description": "difuminador de prueba",
-      "Price": "0",
+      "id": "a9a663ce-d63a-a267-6d2a-ed8c150053fd",
+      "Title": "Lapices",
+      "Description": "lapices 1",
+      "Price": "123",
       "Img": "",
       "State": "Public",
       "filter": "mostrar",
       "tags": [
         {
-          "tagName": "Difuminadores",
-          "id": "c689bb6a-3a98-3b90-b4c0-9ef28b0af5fa"
+          "tagName": "lapices",
+          "id": "e8ba172e-e47e-f119-cb33-d17ab3593182"
         }
       ]
     },
     {
-      "id": "092cb156-6c30-8c58-9b2b-edd7c6305c0a",
-      "Title": "Carboncillo",
-      "Description": "Carboncillo de prueba",
-      "Price": "234",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Carboncillos",
-          "id": "74234fac-2d6b-fb7a-0239-6ac45e66edad"
-        }
-      ]
-    },
-    {
-      "id": "ba26e5b7-a2bc-06bd-fe6a-50f6e275b2d0",
+      "id": "ff881d61-d455-feed-9407-531a8814e2c5",
       "Title": "Acuarelas",
-      "Description": "acuearelas de prueba",
-      "Price": "300",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Acuarelas",
-          "id": "9ac3b4fa-e014-3cc2-7419-12e2ddb01714"
-        }
-      ]
-    },
-    {
-      "id": "02718ac0-81e2-8a28-8cdf-840b22b34512",
-      "Title": "Tajadores",
-      "Description": "Tajadores de prueba",
+      "Description": "acuerela 1",
       "Price": "200",
       "Img": "",
       "State": "Public",
       "filter": "mostrar",
+      "tags": []
+    },
+    {
+      "id": "2255642a-fcdb-7d28-8e14-96f53fd0911e",
+      "Title": "Producto 1",
+      "Description": "Producto 1 descripcion",
+      "Price": "400",
+      "Img": "",
+      "State": "Public",
+      "filter": "mostrar",
       "tags": [
         {
-          "tagName": "tajadores",
-          "id": "9a792b6d-04d7-45d2-b702-4785d4191cee"
+          "tagName": "producto x",
+          "id": "f36d4ac5-23ff-3d6f-c908-9e6301f7e6e4"
         }
       ]
     }
