@@ -5,9 +5,29 @@
   height: 700px;
   border-radius: 15px;
   color: white;
- 
+  
+  
+}
+.NoResults{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  height: 400px;
+  width: 700px;
+  
+  position: fixed;
 }
 
+.noResultsInfo{
+align-self: center;
+color: #979da6;
+font-size: 40px;
+}
+
+.noResultsIcon{
+align-self: center;
+}
 .Private_Product2 {
   display: grid;
   grid-template-columns: 70% auto;
@@ -61,7 +81,6 @@
 .Price2 {
   margin-left: 15px;
   margin-top: 5px;
-  
   justify-self: center;
 }
 

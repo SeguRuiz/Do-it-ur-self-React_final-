@@ -14,7 +14,6 @@ const ProductPublic = ({ id }) => {
   const btnRef = useRef();
   const [btnFunction, setFunction] = useState("Publicar");
 
-  
   const publish = () => {
     if (userInfo != "" && btnFunction == "Publicar") {
       let productsCopy = [...user_Products];
@@ -40,7 +39,9 @@ const ProductPublic = ({ id }) => {
 
       newUpdateP.post_The_Data(newUpdateP.data_For_Posts);
 
-      updateData(data + 1);
+      setTimeout(() => {
+        updateData(data + 1);
+      }, 200);
 
       confirmModal.current.close();
     } else if (userInfo != "" && btnFunction == "Privatizar") {
@@ -64,7 +65,9 @@ const ProductPublic = ({ id }) => {
       let deleteThis = new Delete_Tools();
       deleteThis.delete_The_Data(id);
 
-      updateData(data + 1);
+      setTimeout(() => {
+        updateData(data + 1);
+      }, 200);
 
       confirmModal.current.close();
     }
@@ -75,7 +78,7 @@ const ProductPublic = ({ id }) => {
 
   //   }
   // };
-  
+
   const openModal = () => {
     confirmModal.current.showModal();
   };

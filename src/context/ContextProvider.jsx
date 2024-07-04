@@ -4,6 +4,7 @@ import {
   Public_Posts_Tools,
   Products_Posts_Tools,
 } from "../utils/Fetchs/classes";
+import { Login } from "@mui/icons-material";
 export const theContext = createContext();
 
 export const ContextProvider = ({ children }) => {
@@ -30,7 +31,7 @@ export const ContextProvider = ({ children }) => {
   const [activeTag, setActiveTag] = useState("defecto");
 
   //SearchBar
-  const [search, setSearch] = useState(false);
+  const [search, setSearch] = useState('sin Busqueda');
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
@@ -88,6 +89,7 @@ export const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     const searchFilter = async () => {
+      setSearch('Sin busqueda')
       if (searchValue == "") {
         const see_Products_Data = new Products_Posts_Tools();
         const Products_Data =
@@ -96,7 +98,9 @@ export const ContextProvider = ({ children }) => {
         refProducts.current = Products_Data;
         setProducts(Products_Data);
       } else {
+        setSearch('En busqueda')
         refProducts.current = [];
+        
         producstData.forEach((e) => {
           if (
             e.Title.toUpperCase().includes(searchValue.toUpperCase()) == true
@@ -107,11 +111,12 @@ export const ContextProvider = ({ children }) => {
           }
           
         });
+         console.log(refProducts);
       }
     };
     searchFilter();
   }, [searchValue]);
-
+console.log(search);
   return (
     <theContext.Provider
       value={{
@@ -130,6 +135,8 @@ export const ContextProvider = ({ children }) => {
         setActiveTag,
         searchValue,
         setSearchValue,
+        search,
+        refProducts
       }}
     >
       {children}

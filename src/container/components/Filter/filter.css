@@ -1,7 +1,7 @@
 .btns_Area {
   width: 60%;
   height: 70px;
-  
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,12 +11,12 @@
 }
 
 .filter {
-  height: 50px;
-  width: 50px;
-  background-color: blue;
+  padding: 5px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .searchBarDiv {
@@ -28,5 +28,26 @@
   gap: 10px;
   padding-right: 10px;
   border-radius: 10px;
+}
 
+.select {
+  max-width: 150px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #252932;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.select:hover{
+  border: #8bb4f8 1.5px solid;  
+}
+.select:focus {
+  outline: none;
+  border: #8bb4f8 1.5px solid;  
+}
+
+.filterIcon {
 }
