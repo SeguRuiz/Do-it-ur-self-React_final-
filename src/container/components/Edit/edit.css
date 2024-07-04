@@ -1,13 +1,13 @@
-.publicarBtn {
+.editBtn {
   padding: 5px 10px 5px 10px;
   font-size: 15px;
   background-color: #252932;
   color: #8bb4f8;
   border-radius: 5px;
   border: none;
-  margin-left: 110px;
+ 
 }
 
-.publicarBtn:hover {
+.editBtn:hover {
   background-color: #2d2f31;
 }

@@ -54,10 +54,10 @@ export const ContextProvider = ({ children }) => {
       if (public_Data != false) {
         setPuData(public_Data);
       }
+
       if (activeTag == "defecto") {
         refProducts.current = Products_Data;
         setProducts(Products_Data);
-        console.log("estas en modo defecto");
       } else {
         refProducts.current = [];
         Products_Data.forEach((e) => {
@@ -69,8 +69,6 @@ export const ContextProvider = ({ children }) => {
             }
           });
         });
-        console.log(refProducts.current);
-        console.log(activeTag);
       }
 
       // if (refProducts.current[0] == undefined) {

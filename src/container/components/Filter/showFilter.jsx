@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import { useTheContext } from "../../../context/ContextProvider";
-import { ProductPut_Tools } from "../../../utils/Fetchs/classes";
+
 const ShowFilter = () => {
-  const { tags, producstData, data, updateData, setActiveTag } =
+  const { tags,  data, updateData, setActiveTag } =
     useTheContext();
   const selectRef = useRef();
 

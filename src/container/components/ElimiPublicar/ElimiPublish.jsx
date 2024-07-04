@@ -3,6 +3,7 @@ import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools, Delete_Tools } from "../../../utils/Fetchs/classes";
 import ConfirmModal from "../Confirm/confirmModal";
 import ProductPublic from "./ProductPublic";
+import EditBtn from "../Edit/EditBtn";
 import "../ElimiPublicar/Eliminar.css"
 
 const ElimiPublish = ({ id }) => {
@@ -52,6 +53,9 @@ const ElimiPublish = ({ id }) => {
         </div>
         <div>
           <button onClick={openModal} className="eliminarBtn">Eliminar</button>
+        </div>
+        <div>
+        <EditBtn id={id}/>
         </div>
       </div>
     </>

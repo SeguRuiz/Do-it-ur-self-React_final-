@@ -13,6 +13,8 @@ const ProductPublic = ({ id }) => {
   const confirmModal = useRef();
   const btnRef = useRef();
   const [btnFunction, setFunction] = useState("Publicar");
+
+  
   const publish = () => {
     if (userInfo != "" && btnFunction == "Publicar") {
       let productsCopy = [...user_Products];

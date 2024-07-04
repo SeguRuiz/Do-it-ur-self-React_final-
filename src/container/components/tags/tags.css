@@ -155,11 +155,13 @@
   gap: 10px;
   border: #8bb4f8 1px solid;
   height: 70px;
-  width: 190px;
+  width: 150px;
   overflow-x: scroll;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  margin-left: 40px;
+ 
 }
 
 /**/

@@ -1,83 +1,6 @@
 {
   "users": [
     {
-      "id": "9ff3",
-      "info": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "password": "123"
-      },
-      "posts": [
-        {
-          "Description": "klmalkvmd",
-          "State": "Private",
-          "id": "cf368ea9-cf26-2e6f-95ad-38c0591ca025"
-        }
-      ],
-      "products": [
-        {
-          "Title": "producto 1",
-          "Description": "prueba 1",
-          "Price": "123$",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Categoria 1",
-              "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-            },
-            {
-              "tagName": "Categoria 2",
-              "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-            }
-          ],
-          "id": "fc1246f9-8b11-45bb-a1ea-9db2b21fbdd4"
-        },
-        {
-          "Title": "Producto 2",
-          "Description": "Prueba 2",
-          "Price": "500$",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Categoria 2",
-              "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-            },
-            {
-              "tagName": "Categoria 1",
-              "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-            },
-            {
-              "tagName": "categoria 3",
-              "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
-            }
-          ],
-          "id": "88818a6d-dfc0-894c-1f91-e6c70c29ca84"
-        }
-      ],
-      "tags": [
-        {
-          "tagName": "Categoria 1",
-          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-        },
-        {
-          "tagName": "Categoria 2",
-          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-        },
-        {
-          "tagName": "categoria 3",
-          "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
-        },
-        {
-          "tagName": "Categoria 5",
-          "id": "d5a9828d-88a4-2f72-917e-eb9d2c418271"
-        }
-      ]
-    },
-    {
       "id": "0633",
       "info": {
         "name": "FueFranco",
@@ -110,6 +33,38 @@
           "id": "048c3b2a-642c-d595-a897-52d891a82e16"
         }
       ]
+    },
+    {
+      "id": "ad96",
+      "info": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "password": "123"
+      },
+      "posts": [],
+      "products": [
+        {
+          "Title": "otro",
+          "Description": "m m ,m",
+          "Price": "77677",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [],
+          "id": "4aaf98cf-93f3-1e12-a732-ee04980e4beb"
+        },
+        {
+          "Title": "eee",
+          "Description": "dededed",
+          "Price": "100",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [],
+          "id": "a825e599-e8c6-1038-e13c-12811a968384"
+        }
+      ],
+      "tags": []
     }
   ],
   "Public": [
@@ -166,48 +121,5 @@
       "comments": []
     }
   ],
-  "Products": [
-    {
-      "id": "fc1246f9-8b11-45bb-a1ea-9db2b21fbdd4",
-      "Title": "producto 1",
-      "Description": "prueba 1",
-      "Price": "123$",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Categoria 1",
-          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-        },
-        {
-          "tagName": "Categoria 2",
-          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-        }
-      ]
-    },
-    {
-      "id": "88818a6d-dfc0-894c-1f91-e6c70c29ca84",
-      "Title": "Producto 2",
-      "Description": "Prueba 2",
-      "Price": "500$",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Categoria 2",
-          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-        },
-        {
-          "tagName": "Categoria 1",
-          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-        },
-        {
-          "tagName": "categoria 3",
-          "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
-        }
-      ]
-    }
-  ]
+  "Products": []
 }

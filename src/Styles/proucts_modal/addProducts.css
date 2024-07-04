@@ -9,7 +9,13 @@
 
 .contentArea {
   display: grid;
-  grid-template-rows: auto 20%;
+  grid-template-rows: 9% auto;
+}
+
+.cancel_area{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 5px;
 }
 .Products_form {
   height: 100%;
