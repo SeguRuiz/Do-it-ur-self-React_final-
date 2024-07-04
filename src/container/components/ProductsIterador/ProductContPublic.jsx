@@ -10,7 +10,7 @@ const ProductContPublic = ({id, description, title, price, img}) => {
             <textarea disabled value={description} className="textP2"></textarea>
           </div>
           <div className="Price_Area2">
-            <h2 className="Price2">{price}</h2>
+            <h2 className="Price2">{price + '$'}</h2>
           </div>
         </div>
         <div className="imgProduct_Area2">{img}</div>

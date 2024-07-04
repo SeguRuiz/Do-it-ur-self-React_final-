@@ -13,7 +13,7 @@
   background-color: #252932;
   margin-top: 20px;
   overflow: hidden;
-  padding-bottom: 20px;
+  
 }
 
 .info_Product {
@@ -113,6 +113,27 @@ gap: 10px;
   width: 95%;
   border-radius: 20px;
 }
+
+.emptyProducts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  overflow-y: auto;
+  background-color: #2d2f31;
+  height: 400px;
+  width: 95%;
+  border-radius: 20px;
+}
+.box{
+align-self: center;
+}
+
+.boxInfo{
+color: #979da6;
+align-self: center;
+}
+
 
 .Posts {
   margin-top: 10px;

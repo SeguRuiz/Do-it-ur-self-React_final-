@@ -1,11 +1,10 @@
+import { useRef, useState } from "react";
 import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools } from "../../../utils/Fetchs/classes";
-import "../tags/tags.css";
-// import Inpts from "../Inpts";
-import TagsSelector from "../tags/TagsSelector";
-import uuid from "react-uuid";
-import { useRef, useState } from "react";
-const AddProducts = () => {
+import "../Edit/edit.css";
+const EditBtn = ({ id }) => {
+  const modalRef2 = useRef();
+
   const product_Inp = useRef();
   const descriptionText = useRef();
   const priceText = useRef();
@@ -16,10 +15,9 @@ const AddProducts = () => {
   const [descriptionText_Value, setDescription] = useState("");
   const [priceText_Value, setPrice] = useState("");
   const [img_value, setImg] = useState("");
-  const modalRef = useRef();
 
-  const OpenModal = () => {
-    modalRef.current.showModal();
+  const CloseModal = () => {
+    modalRef2.current.close();
   };
 
   const see_The_value = (o) => {
@@ -38,54 +36,52 @@ const AddProducts = () => {
     setImg(o.target.value);
   };
 
-  const CloseModal = () => {
-    set_prodValue("");
-    setDescription("");
-    setPrice('');
-    modalRef.current.close();
+  const replicate_Value = () => {
+    updateData(data + 1);
+    setTimeout(() => {
+      let theProduct = userInfo.products.find((products) => products.id == id);
+      set_prodValue(theProduct.Title);
+      setDescription(theProduct.Description);
+      setPrice(theProduct.Price);
+      setImg(theProduct.Img);
+      modalRef2.current.showModal();
+    }, 200);
   };
 
-  const user_Private_Product = async (o) => {
+  const editTheProduct = (o) => {
     o.preventDefault();
-
     let info_Inp_Value = product_Inp.current.value.trim();
     let descrption_value = descriptionText.current.value.trim();
     let price_value = priceText.current.value.trim();
     let img_value = imgInp.current.value.trim();
 
     if (info_Inp_Value != "" && descrption_value != "" && price_value != "") {
-      let id = uuid();
-      let product = {
-        Title: info_Inp_Value,
-        Description: descrption_value,
-        Price: price_value,
-        Img: img_value,
-        State: "Private",
-        filter: "mostrar",
-        tags: [],
-        id: id,
-      };
-      let copyUser = { ...userInfo };
+      let userCopy = { ...userInfo };
 
-      console.log(copyUser);
+      userCopy.products.forEach((e) => {
+        if (e.id == id) {
+          e.Title = info_Inp_Value;
+          e.Description = descrption_value;
+          e.Price = price_value;
+          e.Img = img_value;
+        }
+      });
 
-      copyUser.products.push(product);
+      let newUpdate = new Put_Tools(userCopy);
+      newUpdate.put_The_Data(userCopy.id, newUpdate.data_For_Puts);
 
-      console.log(copyUser);
-
-      let new_User_Update = new Put_Tools(copyUser);
-      new_User_Update.put_The_Data(copyUser.id, new_User_Update.data_For_Puts);
-
-      updateData(data + 1);
-      set_prodValue("");
-      setDescription("");
-      setPrice(0);
-      modalRef.current.close();
+      setTimeout(() => {
+        updateData(data + 1);
+      }, 200);
+     
+      
+      modalRef2.current.close();
     }
   };
+
   return (
     <>
-      <dialog ref={modalRef} className="ModalProducts">
+      <dialog ref={modalRef2} className="ModalProducts">
         <div className="contentArea">
           <div className="cancel_area">
             <button onClick={CloseModal} className="cancelBtn">
@@ -93,9 +89,9 @@ const AddProducts = () => {
             </button>
           </div>
           <form
+            onSubmit={editTheProduct}
             name="form_User"
             className="Products_form"
-            onSubmit={user_Private_Product}
           >
             <input
               type="text"
@@ -137,29 +133,17 @@ const AddProducts = () => {
             </div>
             <div className="cancel_add">
               <button type="submit" className="addPBtn">
-                Add
+                Change
               </button>
             </div>
           </form>
         </div>
       </dialog>
-      <div onClick={OpenModal} className="Open_Modal_P">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="40px"
-            viewBox="0 -960 960 960"
-            width="40px"
-            fill="#8bb4f8"
-            className="iconAdd"
-          >
-            <path d="M446.67-446.67H200v-66.66h246.67V-760h66.66v246.67H760v66.66H513.33V-200h-66.66v-246.67Z" />
-          </svg>
-        </div>
-        <p>Add products</p>
-      </div>
+      <button onClick={replicate_Value} className="editBtn">
+        EditBtn
+      </button>
     </>
   );
 };
 
-export default AddProducts;
+export default EditBtn;

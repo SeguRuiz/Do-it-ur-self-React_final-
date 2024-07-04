@@ -1,83 +1,6 @@
 {
   "users": [
     {
-      "id": "9ff3",
-      "info": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "password": "123"
-      },
-      "posts": [
-        {
-          "Description": "klmalkvmd",
-          "State": "Private",
-          "id": "cf368ea9-cf26-2e6f-95ad-38c0591ca025"
-        }
-      ],
-      "products": [
-        {
-          "Title": "producto 1",
-          "Description": "prueba 1",
-          "Price": "123$",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Categoria 1",
-              "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-            },
-            {
-              "tagName": "Categoria 2",
-              "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-            }
-          ],
-          "id": "fc1246f9-8b11-45bb-a1ea-9db2b21fbdd4"
-        },
-        {
-          "Title": "Producto 2",
-          "Description": "Prueba 2",
-          "Price": "500$",
-          "Img": "",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Categoria 2",
-              "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-            },
-            {
-              "tagName": "Categoria 1",
-              "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-            },
-            {
-              "tagName": "categoria 3",
-              "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
-            }
-          ],
-          "id": "88818a6d-dfc0-894c-1f91-e6c70c29ca84"
-        }
-      ],
-      "tags": [
-        {
-          "tagName": "Categoria 1",
-          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-        },
-        {
-          "tagName": "Categoria 2",
-          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-        },
-        {
-          "tagName": "categoria 3",
-          "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
-        },
-        {
-          "tagName": "Categoria 5",
-          "id": "d5a9828d-88a4-2f72-917e-eb9d2c418271"
-        }
-      ]
-    },
-    {
       "id": "0633",
       "info": {
         "name": "FueFranco",
@@ -108,6 +31,133 @@
         {
           "tagName": "Categoria 3",
           "id": "048c3b2a-642c-d595-a897-52d891a82e16"
+        }
+      ]
+    },
+    {
+      "id": "ad96",
+      "info": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "password": "123"
+      },
+      "posts": [],
+      "products": [
+        {
+          "Title": "Lapices",
+          "Description": "esto son unos lapices para carboncillo",
+          "Price": "200",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Lapiz",
+              "id": "40271686-022b-f232-a18c-6bf8ea2791cd"
+            }
+          ],
+          "id": "73e8af69-615b-483f-70a1-70e3ad8a9458"
+        },
+        {
+          "Title": "Borradores",
+          "Description": "Estos son unos borradores",
+          "Price": "500",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Borrar",
+              "id": "448562ae-8a8d-3c8e-4433-d7ded3b2ecaf"
+            }
+          ],
+          "id": "cc61ecda-23e0-bad3-f124-41931dfd2e1b"
+        },
+        {
+          "Title": "Tajadores",
+          "Description": "Tajadores de prueba",
+          "Price": "200",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "tajadores",
+              "id": "9a792b6d-04d7-45d2-b702-4785d4191cee"
+            }
+          ],
+          "id": "02718ac0-81e2-8a28-8cdf-840b22b34512"
+        },
+        {
+          "Title": "Acuarelas",
+          "Description": "acuearelas de prueba",
+          "Price": "300",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Acuarelas",
+              "id": "9ac3b4fa-e014-3cc2-7419-12e2ddb01714"
+            }
+          ],
+          "id": "ba26e5b7-a2bc-06bd-fe6a-50f6e275b2d0"
+        },
+        {
+          "Title": "Carboncillo",
+          "Description": "Carboncillo de prueba",
+          "Price": "234",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Carboncillos",
+              "id": "74234fac-2d6b-fb7a-0239-6ac45e66edad"
+            }
+          ],
+          "id": "092cb156-6c30-8c58-9b2b-edd7c6305c0a"
+        },
+        {
+          "Title": "Difuminador",
+          "Description": "difuminador de prueba",
+          "Price": "0",
+          "Img": "",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Difuminadores",
+              "id": "c689bb6a-3a98-3b90-b4c0-9ef28b0af5fa"
+            }
+          ],
+          "id": "b8240324-121f-0ade-af0f-1a87a52e8939"
+        }
+      ],
+      "tags": [
+        {
+          "tagName": "Lapiz",
+          "id": "40271686-022b-f232-a18c-6bf8ea2791cd"
+        },
+        {
+          "tagName": "Borrar",
+          "id": "448562ae-8a8d-3c8e-4433-d7ded3b2ecaf"
+        },
+        {
+          "tagName": "tajadores",
+          "id": "9a792b6d-04d7-45d2-b702-4785d4191cee"
+        },
+        {
+          "tagName": "Difuminadores",
+          "id": "c689bb6a-3a98-3b90-b4c0-9ef28b0af5fa"
+        },
+        {
+          "tagName": "Carboncillos",
+          "id": "74234fac-2d6b-fb7a-0239-6ac45e66edad"
+        },
+        {
+          "tagName": "Acuarelas",
+          "id": "9ac3b4fa-e014-3cc2-7419-12e2ddb01714"
         }
       ]
     }
@@ -168,44 +218,92 @@
   ],
   "Products": [
     {
-      "id": "fc1246f9-8b11-45bb-a1ea-9db2b21fbdd4",
-      "Title": "producto 1",
-      "Description": "prueba 1",
-      "Price": "123$",
+      "id": "73e8af69-615b-483f-70a1-70e3ad8a9458",
+      "Title": "Lapices",
+      "Description": "esto son unos lapices para carboncillo",
+      "Price": "200",
       "Img": "",
       "State": "Public",
       "filter": "mostrar",
       "tags": [
         {
-          "tagName": "Categoria 1",
-          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-        },
-        {
-          "tagName": "Categoria 2",
-          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
+          "tagName": "Lapiz",
+          "id": "40271686-022b-f232-a18c-6bf8ea2791cd"
         }
       ]
     },
     {
-      "id": "88818a6d-dfc0-894c-1f91-e6c70c29ca84",
-      "Title": "Producto 2",
-      "Description": "Prueba 2",
-      "Price": "500$",
+      "id": "cc61ecda-23e0-bad3-f124-41931dfd2e1b",
+      "Title": "Borradores",
+      "Description": "Estos son unos borradores",
+      "Price": "500",
       "Img": "",
       "State": "Public",
       "filter": "mostrar",
       "tags": [
         {
-          "tagName": "Categoria 2",
-          "id": "a0bad54a-e85b-18b2-af05-26d8b281741d"
-        },
+          "tagName": "Borrar",
+          "id": "448562ae-8a8d-3c8e-4433-d7ded3b2ecaf"
+        }
+      ]
+    },
+    {
+      "id": "b8240324-121f-0ade-af0f-1a87a52e8939",
+      "Title": "Difuminador",
+      "Description": "difuminador de prueba",
+      "Price": "0",
+      "Img": "",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
         {
-          "tagName": "Categoria 1",
-          "id": "51cc306c-1699-16cb-2acc-76cbd00b80a1"
-        },
+          "tagName": "Difuminadores",
+          "id": "c689bb6a-3a98-3b90-b4c0-9ef28b0af5fa"
+        }
+      ]
+    },
+    {
+      "id": "092cb156-6c30-8c58-9b2b-edd7c6305c0a",
+      "Title": "Carboncillo",
+      "Description": "Carboncillo de prueba",
+      "Price": "234",
+      "Img": "",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
         {
-          "tagName": "categoria 3",
-          "id": "4b9751fd-a78e-8d45-3e7f-38c19a1b36a7"
+          "tagName": "Carboncillos",
+          "id": "74234fac-2d6b-fb7a-0239-6ac45e66edad"
+        }
+      ]
+    },
+    {
+      "id": "ba26e5b7-a2bc-06bd-fe6a-50f6e275b2d0",
+      "Title": "Acuarelas",
+      "Description": "acuearelas de prueba",
+      "Price": "300",
+      "Img": "",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Acuarelas",
+          "id": "9ac3b4fa-e014-3cc2-7419-12e2ddb01714"
+        }
+      ]
+    },
+    {
+      "id": "02718ac0-81e2-8a28-8cdf-840b22b34512",
+      "Title": "Tajadores",
+      "Description": "Tajadores de prueba",
+      "Price": "200",
+      "Img": "",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "tajadores",
+          "id": "9a792b6d-04d7-45d2-b702-4785d4191cee"
         }
       ]
     }

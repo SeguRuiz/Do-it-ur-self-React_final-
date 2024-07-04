@@ -28,6 +28,11 @@ export const ContextProvider = ({ children }) => {
   //Admin tags
   const [tags, setTags] = useState([]);
   const [activeTag, setActiveTag] = useState("defecto");
+
+  //SearchBar
+  const [search, setSearch] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+
   useEffect(() => {
     const comprobate_User = async () => {
       const see_Data = new Posts_Tools();
@@ -54,10 +59,10 @@ export const ContextProvider = ({ children }) => {
       if (public_Data != false) {
         setPuData(public_Data);
       }
+
       if (activeTag == "defecto") {
         refProducts.current = Products_Data;
         setProducts(Products_Data);
-        console.log("estas en modo defecto");
       } else {
         refProducts.current = [];
         Products_Data.forEach((e) => {
@@ -65,12 +70,9 @@ export const ContextProvider = ({ children }) => {
             if (x.tagName == activeTag) {
               refProducts.current.push(e);
               setProducts(refProducts.current);
-              console.log(e.tags);
             }
           });
         });
-        console.log(refProducts.current);
-        console.log(activeTag);
       }
 
       // if (refProducts.current[0] == undefined) {
@@ -81,6 +83,34 @@ export const ContextProvider = ({ children }) => {
     };
     comprobate_User();
   }, [data, userValidate]);
+
+
+
+  useEffect(() => {
+    const searchFilter = async () => {
+      if (searchValue == "") {
+        const see_Products_Data = new Products_Posts_Tools();
+        const Products_Data =
+          (await see_Products_Data.post_The_Data()) ?? false;
+
+        refProducts.current = Products_Data;
+        setProducts(Products_Data);
+      } else {
+        refProducts.current = [];
+        producstData.forEach((e) => {
+          if (
+            e.Title.toUpperCase().includes(searchValue.toUpperCase()) == true
+          ) {
+            refProducts.current.push(e);
+            setProducts(refProducts.current);
+            
+          }
+          
+        });
+      }
+    };
+    searchFilter();
+  }, [searchValue]);
 
   return (
     <theContext.Provider
@@ -98,6 +128,8 @@ export const ContextProvider = ({ children }) => {
         producstData,
         tags,
         setActiveTag,
+        searchValue,
+        setSearchValue,
       }}
     >
       {children}
