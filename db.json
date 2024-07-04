@@ -54,7 +54,7 @@
           "Description": "Producto 1 descripcion",
           "Price": "400",
           "Img": "",
-          "State": "Public",
+          "State": "Private",
           "filter": "mostrar",
           "tags": [
             {
@@ -69,7 +69,7 @@
           "Description": "lapices 1",
           "Price": "123",
           "Img": "",
-          "State": "Public",
+          "State": "Private",
           "filter": "mostrar",
           "tags": [
             {
@@ -84,7 +84,7 @@
           "Description": "borradores",
           "Price": "1000",
           "Img": "",
-          "State": "Public",
+          "State": "Private",
           "filter": "mostrar",
           "tags": [
             {
@@ -99,7 +99,7 @@
           "Description": "acuerela 1",
           "Price": "200",
           "Img": "",
-          "State": "Public",
+          "State": "Private",
           "filter": "mostrar",
           "tags": [],
           "id": "ff881d61-d455-feed-9407-531a8814e2c5"
@@ -175,61 +175,5 @@
       "comments": []
     }
   ],
-  "Products": [
-    {
-      "id": "6a1b14c9-1ed1-3037-43a2-a9ab3616464d",
-      "Title": "Borradores",
-      "Description": "borradores",
-      "Price": "1000",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "borrador",
-          "id": "31c8f267-69b3-15fc-b798-9144f757e636"
-        }
-      ]
-    },
-    {
-      "id": "a9a663ce-d63a-a267-6d2a-ed8c150053fd",
-      "Title": "Lapices",
-      "Description": "lapices 1",
-      "Price": "123",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "lapices",
-          "id": "e8ba172e-e47e-f119-cb33-d17ab3593182"
-        }
-      ]
-    },
-    {
-      "id": "ff881d61-d455-feed-9407-531a8814e2c5",
-      "Title": "Acuarelas",
-      "Description": "acuerela 1",
-      "Price": "200",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": []
-    },
-    {
-      "id": "2255642a-fcdb-7d28-8e14-96f53fd0911e",
-      "Title": "Producto 1",
-      "Description": "Producto 1 descripcion",
-      "Price": "400",
-      "Img": "",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "producto x",
-          "id": "f36d4ac5-23ff-3d6f-c908-9e6301f7e6e4"
-        }
-      ]
-    }
-  ]
+  "Products": []
 }

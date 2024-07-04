@@ -7,13 +7,12 @@
 .Private_Product {
   display: grid;
   grid-template-columns: 65% auto;
-  
+
   width: 730px;
   border-radius: 10px;
   background-color: #252932;
   margin-top: 20px;
   overflow: hidden;
-  
 }
 
 .info_Product {
@@ -48,18 +47,15 @@
   gap: 130px;
   padding-bottom: 15px;
   padding-left: 15px;
-  
 }
 
-.Elim_Pub_Container{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 50px;
-gap: 10px;
+.Elim_Pub_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  gap: 10px;
 }
-
-
 
 .textP {
   background-color: #252932;
@@ -114,7 +110,7 @@ gap: 10px;
   border-radius: 20px;
 }
 
-.emptyProducts{
+.emptyProducts {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,15 +121,14 @@ gap: 10px;
   width: 95%;
   border-radius: 20px;
 }
-.box{
-align-self: center;
+.box {
+  align-self: center;
 }
 
-.boxInfo{
-color: #979da6;
-align-self: center;
+.boxInfo {
+  color: #979da6;
+  align-self: center;
 }
-
 
 .Posts {
   margin-top: 10px;
@@ -205,21 +200,37 @@ align-self: center;
 .productspage {
   display: grid;
   grid-template-rows: 11% auto;
-  
+}
+.EmptyStock {
+  display: grid;
+  grid-template-rows: 11% auto;
 }
 
+.EmptyComponents{
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  height: 550px;
+  color: #979da6;
+}
+.emptyPageInfo{
+font-size: 40px;
+align-self: center;
+}
+
+.emptyBoxsIcon{
+align-self: center;
+}
 .components_Part {
   display: grid;
   grid-template-rows: 20% auto;
-   
-  
 }
 
 .filters_Area {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   height: 100%;
 }
 
@@ -227,5 +238,3 @@ align-self: center;
   display: flex;
   justify-content: center;
 }
-
-
