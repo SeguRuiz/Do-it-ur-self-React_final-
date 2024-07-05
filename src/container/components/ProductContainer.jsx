@@ -2,7 +2,7 @@ import TagsSelector from "./tags/TagsSelector";
 import { useTheContext } from "../../context/ContextProvider";
 
 const ProductContainer = ({ key, id, description, title, price, btns }) => {
-  const { user_Products, userInfo, data, updateData } = useTheContext();
+  const {  userInfo  } = useTheContext();
   return (
     <div key={key} className="Private_Product" id={id}>
       <div className="info_Product">

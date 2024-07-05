@@ -34,13 +34,18 @@ export const ContextProvider = ({ children }) => {
   const [search, setSearch] = useState('sin Busqueda');
   const [searchValue, setSearchValue] = useState("");
 
+
+  //
+  const emptyApi = useRef([])
   useEffect(() => {
     const comprobate_User = async () => {
       const see_Data = new Posts_Tools();
       const data = await see_Data.post_The_Data();
 
       const see_Products_Data = new Products_Posts_Tools();
+
       const Products_Data = (await see_Products_Data.post_The_Data()) ?? false;
+      emptyApi.current = Products_Data
 
       const see_Public_Data = new Public_Posts_Tools();
 
@@ -75,6 +80,7 @@ export const ContextProvider = ({ children }) => {
           });
         });
       }
+      
 
       // if (refProducts.current[0] == undefined) {
       //   console.log("no hay nada");
@@ -136,7 +142,8 @@ console.log(search);
         searchValue,
         setSearchValue,
         search,
-        refProducts
+        refProducts,
+        emptyApi
       }}
     >
       {children}
