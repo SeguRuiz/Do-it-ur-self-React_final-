@@ -9,9 +9,9 @@ import QuitSearch from "../../components/searchBar/quitSearch";
 import { useTheContext } from "../../../context/ContextProvider";
 
 const Products = () => {
-  const { search, refProducts } = useTheContext();
+  const { search, refProducts, emptyApi } = useTheContext();
 
-  if (search == "Sin busqueda" && refProducts.current[0] == undefined) {
+  if (emptyApi.current[0] == undefined) {
     return (
       <>
         <Navbar_Ho />

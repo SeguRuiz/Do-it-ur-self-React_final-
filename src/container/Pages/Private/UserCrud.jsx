@@ -38,7 +38,7 @@ go_to_Log('/')
         <div className="profile_page_Container">
           <div className="user_Navigation_area">
             <div className="User_Navigate">
-              <div className="profile"></div>
+              
               <div className="greeting">
                 <p className="tittle_G">Bienvenido</p>
                 <p className="extra_info">User</p>

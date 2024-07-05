@@ -4,15 +4,15 @@ import "../searchBar/search.css";
 const SearchBar = () => {
   const { searchValue, setSearchValue } = useTheContext();
 
-  const searchRef = useRef()
+  const searchRef = useRef();
 
   const changeSearch = (o) => {
     setSearchValue(o.target.value);
   };
 
   const focus = () => {
-  searchRef.current.focus()
-  }
+    searchRef.current.focus();
+  };
 
   return (
     <>
@@ -34,8 +34,8 @@ const SearchBar = () => {
         onInput={changeSearch}
         className="searchBar"
         ref={searchRef}
+        autoFocus
       />
-      
     </>
   );
 };

@@ -5,7 +5,7 @@
 
 .profile_page_Container {
   display: grid;
-  grid-template-columns: auto 80%;
+  grid-template-columns: auto 87%;
   height: 553px;
 }
 
@@ -22,8 +22,7 @@ overflow-y: auto;
 
 .User_Navigate {
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: center;
   align-items: center;
   height: 150px;
   border-bottom: solid #979da6 0.5px;
@@ -31,12 +30,12 @@ overflow-y: auto;
   margin-right: 15px;
 }
 
-.profile {
+/* .profile {
   background-color: #2d2f31;
   height: 60px;
   width: 60px;
   border-radius: 100px;
-}
+} */
 
 .greeting {
   height: 60px;
