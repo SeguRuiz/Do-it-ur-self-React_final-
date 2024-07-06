@@ -80,7 +80,7 @@
 
 .Inventory_Page {
   display: grid;
-  grid-template-rows: 25% auto 20% auto ;
+  grid-template-rows: 25% auto 20%;
   height: 100%;
 }
 
@@ -109,6 +109,17 @@
   width: 95%;
   border-radius: 20px;
 }
+
+.products_Table {
+  padding: 5px;
+  
+  
+  height: auto;
+  width: 95%;
+  border-radius: 20px;
+}
+
+
 
 .emptyProducts {
   display: flex;

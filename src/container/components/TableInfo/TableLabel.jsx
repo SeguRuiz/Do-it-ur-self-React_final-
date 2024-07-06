@@ -2,7 +2,7 @@
 import "../TableInfo/table.css";
 import { useTheContext } from "../../../context/ContextProvider";
 
-const TableLabel = ({ State, Titulo, Precio, Id, key}) => {
+const TableLabel = ({ State, Titulo, Precio, Id, key, ediBtn,publishEliminate }) => {
 
 
 
@@ -10,12 +10,12 @@ const TableLabel = ({ State, Titulo, Precio, Id, key}) => {
   return (
     <>
     <div className="infoLabel" key={key}>
-      <textarea className="labelOption" defaultValue={State}></textarea>
-      <textarea className="labelOption" defaultValue={Titulo}></textarea>
-      <textarea className="labelOption" defaultValue={Precio}></textarea>
-      <textarea className="labelOption" defaultValue={Id}></textarea>
-      <textarea className="labelOption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</textarea>
-      <textarea className="labelOption">options</textarea>
+      <div className="labelOptionState" >{State}</div>
+      <div className="labelOptionState">{Titulo}</div>
+      <div className="labelOptionState">{Precio + '$'}</div>
+      <div className="labelOptionState" >{Id}</div>
+      <div className="labelOptionState">Categories</div>
+      <div className="labelOptionOptions">{publishEliminate}{ediBtn}</div>
     </div>
     </>
   );
