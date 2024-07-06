@@ -1,0 +1,62 @@
+.CategoriModal {
+  border: none;
+  padding: 0;
+}
+
+.CategoriModalContent {
+  display: grid;
+  grid-template-rows: 10% 10% auto;
+  background-color: bisque;
+  height: 400px;
+  width: 360px;
+  background-color: #2d2f31;
+}
+.infoSelected {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px white solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #8bb4f8;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+.selectedArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: white 1px solid;
+  border-bottom-left-radius: 10px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.UnselectedArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-bottom-right-radius: 10px;
+  border: white 1px solid;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.ExitCategoriModal {
+}
+
+.infoArea {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.infoSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2d2f31;
+}
+
+.tagsDivSelector2 {
+  align-self: center;
+  margin-top: 6px;
+}

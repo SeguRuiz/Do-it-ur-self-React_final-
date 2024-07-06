@@ -31,6 +31,8 @@ const Selected = ({ id, text, product_id }) => {
         updateData(data + 1);
       }, 200);
     } else if (checkRef.current.checked == true) {
+      checkRef.current.checked = false;
+      divRef.current.className = "tagsTextSelector";
       let userCopy = { ...userInfo };
 
       userCopy.products.forEach((e) => {

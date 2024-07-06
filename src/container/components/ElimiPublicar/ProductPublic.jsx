@@ -92,6 +92,8 @@ const ProductPublic = ({ id }) => {
       setFunction("Publicar");
     }
   }, [data]);
+
+
   return (
     <>
       <ConfirmModal

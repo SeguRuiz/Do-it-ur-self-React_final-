@@ -5,7 +5,7 @@ import EditBtn from "../Edit/EditBtn";
 import ElimiPublish from "../ElimiPublicar/ElimiPublish";
 
 const Table_Iterador = () => {
-  const { user_Products } = useTheContext();
+  const { user_Products, userInfo } = useTheContext();
   return (
     <div className="tableBase">
      
@@ -26,6 +26,7 @@ const Table_Iterador = () => {
             State={product.State}
             Id={product.id}
             publishEliminate={<ElimiPublish id={product.id}/>}
+            
           />
         ))}
       </div>

@@ -86,7 +86,16 @@
           "Img": "",
           "State": "Private",
           "filter": "mostrar",
-          "tags": [],
+          "tags": [
+            {
+              "tagName": "Tag 4",
+              "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+            },
+            {
+              "tagName": "Tag 3",
+              "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+            }
+          ],
           "id": "5fe69503-2711-d180-1405-3d6028bf6387"
         },
         {
@@ -106,7 +115,24 @@
           "Img": "",
           "State": "Private",
           "filter": "mostrar",
-          "tags": [],
+          "tags": [
+            {
+              "tagName": "Tag 1",
+              "id": "8ce999e8-48a4-0eec-a25a-6ce460cf7842"
+            },
+            {
+              "tagName": "Tag 4",
+              "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+            },
+            {
+              "tagName": "Tag 3",
+              "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+            },
+            {
+              "tagName": "Tag 2",
+              "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+            }
+          ],
           "id": "3fb32f34-7adf-4c3f-6ca6-a1755cc4008c"
         },
         {
@@ -116,11 +142,33 @@
           "Img": "",
           "State": "Private",
           "filter": "mostrar",
-          "tags": [],
+          "tags": [
+            {
+              "tagName": "Tag 2",
+              "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+            }
+          ],
           "id": "b33e1cfe-568d-42ad-ba0b-471d11320317"
         }
       ],
-      "tags": []
+      "tags": [
+        {
+          "tagName": "Tag 1",
+          "id": "8ce999e8-48a4-0eec-a25a-6ce460cf7842"
+        },
+        {
+          "tagName": "Tag 2",
+          "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+        },
+        {
+          "tagName": "Tag 3",
+          "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+        },
+        {
+          "tagName": "Tag 4",
+          "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+        }
+      ]
     }
   ],
   "Public": [
