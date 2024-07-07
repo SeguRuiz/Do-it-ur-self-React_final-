@@ -3,13 +3,15 @@ import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools } from "../../../utils/Fetchs/classes";
 import "../Edit/edit.css";
 const EditBtn = ({ id }) => {
+  const { userInfo, data, updateData } = useTheContext();
+   
   const modalRef2 = useRef();
 
   const product_Inp = useRef();
   const descriptionText = useRef();
   const priceText = useRef();
   const imgInp = useRef();
-  const { userInfo, data, updateData } = useTheContext();
+ 
 
   const [product_Inp_Value, set_prodValue] = useState("");
   const [descriptionText_Value, setDescription] = useState("");
@@ -44,6 +46,7 @@ const EditBtn = ({ id }) => {
       setDescription(theProduct.Description);
       setPrice(theProduct.Price);
       setImg(theProduct.Img);
+      console.log(theProduct.Img);
       modalRef2.current.showModal();
     }, 200);
   };
@@ -108,6 +111,7 @@ const EditBtn = ({ id }) => {
               ref={imgInp}
               onInput={see_Img_value}
               placeholder="Img url"
+              value={img_value}
             />
 
             <textarea

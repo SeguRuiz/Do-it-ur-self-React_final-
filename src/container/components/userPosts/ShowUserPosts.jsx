@@ -2,10 +2,9 @@ import { useTheContext } from "../../../context/ContextProvider";
 import PublishBtn from "./PublishBtn";
 import PostContainer1 from "./PostContainer";
 import AddPostForm from "./AddPostForm";
+import EliminatePost from "./eliminatePost";
 const ShowUserPosts = () => {
-  const { user_Posts } = useTheContext();
-
-  console.log(user_Posts);
+  const { user_Posts,  } = useTheContext();
 
   return (
     <>
@@ -14,15 +13,19 @@ const ShowUserPosts = () => {
           <div className="Posts">
             {user_Posts.map((posts, i) => (
               <div key={i} className="product_Container">
-                <PostContainer1 Btn={<PublishBtn/>} text={posts.Description} />
+                <PostContainer1
+                  Btn={<PublishBtn id={posts.id}/>}
+                  text={posts.Description}
+                  img={posts.Img}
+                  Eliminar={<EliminatePost id={posts.id}/>}
+                />
               </div>
             ))}
           </div>
         </div>
 
         <div className="addProduct_Area">
-         <AddPostForm/>
-        
+          <AddPostForm />
         </div>
       </div>
     </>

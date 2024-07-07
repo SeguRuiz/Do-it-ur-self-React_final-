@@ -11,7 +11,7 @@ import Navbar from "../container/components/Navbar";
 import "../Styles/index.css";
 import "../Styles/Navbar_Home.css";
 import "../Styles/userCrud.css";
-import "../Styles/Posts.css";
+import "../container/components/userPosts/Posts.css";
 import "../Styles/Community.css";
 import "../Styles/Products.css";
 import "../Styles/AboutUs.css"

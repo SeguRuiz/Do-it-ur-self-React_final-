@@ -20,6 +20,7 @@ const UnselectedList = ({ product_id }) => {
     });
 
     setUnactiveTags(userCopy.tags)
+    updateData(data + 1)
     
     console.log(userCopy);
   }, [user_Products, userInfo]);

@@ -6,7 +6,7 @@ import ProductPublic from "./ProductPublic";
 import EditBtn from "../Edit/EditBtn";
 import "../ElimiPublicar/Eliminar.css"
 
-const ElimiPublish = ({ id }) => {
+const ElimiPublish = ({ id, publicId }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
   const confirmModal = useRef();
 

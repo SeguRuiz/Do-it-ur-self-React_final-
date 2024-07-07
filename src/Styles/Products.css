@@ -15,6 +15,17 @@
   overflow: hidden;
 }
 
+.privateProductImg{
+height: 100%;
+width: 100%;
+}
+
+.imgProduct_Area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .info_Product {
   display: grid;
   grid-template-rows: 60% auto;
@@ -73,9 +84,7 @@
   flex-direction: column;
   gap: 5px;
 }
-.imgProduct_Area {
-  background-color: #8bb4f8;
-}
+
 /**/
 
 .Inventory_Page {

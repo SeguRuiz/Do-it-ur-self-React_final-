@@ -2,34 +2,34 @@
 // import AddProducts from "../../components/UseCrud/AddProducts";
 // import ShowTheProducst from "../../components/UseCrud/ShowTheProducst";
 // import ShowUserPosts from "../../components/UseCrud/ShowUserPosts";
-import ShowTheProducst from "../../components/UseCrud/ShowTheProducst"
-import ShowUserPosts from "../../components/UseCrud/ShowUserPosts"
+import ShowTheProducst from "../../components/UseCrud/ShowTheProducst";
+import ShowUserPosts from "../../components/userPosts/ShowUserPosts";
 import { useTheContext } from "../../../context/ContextProvider";
 import Navbar_Ho from "../../components/Navbar_Ho";
 import UserInfo from "../../components/UseCrud/UserInfo";
 import { useNavigate } from "react-router-dom";
 
 const UserCrud = () => {
-const {usersPage, setPage} = useTheContext()
-const go_to_Log = useNavigate()
+  const { usersPage, setPage } = useTheContext();
+  const go_to_Log = useNavigate();
 
-const page_Inventory = () =>{
-setPage('Inventory')
-console.log(usersPage);
-}
+  const page_Inventory = () => {
+    setPage("Inventory");
+    console.log(usersPage);
+  };
 
-const page_Posts = () =>{
-setPage('Posts')
-}
+  const page_Posts = () => {
+    setPage("Posts");
+  };
 
-const page_Info = () =>{
-  setPage('Info')
-}
+  const page_Info = () => {
+    setPage("Info");
+  };
 
-const logOut = () =>{
-localStorage.removeItem('user_Sesion')
-go_to_Log('/')
-}
+  const logOut = () => {
+    localStorage.removeItem("user_Sesion");
+    go_to_Log("/");
+  };
   return (
     <>
       <Navbar_Ho />
@@ -38,7 +38,6 @@ go_to_Log('/')
         <div className="profile_page_Container">
           <div className="user_Navigation_area">
             <div className="User_Navigate">
-              
               <div className="greeting">
                 <p className="tittle_G">Bienvenido</p>
                 <p className="extra_info">User</p>
@@ -59,7 +58,12 @@ go_to_Log('/')
                 </div>
                 <p>Log Out</p>
               </div>
-              <div className={usersPage == 'Inventory' ? 'option_Invent' : 'option'} onClick={page_Inventory}>
+              <div
+                className={
+                  usersPage == "Inventory" ? "option_Invent" : "option"
+                }
+                onClick={page_Inventory}
+              >
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +77,10 @@ go_to_Log('/')
                 </div>
                 <p>Inventory</p>
               </div>
-              <div className={usersPage == 'Posts' ? 'option_Posts' : 'option'} onClick={page_Posts}>
+              <div
+                className={usersPage == "Posts" ? "option_Posts" : "option"}
+                onClick={page_Posts}
+              >
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +94,10 @@ go_to_Log('/')
                 </div>
                 <p>Posts</p>
               </div>
-              <div className={usersPage == 'Info' ? 'option_Info' : 'option'} onClick={page_Info}>
+              <div
+                className={usersPage == "Info" ? "option_Info" : "option"}
+                onClick={page_Info}
+              >
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +115,9 @@ go_to_Log('/')
           </div>
           <div className="user_Area">
             <div className="info_User_Area">
-           {usersPage == 'Inventory' ? <ShowTheProducst/> : <></>}
-           {usersPage == 'Posts' ? <ShowUserPosts/> : <></>}
-           {usersPage == 'Info' ? <UserInfo/> : <></>}
+              {usersPage == "Inventory" ? <ShowTheProducst /> : <></>}
+              {usersPage == "Posts" ? <ShowUserPosts /> : <></>}
+              {usersPage == "Info" ? <UserInfo /> : <></>}
             </div>
           </div>
         </div>

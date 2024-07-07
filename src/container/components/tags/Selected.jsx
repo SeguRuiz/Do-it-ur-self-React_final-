@@ -10,7 +10,6 @@ const Selected = ({ id, text, product_id }) => {
   const selected = () => {
     if (checkRef.current.checked == false) {
       divRef.current.className = "tagsTextSelector2";
-      checkRef.current.checked = true;
       let userCopy1 = { ...userInfo };
 
       let theTag = userCopy1.tags.find((tags) => tags.id == id);
@@ -31,7 +30,6 @@ const Selected = ({ id, text, product_id }) => {
         updateData(data + 1);
       }, 200);
     } else if (checkRef.current.checked == true) {
-      checkRef.current.checked = false;
       divRef.current.className = "tagsTextSelector";
       let userCopy = { ...userInfo };
 

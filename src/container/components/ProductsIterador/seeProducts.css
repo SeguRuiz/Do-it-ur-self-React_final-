@@ -85,5 +85,13 @@ align-self: center;
 }
 
 .imgProduct_Area2 {
-  background-color: #8bb4f8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.publicImg{
+height: 100%;
+width: 100%;
 }

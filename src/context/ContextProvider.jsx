@@ -80,7 +80,7 @@ export const ContextProvider = ({ children }) => {
           });
         });
       }
-      
+       console.log(refProducts.current);
 
       // if (refProducts.current[0] == undefined) {
       //   console.log("no hay nada");
