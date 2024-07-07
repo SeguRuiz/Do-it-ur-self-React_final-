@@ -13,6 +13,7 @@ const PrivateProducts = () => {
             title={product.Title}
             price={product.Price}
             id={product.id}
+            img={product.Img}
             btns={<ElimiPublish id={product.id} />}
           />
         </div>

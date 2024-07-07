@@ -1,8 +1,21 @@
 import TagsSelector from "./tags/TagsSelector";
 import { useTheContext } from "../../context/ContextProvider";
+import BrokenImg from "../../assets/imgs/BrokenImg.svg";
+import { useState } from "react";
+import { Title } from "@mui/icons-material";
 
-const ProductContainer = ({ key, id, description, title, price, btns }) => {
-  const {  userInfo  } = useTheContext();
+const ProductContainer = ({
+  key,
+  id,
+  description,
+  title,
+  price,
+  btns,
+  img,
+}) => {
+  const { userInfo } = useTheContext();
+   
+  
   return (
     <div key={key} className="Private_Product" id={id}>
       <div className="info_Product">
@@ -34,7 +47,9 @@ const ProductContainer = ({ key, id, description, title, price, btns }) => {
           </div>
         </div>
       </div>
-      <div className="imgProduct_Area"></div>
+      <div className="imgProduct_Area">
+        <img src={img} alt={Title} className="privateProductImg" />
+      </div>
     </div>
   );
 };

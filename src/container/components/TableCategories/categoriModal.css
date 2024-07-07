@@ -1,15 +1,16 @@
 .CategoriModal {
   border: none;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .CategoriModalContent {
   display: grid;
   grid-template-rows: 10% 10% auto;
-  background-color: bisque;
+  
   height: 400px;
   width: 360px;
-  background-color: #2d2f31;
+ 
 }
 .infoSelected {
   display: grid;
@@ -29,6 +30,7 @@
   border-bottom-left-radius: 10px;
   overflow-y: scroll;
   scrollbar-width: thin;
+  background-color: #2d2f31;
 }
 
 .UnselectedArea {
@@ -39,11 +41,25 @@
   border: white 1px solid;
   overflow-y: scroll;
   scrollbar-width: thin;
+  background-color: #2d2f31;
 }
 
 .ExitCategoriModal {
-}
+display: flex;
+justify-content: end;
 
+}
+.closeCategorys{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #2d2f31;
+color: white;
+border: none;
+margin-bottom: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
 .infoArea {
   display: grid;
   grid-template-columns: 50% 50%;
