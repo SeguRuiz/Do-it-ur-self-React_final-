@@ -41,25 +41,8 @@
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "posts": [
-        {
-          "Description": "jqiej",
-          "State": "Private",
-          "id": "18d59efc-5fa2-2a3c-164e-fb657e19a208"
-        }
-      ],
-      "products": [
-        {
-          "Title": "Gato",
-          "Description": "Gato",
-          "Price": "100",
-          "Img": "https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg",
-          "State": "Private",
-          "filter": "mostrar",
-          "tags": [],
-          "id": "f2cf6903-71e7-3b7a-69a9-4f4645aa37e2"
-        }
-      ],
+      "posts": [],
+      "products": [],
       "tags": [
         {
           "tagName": "Tag 1",
@@ -80,59 +63,6 @@
       ]
     }
   ],
-  "Public": [
-    {
-      "id": "0b8c",
-      "user": [
-        "Luis",
-        "db92"
-      ],
-      "post": {
-        "Description": "njn",
-        "State": "Public",
-        "id": "5587e399-4713-6242-1753-2c2f44540849"
-      },
-      "comments": []
-    },
-    {
-      "id": "10f3",
-      "user": [
-        "Luis",
-        "db92"
-      ],
-      "post": {
-        "Description": "hola",
-        "State": "Public",
-        "id": "0c106ce5-ea3f-f8c1-95ac-aa5b0dc00260"
-      },
-      "comments": []
-    },
-    {
-      "id": "c24e",
-      "user": [
-        "Luis",
-        "db92"
-      ],
-      "post": {
-        "Description": "Esto fue posteado por luis",
-        "State": "Public",
-        "id": "d98e292b-a7e6-69c1-35f9-d538630e0c2a"
-      },
-      "comments": []
-    },
-    {
-      "id": "2f39",
-      "user": [
-        "Maria",
-        "a1ae"
-      ],
-      "post": {
-        "Description": "holaaa esto fue mandado por maria",
-        "State": "Public",
-        "id": "2544f519-ef98-a9a1-9df9-092cff38d3e5"
-      },
-      "comments": []
-    }
-  ],
+  "Public": [],
   "Products": []
 }

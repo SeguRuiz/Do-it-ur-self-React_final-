@@ -3,7 +3,7 @@ import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools } from "../../../utils/Fetchs/classes";
 import "../Edit/edit.css";
 const EditBtn = ({ id }) => {
-   const { userInfo, data, updateData } = useTheContext();
+  const { userInfo, data, updateData } = useTheContext();
    
   const modalRef2 = useRef();
 

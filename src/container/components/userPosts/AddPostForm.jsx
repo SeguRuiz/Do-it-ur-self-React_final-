@@ -6,31 +6,41 @@ import Inpts from "../Inpts";
 
 const AddPostForm = () => {
   const info_Inp = useRef();
+  const img_InpRef = useRef()
   const { userInfo, data, updateData } = useTheContext();
 
   const [info_Inp_Value, set_InfoValue] = useState("");
-  const postsDlg = useRef()
+  const [img_Inp, setImgValue] = useState("")
+  const postsDlg = useRef();
 
-   const OpenModal = () => {
+  const OpenModal = () => {
     updateData(data + 1);
     postsDlg.current.showModal();
   };
 
+  const Close = () => {
+    postsDlg.current.close();
+  }
 
   const see_The_value = (o) => {
     set_InfoValue(o.target.value);
   };
-
+  
+  const seeImg_Value = (o) => {
+  setImgValue(o.target.value)
+  }
   const user_Private_Post = async (o) => {
     o.preventDefault();
 
     let info_Inp_Value = info_Inp.current.value.trim();
+    let img_Value = img_InpRef.current.value.trim()
 
     if (info_Inp_Value != "") {
       let id = uuid();
       let post = {
         Description: info_Inp_Value,
         State: "Private",
+        Img: img_Value,
         id: id,
       };
       let copyUser = { ...userInfo };
@@ -44,23 +54,36 @@ const AddPostForm = () => {
 
       updateData(data + 1);
       set_InfoValue("");
+      postsDlg.current.close();
     }
   };
   return (
     <>
-    <dialog ref={postsDlg}>
-      <form name="form_User" className="form_User" onSubmit={user_Private_Post}>
-        <Inpts
-          type={"text"}
-          placeholder={"Add posts"}
-          ref={info_Inp}
-          value={info_Inp_Value}
-          Change_Value={see_The_value}
-        />
-        <button type="submit">Add</button>
-      </form>
+      <dialog ref={postsDlg}>
+        <div>
+          <div>
+            <button onClick={Close}>close</button>
+          </div>
+          <form
+            name="form_User"
+            className="form_User"
+            onSubmit={user_Private_Post}
+          >
+            <textarea
+              type={"text"}
+              placeholder={"Add posts"}
+              ref={info_Inp}
+              value={info_Inp_Value}
+              onInput={see_The_value}
+              className="textPost_Inp"
+            />
+
+            <input type="text" name="" className="imgInp_Posts" value={img_Inp} ref={img_InpRef} onInput={seeImg_Value} />
+            <button type="submit">Add</button>
+          </form>
+        </div>
       </dialog>
-            <div onClick={OpenModal} className="Open_Modal_Posts">
+      <div onClick={OpenModal} className="Open_Modal_Posts">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

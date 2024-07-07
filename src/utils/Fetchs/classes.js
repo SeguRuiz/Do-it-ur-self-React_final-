@@ -1,4 +1,4 @@
-const public_Posts = "http://localhost:3002/Public";
+const public_Posts = "http://localhost:3002/Public/";
 const users_Post = "http://localhost:3002/users";
 const products_Area = "http://localhost:3002/Products/";
 export class Posts_Tools {
@@ -161,3 +161,21 @@ export class Delete_Tools {
     method: "delete",
   };
 }
+
+export class Delete_ToolsPosts {
+  delete_The_Data = async (id) => {
+    try {
+      const response = await fetch(public_Posts + id, this.data_For_Puts);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  data_For_Puts = {
+    method: "delete",
+  };
+}
+
+
