@@ -50,17 +50,125 @@
       ],
       "products": [
         {
-          "Title": "TITULO",
-          "Description": "Prueba 1",
-          "Price": "123",
+          "Title": "Producto 1",
+          "Description": "Esta es una buena descripcion que tu veras despues",
+          "Price": "400",
           "Img": "",
           "State": "Private",
           "filter": "mostrar",
           "tags": [],
-          "id": "6324300d-dc18-a047-8745-d3d66653c81a"
+          "id": "68903fdf-ab03-47f3-e10f-7f014c7ce563"
+        },
+        {
+          "Title": "Nuevo producto",
+          "Description": "New description",
+          "Price": "500",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [],
+          "id": "c7474bd7-f0f1-a2b0-b6f6-ad7351265a0a"
+        },
+        {
+          "Title": "Borrador",
+          "Description": "Esta es una descripcion para los lapices que estoy a punto de agregar.",
+          "Price": "700",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [],
+          "id": "006ddc0d-b58f-99eb-aed2-ccc0bcf607c7"
+        },
+        {
+          "Title": "Acuarelas",
+          "Description": "Esta es una nueva descripcion para este nuevo producto",
+          "Price": "1000",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Tag 4",
+              "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+            },
+            {
+              "tagName": "Tag 3",
+              "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+            }
+          ],
+          "id": "5fe69503-2711-d180-1405-3d6028bf6387"
+        },
+        {
+          "Title": "Carboncillos",
+          "Description": "Esta es una descripcion para este tipos de carboncillos",
+          "Price": "800",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [],
+          "id": "a321369e-3245-48c6-9db5-76061d464c50"
+        },
+        {
+          "Title": "Producto de relleno",
+          "Description": "descripcion",
+          "Price": "800",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Tag 1",
+              "id": "8ce999e8-48a4-0eec-a25a-6ce460cf7842"
+            },
+            {
+              "tagName": "Tag 4",
+              "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+            },
+            {
+              "tagName": "Tag 3",
+              "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+            },
+            {
+              "tagName": "Tag 2",
+              "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+            }
+          ],
+          "id": "3fb32f34-7adf-4c3f-6ca6-a1755cc4008c"
+        },
+        {
+          "Title": "Otro producto de prueba",
+          "Description": "producto de prueba",
+          "Price": "800",
+          "Img": "",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Tag 2",
+              "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+            }
+          ],
+          "id": "b33e1cfe-568d-42ad-ba0b-471d11320317"
         }
       ],
-      "tags": []
+      "tags": [
+        {
+          "tagName": "Tag 1",
+          "id": "8ce999e8-48a4-0eec-a25a-6ce460cf7842"
+        },
+        {
+          "tagName": "Tag 2",
+          "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+        },
+        {
+          "tagName": "Tag 3",
+          "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+        },
+        {
+          "tagName": "Tag 4",
+          "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+        }
+      ]
     }
   ],
   "Public": [

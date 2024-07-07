@@ -11,6 +11,8 @@ import { useTheContext } from "../../../context/ContextProvider";
 const Products = () => {
   const { search, refProducts, emptyApi } = useTheContext();
 
+  
+
   if (emptyApi.current[0] == undefined) {
     return (
       <>
