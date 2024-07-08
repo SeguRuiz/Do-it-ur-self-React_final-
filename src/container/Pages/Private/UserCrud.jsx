@@ -10,7 +10,7 @@ import UserInfo from "../../components/UseCrud/UserInfo";
 import { useNavigate } from "react-router-dom";
 
 const UserCrud = () => {
-  const { usersPage, setPage } = useTheContext();
+  const { usersPage, setPage, data, updateData } = useTheContext();
   const go_to_Log = useNavigate();
 
   const page_Inventory = () => {
@@ -28,6 +28,8 @@ const UserCrud = () => {
 
   const logOut = () => {
     localStorage.removeItem("user_Sesion");
+    updateData(data + 1)
+    setPage("Info");
     go_to_Log("/");
   };
   return (

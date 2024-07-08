@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 import { useTheContext } from "../../../context/ContextProvider";
 
 const Login = () => {
-  const { setState } = useTheContext();
+  const { setState, data, updateData } = useTheContext();
 
   const go_To_Home = useNavigate();
 
@@ -49,6 +49,8 @@ const Login = () => {
       data != false
     ) {
       localStorage.setItem("user_Sesion", find_User_Name.id);
+      updateData(data + 1)
+
       setState(true);
 
       set_Validate_State((state) => ({

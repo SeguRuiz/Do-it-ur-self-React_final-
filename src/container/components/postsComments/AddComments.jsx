@@ -40,7 +40,7 @@ const AddComments = ({id, closeModal}) => {
             updateData(data + 1)
         }, 200);
 
-        closeModal()
+        
         setValue('')
      }
     }
