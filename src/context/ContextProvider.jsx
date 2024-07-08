@@ -31,12 +31,11 @@ export const ContextProvider = ({ children }) => {
   const [activeTag, setActiveTag] = useState("defecto");
 
   //SearchBar
-  const [search, setSearch] = useState('sin Busqueda');
+  const [search, setSearch] = useState("sin Busqueda");
   const [searchValue, setSearchValue] = useState("");
 
-
   //
-  const emptyApi = useRef([])
+  const emptyApi = useRef([]);
   useEffect(() => {
     const comprobate_User = async () => {
       const see_Data = new Posts_Tools();
@@ -45,7 +44,7 @@ export const ContextProvider = ({ children }) => {
       const see_Products_Data = new Products_Posts_Tools();
 
       const Products_Data = (await see_Products_Data.post_The_Data()) ?? false;
-      emptyApi.current = Products_Data
+      emptyApi.current = Products_Data;
 
       const see_Public_Data = new Public_Posts_Tools();
 
@@ -54,17 +53,13 @@ export const ContextProvider = ({ children }) => {
       const find_User =
         (await data.find((users) => users.id == userValidate)) ?? false;
 
-      if (find_User != false) {
-        setState(true);
-        setUser(find_User.posts);
-        setUserP(find_User.products);
-        setUserInfo(find_User);
-        setTags(find_User.tags);
-      }
+      setState(true);
+      setUser(find_User.posts);
+      setUserP(find_User.products);
+      setUserInfo(find_User);
+      setTags(find_User.tags);
 
-      if (public_Data != false) {
-        setPuData(public_Data);
-      }
+      setPuData(public_Data);
 
       if (activeTag == "defecto") {
         refProducts.current = Products_Data;
@@ -80,7 +75,6 @@ export const ContextProvider = ({ children }) => {
           });
         });
       }
-       console.log(refProducts.current);
 
       // if (refProducts.current[0] == undefined) {
       //   console.log("no hay nada");
@@ -91,11 +85,9 @@ export const ContextProvider = ({ children }) => {
     comprobate_User();
   }, [data, userValidate]);
 
-
-
   useEffect(() => {
     const searchFilter = async () => {
-      setSearch('Sin busqueda')
+      setSearch("Sin busqueda");
       if (searchValue == "") {
         const see_Products_Data = new Products_Posts_Tools();
         const Products_Data =
@@ -104,25 +96,23 @@ export const ContextProvider = ({ children }) => {
         refProducts.current = Products_Data;
         setProducts(Products_Data);
       } else {
-        setSearch('En busqueda')
+        setSearch("En busqueda");
         refProducts.current = [];
-        
+
         producstData.forEach((e) => {
           if (
             e.Title.toUpperCase().includes(searchValue.toUpperCase()) == true
           ) {
             refProducts.current.push(e);
             setProducts(refProducts.current);
-            
           }
-          
         });
-         console.log(refProducts);
+        console.log(refProducts);
       }
     };
     searchFilter();
   }, [searchValue]);
-console.log(search);
+  console.log(search);
   return (
     <theContext.Provider
       value={{
@@ -143,7 +133,8 @@ console.log(search);
         setSearchValue,
         search,
         refProducts,
-        emptyApi
+        emptyApi,
+        setUserP,
       }}
     >
       {children}

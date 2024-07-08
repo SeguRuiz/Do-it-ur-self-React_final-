@@ -145,6 +145,34 @@ export class ProductPut_Tools {
   }
 }
 
+export class PublicPut_Tools {
+  put_The_Data = async (id, the_Data) => {
+    try {
+      const response = await fetch(
+        public_Posts + id,
+        the_Data
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  data_For_Puts = {
+    method: "put",
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: null,
+  };
+
+  constructor(Update) {
+    this.data_For_Puts.body = JSON.stringify(Update);
+  }
+}
+
 
 export class Delete_Tools {
   delete_The_Data = async (id) => {

@@ -41,28 +41,246 @@
         "email": "luis@gmail.com",
         "password": "123"
       },
-      "posts": [],
-      "products": [],
+      "posts": [
+        {
+          "Description": "iwojdoije",
+          "State": "Public",
+          "Img": "lwswm",
+          "id": "7b497135-3333-5c66-b326-7c59543b701e"
+        }
+      ],
+      "products": [
+        {
+          "Title": "Carboncillos",
+          "Description": "Carboncillos para trazos gruesos",
+          "Price": "30",
+          "Img": "https://dhb3yazwboecu.cloudfront.net/270/nitram/NITRAMcat_l.jpg",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Arcilla",
+              "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
+            },
+            {
+              "tagName": "Lapices",
+              "id": "32f88086-3420-17bd-0909-aaa3c375ea7b"
+            }
+          ],
+          "id": "e4dd3aec-6821-8edc-de93-b1a9f116cf07"
+        },
+        {
+          "Title": "Lapices para dibujo",
+          "Description": "Paquete basico de lapices para dibujo tradicional",
+          "Price": "80",
+          "Img": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/a6cba15a-e9fb-4ade-af3b-31317a6f2f8e.05f558319851c782170fb815b0e76c8c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Tradicional",
+              "id": "628995f6-6075-ec57-045c-f072c71ed15f"
+            },
+            {
+              "tagName": "Lienzos",
+              "id": "35ec3c25-bbfc-5808-86fc-c88de2fcd600"
+            },
+            {
+              "tagName": "Esculturas",
+              "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
+            },
+            {
+              "tagName": "Carboncillos",
+              "id": "29cc050b-f7ab-dfe0-97f0-d5725fda3f22"
+            }
+          ],
+          "id": "57a14fe3-3196-63ec-a47e-e204e8903f3b"
+        },
+        {
+          "Title": "Lienzo",
+          "Description": "Lienzo 20x20 cm, para pintura a a base de aceite",
+          "Price": "10",
+          "Img": "https://mytaleiteach.com/wp-content/uploads/2013/12/medida-universal-de-los-cuadros.jpg?w=640",
+          "State": "Private",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Lienzos",
+              "id": "35ec3c25-bbfc-5808-86fc-c88de2fcd600"
+            },
+            {
+              "tagName": "Tradicional",
+              "id": "628995f6-6075-ec57-045c-f072c71ed15f"
+            }
+          ],
+          "id": "fc9ab482-44b6-8155-aacc-3a3c2db58aa9"
+        },
+        {
+          "Title": "Arcilla",
+          "Description": "Arcilla especializada para esculturas",
+          "Price": "90",
+          "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuA4R8XD6c6WVyW2SXE_O5PdLIx2rfKtGZw&s",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Arcilla",
+              "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
+            },
+            {
+              "tagName": "Esculturas",
+              "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
+            }
+          ],
+          "id": "11eefcb3-86b4-8855-aaf0-7fcaafee39ec"
+        }
+      ],
       "tags": [
         {
-          "tagName": "Tag 1",
-          "id": "8ce999e8-48a4-0eec-a25a-6ce460cf7842"
+          "tagName": "Tradicional",
+          "id": "628995f6-6075-ec57-045c-f072c71ed15f"
         },
         {
-          "tagName": "Tag 2",
-          "id": "8f42cd74-8783-fc93-b145-6a271f797c68"
+          "tagName": "Lapices",
+          "id": "32f88086-3420-17bd-0909-aaa3c375ea7b"
         },
         {
-          "tagName": "Tag 3",
-          "id": "020a9ece-2f68-3580-8f14-692031cd6e06"
+          "tagName": "Carboncillos",
+          "id": "29cc050b-f7ab-dfe0-97f0-d5725fda3f22"
         },
         {
-          "tagName": "Tag 4",
-          "id": "9e8677ee-0658-fd10-96ae-b5b3b3c757a8"
+          "tagName": "Lienzos",
+          "id": "35ec3c25-bbfc-5808-86fc-c88de2fcd600"
+        },
+        {
+          "tagName": "Arcilla",
+          "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
+        },
+        {
+          "tagName": "Esculturas",
+          "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
+        },
+        {
+          "tagName": "paquetes",
+          "id": "c6cb0034-d847-d50e-e029-b69cbbd3f8ce"
+        }
+      ]
+    },
+    {
+      "id": "e16a",
+      "info": {
+        "name": "Maria",
+        "email": "maria@gmail.com",
+        "password": "123"
+      },
+      "posts": [
+        {
+          "Description": "Posteado por otro usuario",
+          "State": "Public",
+          "Img": "https://static.demilked.com/wp-content/uploads/2023/07/funny-photos-cursed-images-1.jpg",
+          "id": "a572df4c-5a98-7dc5-574c-935ae3d5fa26"
+        }
+      ],
+      "products": [],
+      "tags": []
+    }
+  ],
+  "Public": [
+    {
+      "id": "d7d4",
+      "user": [
+        "Luis",
+        "ad96"
+      ],
+      "post": {
+        "Description": "iwojdoije",
+        "State": "Public",
+        "Img": "lwswm",
+        "id": "7b497135-3333-5c66-b326-7c59543b701e"
+      },
+      "comments": []
+    },
+    {
+      "id": "e53d",
+      "user": [
+        "Maria",
+        "e16a"
+      ],
+      "post": {
+        "Description": "Posteado por otro usuario",
+        "State": "Public",
+        "Img": "https://static.demilked.com/wp-content/uploads/2023/07/funny-photos-cursed-images-1.jpg",
+        "id": "a572df4c-5a98-7dc5-574c-935ae3d5fa26"
+      },
+      "comments": [
+        {
+          "user": [
+            "Maria",
+            "e16a"
+          ],
+          "text": "lll",
+          "id": "a7852fd3-615a-22ab-e11b-b6366e2ac494"
         }
       ]
     }
   ],
-  "Public": [],
-  "Products": []
+  "Products": [
+    {
+      "id": "57a14fe3-3196-63ec-a47e-e204e8903f3b",
+      "Title": "Lapices para dibujo",
+      "Description": "Paquete basico de lapices para dibujo tradicional",
+      "Price": "80",
+      "Img": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/a6cba15a-e9fb-4ade-af3b-31317a6f2f8e.05f558319851c782170fb815b0e76c8c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Tradicional",
+          "id": "628995f6-6075-ec57-045c-f072c71ed15f"
+        },
+        {
+          "tagName": "Lapices",
+          "id": "32f88086-3420-17bd-0909-aaa3c375ea7b"
+        }
+      ]
+    },
+    {
+      "id": "11eefcb3-86b4-8855-aaf0-7fcaafee39ec",
+      "Title": "Arcilla",
+      "Description": "Arcilla especializada para esculturas",
+      "Price": "90",
+      "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuA4R8XD6c6WVyW2SXE_O5PdLIx2rfKtGZw&s",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Arcilla",
+          "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
+        },
+        {
+          "tagName": "Esculturas",
+          "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
+        }
+      ]
+    },
+    {
+      "id": "e4dd3aec-6821-8edc-de93-b1a9f116cf07",
+      "Title": "Carboncillos",
+      "Description": "Carboncillos para trazos gruesos",
+      "Price": "30",
+      "Img": "https://dhb3yazwboecu.cloudfront.net/270/nitram/NITRAMcat_l.jpg",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Carboncillos",
+          "id": "29cc050b-f7ab-dfe0-97f0-d5725fda3f22"
+        },
+        {
+          "tagName": "Tradicional",
+          "id": "628995f6-6075-ec57-045c-f072c71ed15f"
+        }
+      ]
+    }
+  ]
 }

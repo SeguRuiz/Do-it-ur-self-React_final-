@@ -3,6 +3,7 @@ import PublishBtn from "./PublishBtn";
 import PostContainer1 from "./PostContainer";
 import AddPostForm from "./AddPostForm";
 import EliminatePost from "./eliminatePost";
+import EditUserPost from "./editUserPost";
 const ShowUserPosts = () => {
   const { user_Posts,  } = useTheContext();
 
@@ -18,6 +19,7 @@ const ShowUserPosts = () => {
                   text={posts.Description}
                   img={posts.Img}
                   Eliminar={<EliminatePost id={posts.id}/>}
+                  edit={<EditUserPost id={posts.id} />}
                 />
               </div>
             ))}
