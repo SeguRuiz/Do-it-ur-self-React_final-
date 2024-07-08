@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import AddComments from "./AddComments";
+import ShowComments from "./ShowComments";
 
 const CommentsModal = ({ post_id }) => {
+ 
   const modalDlg = useRef();
-
+ 
   const openModal = () => {
     modalDlg.current.showModal();
   };
@@ -21,6 +23,7 @@ const CommentsModal = ({ post_id }) => {
           <button onClick={close}>close</button>
           <div>
             <h2>comments area</h2>
+            <ShowComments id={post_id}/>
           </div>
           <div>
             <AddComments id={post_id} closeModal={close}/>
