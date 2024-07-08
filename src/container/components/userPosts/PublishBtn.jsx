@@ -54,6 +54,7 @@ const PublishBtn = ({ id, key }) => {
         updateData(data + 1);
       }, 200);
       confirmModal.current.close()
+      
     } else if (userInfo != "" && btnFunction == "Privatizar") {
       let thePorduct_inPublic = publicData.filter(info => info.post.id == id)
       console.log(thePorduct_inPublic);

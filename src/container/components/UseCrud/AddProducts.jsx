@@ -76,7 +76,9 @@ const AddProducts = () => {
       let new_User_Update = new Put_Tools(copyUser);
       new_User_Update.put_The_Data(copyUser.id, new_User_Update.data_For_Puts);
 
+     setTimeout(() => {
       updateData(data + 1);
+     }, 200); 
       set_prodValue("");
       setDescription("");
       setPrice(0);

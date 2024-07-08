@@ -48,7 +48,7 @@ const ProductContainer = ({
         </div>
       </div>
       <div className="imgProduct_Area">
-        <img src={img} alt={Title} className="privateProductImg" />
+        <img src={img} alt='aqui debe haber una imagen' className="privateProductImg" />
       </div>
     </div>
   );
