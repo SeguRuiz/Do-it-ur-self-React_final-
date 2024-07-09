@@ -5,14 +5,24 @@ import {
   Products_Posts_Tools,
 } from "../utils/Fetchs/classes";
 import { Login } from "@mui/icons-material";
+import UserInfo from "../container/components/UseCrud/UserInfo";
+
 export const theContext = createContext();
 
 export const ContextProvider = ({ children }) => {
+  //Admin Info
+  const [AdminInfo, setAdmin] = useState("");
+  const loggedRef = useRef(false);
+  const [AdminLogged, setAdminLogged] = useState(false);
+
+  const adminRef = useRef({});
   //Users context
-  const userValidate = localStorage.getItem("user_Sesion") ?? false;
+
   const [thisState, setState] = useState(false);
   const [user_Posts, setUser] = useState([]);
   const [user_Products, setUserP] = useState([]);
+
+  const userRef = useRef({});
   const [userInfo, setUserInfo] = useState("");
   const [data, updateData] = useState(0);
 
@@ -37,6 +47,7 @@ export const ContextProvider = ({ children }) => {
   //
   const emptyApi = useRef([]);
   useEffect(() => {
+    const userValidate = localStorage.getItem("user_Sesion") ?? false;
     const comprobate_User = async () => {
       const see_Data = new Posts_Tools();
       const data = await see_Data.post_The_Data();
@@ -52,15 +63,35 @@ export const ContextProvider = ({ children }) => {
 
       const find_User =
         (await data.find((users) => users.id == userValidate)) ?? false;
+      const findAdmin =
+        (await data.find((users) => users.id == "1181")) ?? false;
+
+      adminRef.current = findAdmin;
+      setAdmin(adminRef.current);
+
+      userRef.current = find_User;
+      setUserInfo(userRef.current);
 
       setState(true);
+      setTags(adminRef.current.tags);
+      setUserP(adminRef.current.products);
+
       setUser(find_User.posts);
-      setUserP(find_User.products);
-      setUserInfo(find_User);
-      setTags(find_User.tags);
 
       setPuData(public_Data);
 
+      if (userValidate == AdminInfo.id) {
+        loggedRef.current = true;
+        setAdminLogged(true);
+      }
+      
+
+      if (userValidate != AdminInfo.id) {
+        loggedRef.current = false;
+        setAdminLogged(false);
+      }
+      
+      
       if (activeTag == "defecto") {
         refProducts.current = Products_Data;
         setProducts(Products_Data);
@@ -83,7 +114,7 @@ export const ContextProvider = ({ children }) => {
       // }
     };
     comprobate_User();
-  }, [data, userValidate]);
+  }, [data]);
 
   useEffect(() => {
     const searchFilter = async () => {
@@ -135,6 +166,9 @@ export const ContextProvider = ({ children }) => {
         refProducts,
         emptyApi,
         setUserP,
+        AdminInfo,
+        AdminLogged,
+        loggedRef,
       }}
     >
       {children}

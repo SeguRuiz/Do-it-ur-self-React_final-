@@ -1,0 +1,58 @@
+.Private_Post {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 380px;
+  width: 300px;
+  margin: 20px;
+  background-color: #252932;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.info {
+  background-color: #252932;
+  resize: none;
+  border: none;
+  font-size: 15px;
+  color: #979da6;
+  height: 95%;
+  margin: 5px;
+}
+
+.UserInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8bb4f8;
+}
+
+.info_Post_Area {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.Btns_AreaP {
+  display: flex;
+  
+}
+
+.Publish_BTN {
+  display: flex;
+  justify-content: center;
+  background-color: #252932;
+  cursor: pointer;
+  align-items: center;
+  border: #8bb4f8 solid 1.3px;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  color: #8bb4f8;
+
+  gap: 5px;
+  margin: 0;
+}
+
+.userPostImg{
+  height: 100%;
+  width: 100%;
+}

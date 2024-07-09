@@ -37,13 +37,16 @@ const AddPostForm = () => {
 
     if (info_Inp_Value != "") {
       let id = uuid();
+      
+      let copyUser = { ...userInfo };
+
       let post = {
+        user: [copyUser.info.perfil, copyUser.info.name],
         Description: info_Inp_Value,
         State: "Private",
         Img: img_Value,
         id: id,
       };
-      let copyUser = { ...userInfo };
 
       copyUser.posts.push(post);
 

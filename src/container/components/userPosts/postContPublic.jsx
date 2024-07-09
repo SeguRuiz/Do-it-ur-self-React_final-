@@ -1,19 +1,35 @@
-import CommentsModal from "../postsComments/CommentsModal"
-const PostContPublic = ({key, id, text, user, img}) => {
+import CommentsModal from "../postsComments/CommentsModal";
+import "./Posts.css";
+const PostContPublic = ({ key, id, text, user, img, profileImg }) => {
   return (
-    <div key={key} className="Private_Post" id={id}>
-        <div className="UserInfo">
-         <img src={img} alt="'no image" className="userPostImg"/>
+    <div
+      key={key}
+      className={img == "" ? "Public_PostNoimage" : "Public_Post"}
+      id={id}
+    >
+      {img == "" ? (
+        <></>
+      ) : (
+        <div className="UserInfoP">
+          <img src={img} alt="'no image" className="userPostImgP" />
         </div>
-        <div className="info_Post_Area">
-        <textarea className="info" disabled value={text} ></textarea>
-        <div className="Btns_AreaP">
-            <p>{user}</p>
+      )}
+      <div className="info_Post_Area_Public">
+        <textarea className="infoP" disabled value={text}></textarea>
+        <div className="Btns_AreaPublic">
+          <div className="userProfile_area">
+            <div className="profileCircle">
+              <img src={profileImg} alt="" className="profileImg" />
+            </div>
+            <h3 className="userName">{user}</h3>
+          </div>
+          <div className="commentsArea">
             <CommentsModal post_id={id} />
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PostContPublic
+export default PostContPublic;

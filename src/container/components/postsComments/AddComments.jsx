@@ -3,55 +3,71 @@ import { useTheContext } from "../../../context/ContextProvider";
 import uuid from "react-uuid";
 import { PublicPut_Tools } from "../../../utils/Fetchs/classes";
 
-const AddComments = ({id, closeModal}) => {
-    const { publicData, userInfo, data, updateData } = useTheContext();
+const AddComments = ({ id, closeModal }) => {
+  const { publicData, userInfo, data, updateData } = useTheContext();
 
-    const inpRef = useRef()
+  const inpRef = useRef();
 
-    const [inpValue, setValue] = useState('')
+  const [inpValue, setValue] = useState("");
 
-    const changeValue = (x) => {
-        setValue(x.target.value)
-    }
+  const changeValue = (x) => {
+    setValue(x.target.value);
+  };
 
-    const addComment = (o) => {
-     o.preventDefault()
+  const addComment = (o) => {
+    o.preventDefault();
 
-     let commentValue = inpRef.current.value.trim()
+    let commentValue = inpRef.current.value.trim();
 
-     if (commentValue != '') {
-        let dataCopy = [...publicData]
-        let thePost = dataCopy.find( posts => posts.id == id) 
-        let id_Comment = uuid()
-        console.log(userInfo.info.name);
+    if (commentValue != "") {
+      let dataCopy = [...publicData];
+      let thePost = dataCopy.find((posts) => posts.id == id);
+      let id_Comment = uuid();
 
-        let comment = {
-        user: [userInfo.info.name, userInfo.id],
+      let comment = {
+        user: [userInfo.info.name, userInfo.id, userInfo.info.perfil],
         text: commentValue,
-        id:  id_Comment
-        }
-         
-        thePost.comments.push(comment)
+        id: id_Comment,
+      };
 
-        let newComment = new PublicPut_Tools(thePost)
-        newComment.put_The_Data(thePost.id, newComment.data_For_Puts)
+      thePost.comments.push(comment);
 
-        setTimeout(() => {
-            updateData(data + 1)
-        }, 200);
+      let newComment = new PublicPut_Tools(thePost);
+      newComment.put_The_Data(thePost.id, newComment.data_For_Puts);
 
-        
-        setValue('')
-     }
+      setTimeout(() => {
+        updateData(data + 1);
+      }, 200);
+
+      setValue("");
     }
+  };
   return (
-   <>
-   <form  onSubmit={addComment} action="">
-    <input type="text"  placeholder="add comments" ref={inpRef} value={inpValue} onInput={changeValue}/>
-    <button>send</button>
-   </form>
-   </>
-  )
-}
+    <>
+      <form onSubmit={addComment} action="" className="addcommentsForm">
+        <input
+          type="text"
+          placeholder="add comments"
+          ref={inpRef}
+          value={inpValue}
+          onInput={changeValue}
+          className="addCommentsInp"
+        />
+        
+        <button className="sendBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            width="30px"
+            fill="#979da6"
+          >
+            <path d="M120-160v-640l760 320-760 320Zm66.67-102 520.66-218-520.66-220v158.67L428-480l-241.33 60v158Zm0 0v-438 438Z" />
+          </svg>
+        </button>
+      </form>
+    </>
+  );
+};
 
-export default AddComments
+export default AddComments;

@@ -15,6 +15,7 @@ const ShowComments = ({ id }) => {
           userId={comments.user[1]}
           post_Id={id}
           comment_Id={comments.id}
+          img={comments.user[2]}
         />
       ))}
     </>

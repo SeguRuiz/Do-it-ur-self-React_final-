@@ -13,7 +13,7 @@ const Comunnity = () => {
     <>
       <Navbar_Ho />
       {publicData[0] == undefined ? (
-         <div className="Community_page_Container">
+         <div className="EmptyPosts">
           <div></div>
           <div className="Community_Posts_Area">
             <h1>No hay posteos</h1>

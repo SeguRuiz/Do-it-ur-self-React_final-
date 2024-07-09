@@ -2,7 +2,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { useTheContext } from "../../context/ContextProvider";
 
 const Navbar_Ho = () => {
-  const { thisState } = useTheContext();
+  const { thisState, data, updateData } = useTheContext();
   const go_To = useNavigate();
 
   return (
@@ -40,6 +40,7 @@ const Navbar_Ho = () => {
             <div
               className="profile_Container"
               onClick={() => {
+                updateData(data + 1)
                 go_To("/Home/Profile");
               }}
             >

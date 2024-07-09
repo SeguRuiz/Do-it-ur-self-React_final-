@@ -1,5 +1,6 @@
-
+import "./userPosts.css"
 const PostContainer1 = ({key, id, text, user, Btn, img, Eliminar, edit}) => {
+  
   return (
     <div key={key} className="Private_Post" id={id}>
         <div className="UserInfo">
