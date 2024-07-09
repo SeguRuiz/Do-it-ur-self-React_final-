@@ -3,14 +3,15 @@ import { Put_Tools } from "../../../utils/Fetchs/classes";
 import { useTheContext } from "../../../context/ContextProvider";
 import uuid from "react-uuid";
 import Inpts from "../Inpts";
+import "./userPosts.css";
 
 const AddPostForm = () => {
   const info_Inp = useRef();
-  const img_InpRef = useRef()
+  const img_InpRef = useRef();
   const { userInfo, data, updateData } = useTheContext();
 
   const [info_Inp_Value, set_InfoValue] = useState("");
-  const [img_Inp, setImgValue] = useState("")
+  const [img_Inp, setImgValue] = useState("");
   const postsDlg = useRef();
 
   const OpenModal = () => {
@@ -20,24 +21,24 @@ const AddPostForm = () => {
 
   const Close = () => {
     postsDlg.current.close();
-  }
+  };
 
   const see_The_value = (o) => {
     set_InfoValue(o.target.value);
   };
-  
+
   const seeImg_Value = (o) => {
-  setImgValue(o.target.value)
-  }
+    setImgValue(o.target.value);
+  };
   const user_Private_Post = async (o) => {
     o.preventDefault();
 
     let info_Inp_Value = info_Inp.current.value.trim();
-    let img_Value = img_InpRef.current.value.trim()
+    let img_Value = img_InpRef.current.value.trim();
 
     if (info_Inp_Value != "") {
       let id = uuid();
-      
+
       let copyUser = { ...userInfo };
 
       let post = {
@@ -62,10 +63,21 @@ const AddPostForm = () => {
   };
   return (
     <>
-      <dialog ref={postsDlg}>
-        <div>
-          <div>
-            <button onClick={Close}>close</button>
+      <dialog ref={postsDlg} className="addPostDlg">
+        <div className="addPostContent">
+          <div className="postCloseArea">
+            <button onClick={Close} className="closeBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#979da6"
+                className="Xicon"
+              >
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg>
+            </button>
           </div>
           <form
             name="form_User"
@@ -81,8 +93,17 @@ const AddPostForm = () => {
               className="textPost_Inp"
             />
 
-            <input type="text" name="" className="imgInp_Posts" value={img_Inp} ref={img_InpRef} onInput={seeImg_Value} />
-            <button type="submit">Add</button>
+            <input
+              type="text"
+              className="imgInp_Posts"
+              value={img_Inp}
+              ref={img_InpRef}
+              onInput={seeImg_Value}
+              placeholder="imagen url"
+            />
+            <button className="submitArea" type="submit">
+              Add
+            </button>
           </form>
         </div>
       </dialog>

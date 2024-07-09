@@ -50,6 +50,10 @@
         {
           "tagName": "Tag 2",
           "id": "46869cff-9d7f-37bd-eb0d-0400fab012f6"
+        },
+        {
+          "tagName": "Tag 3",
+          "id": "c7aabd31-7acf-3041-625a-21f4b72d3fd4"
         }
       ]
     },
@@ -67,10 +71,10 @@
             "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg",
             "Maria"
           ],
-          "Description": "Hola",
-          "State": "Public",
+          "Description": "iojaija",
+          "State": "Private",
           "Img": "",
-          "id": "916ff1ce-a457-a2b9-1dc9-10432f8fa44e"
+          "id": "87ccf3f9-e4a3-8133-255c-1e0140487a6c"
         }
       ],
       "products": [],
@@ -110,45 +114,8 @@
             "9111",
             "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
           ],
-          "text": "Nuevo comentario",
-          "id": "10f550a4-55fd-e6cc-51f9-5bc61f97f894"
-        },
-        {
-          "user": [
-            "Maria",
-            "9111",
-            "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
-          ],
-          "text": "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
-          "id": "14c1fc3f-04b3-2808-ca72-3bb2a606fb2b"
-        }
-      ]
-    },
-    {
-      "id": "a4ee",
-      "user": [
-        "Maria",
-        "9111"
-      ],
-      "post": {
-        "user": [
-          "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg",
-          "Maria"
-        ],
-        "Description": "Hola",
-        "State": "Public",
-        "Img": "",
-        "id": "916ff1ce-a457-a2b9-1dc9-10432f8fa44e"
-      },
-      "comments": [
-        {
-          "user": [
-            "Maria",
-            "9111",
-            "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
-          ],
           "text": "hola",
-          "id": "1c124ad4-93fe-294c-1799-4a811c1815b0"
+          "id": "fdc3ea1e-e219-c614-d92c-87a6df14ef05"
         }
       ]
     }

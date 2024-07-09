@@ -57,19 +57,34 @@ const ProductTags = () => {
     <>
       <dialog ref={tagModal} className="addTagModal">
         <div className="addT_Content">
-          <form onSubmit={addTags}>
+         <div className="closeTagArea">
+         <button onClick={closeModal} className="closeTag">
+         <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#979da6"
+                className="XiconTags"
+              >
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg>
+         </button>
+         </div>
+          <form onSubmit={addTags} className="addTagForm">
             <input
               type="text"
               ref={tagText}
               value={value}
               onInput={setThatValue}
               className="addTagInp"
+              placeholder="Nombra tu categoria"
             />
             <button className="addTagBtn" type="submit">
               add
             </button>
           </form>
-          <button onClick={closeModal}>salir</button>
+          
         </div>
       </dialog>
 

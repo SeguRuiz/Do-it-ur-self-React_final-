@@ -52,6 +52,7 @@ grid-template-rows: 70% 30%;
 display: flex;
 justify-content: space-between;
 gap: 20px;
+
 }
 
 
@@ -71,9 +72,6 @@ gap: 20px;
   margin: 0;
 }
 
-.textPost_Inp{
-  resize: none;
-}
 
 .userPostImgP{
   height: 100%;
@@ -121,10 +119,4 @@ width: 100%;
 border-radius: 100px;
 }
 
-.editPost{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #252932;
-border: none;
-}
+
