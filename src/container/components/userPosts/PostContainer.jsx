@@ -1,5 +1,6 @@
-
+import "./userPosts.css"
 const PostContainer1 = ({key, id, text, user, Btn, img, Eliminar, edit}) => {
+  
   return (
     <div key={key} className="Private_Post" id={id}>
         <div className="UserInfo">
@@ -9,8 +10,10 @@ const PostContainer1 = ({key, id, text, user, Btn, img, Eliminar, edit}) => {
         <textarea className="info" disabled value={text} ></textarea>
         <div className="Btns_AreaP">
           {Btn}
+          <div className="editEliminar">
           {Eliminar}
           {edit}
+          </div>
         </div>
         </div>
     </div>

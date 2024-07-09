@@ -1,184 +1,80 @@
 {
   "users": [
     {
-      "id": "0633",
-      "info": {
-        "name": "FueFranco",
-        "email": "sainex1314@gmail.com",
-        "password": "qwerty"
-      },
-      "posts": [],
-      "products": [
-        {
-          "Title": "pokfksiew",
-          "Description": "pwdfkeofk",
-          "Price": "7376464$",
-          "Img": "",
-          "State": "Private",
-          "tags": [],
-          "id": "4dacc03c-a92b-916d-8b4b-79931e58933f"
-        }
-      ],
-      "tags": [
-        {
-          "tagName": "categoria 1",
-          "id": "4adcb7d1-7ca6-5687-4761-ca3ae2dc6d57"
-        },
-        {
-          "tagName": "categoria 2",
-          "id": "3175ce34-6fff-e097-0940-025fe02f7596"
-        },
-        {
-          "tagName": "Categoria 3",
-          "id": "048c3b2a-642c-d595-a897-52d891a82e16"
-        }
-      ]
-    },
-    {
-      "id": "ad96",
+      "id": "1181",
       "info": {
         "name": "Luis",
         "email": "luis@gmail.com",
-        "password": "123"
+        "password": "123",
+        "perfil": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s"
       },
       "posts": [
         {
-          "Description": "iwojdoije",
+          "user": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s",
+            "Luis"
+          ],
+          "Description": "Nuevo posts para esto",
           "State": "Public",
-          "Img": "lwswm",
-          "id": "7b497135-3333-5c66-b326-7c59543b701e"
+          "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI1larNiJhFAYdfNOwmQKShoS_dfYQ9s4OQ&s",
+          "id": "8de4491f-2040-f839-b245-3cf2fd652e0b"
         }
       ],
       "products": [
         {
-          "Title": "Carboncillos",
-          "Description": "Carboncillos para trazos gruesos",
-          "Price": "30",
-          "Img": "https://dhb3yazwboecu.cloudfront.net/270/nitram/NITRAMcat_l.jpg",
+          "Title": "okpokpokp",
+          "Description": "k´kpkkpkp",
+          "Price": "2000",
+          "Img": "´kpokp",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Arcilla",
-              "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
-            },
-            {
-              "tagName": "Lapices",
-              "id": "32f88086-3420-17bd-0909-aaa3c375ea7b"
-            }
-          ],
-          "id": "e4dd3aec-6821-8edc-de93-b1a9f116cf07"
+          "tags": [],
+          "id": "30aa9376-21c7-3403-929a-5eb15441309e"
         },
         {
-          "Title": "Lapices para dibujo",
-          "Description": "Paquete basico de lapices para dibujo tradicional",
-          "Price": "80",
-          "Img": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/a6cba15a-e9fb-4ade-af3b-31317a6f2f8e.05f558319851c782170fb815b0e76c8c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+          "Title": "numero 2",
+          "Description": "numero 3",
+          "Price": "40",
+          "Img": "kwcnec",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Tradicional",
-              "id": "628995f6-6075-ec57-045c-f072c71ed15f"
-            },
-            {
-              "tagName": "Lienzos",
-              "id": "35ec3c25-bbfc-5808-86fc-c88de2fcd600"
-            },
-            {
-              "tagName": "Esculturas",
-              "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
-            },
-            {
-              "tagName": "Carboncillos",
-              "id": "29cc050b-f7ab-dfe0-97f0-d5725fda3f22"
-            }
-          ],
-          "id": "57a14fe3-3196-63ec-a47e-e204e8903f3b"
-        },
-        {
-          "Title": "Lienzo",
-          "Description": "Lienzo 20x20 cm, para pintura a a base de aceite",
-          "Price": "10",
-          "Img": "https://mytaleiteach.com/wp-content/uploads/2013/12/medida-universal-de-los-cuadros.jpg?w=640",
-          "State": "Private",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Lienzos",
-              "id": "35ec3c25-bbfc-5808-86fc-c88de2fcd600"
-            },
-            {
-              "tagName": "Tradicional",
-              "id": "628995f6-6075-ec57-045c-f072c71ed15f"
-            }
-          ],
-          "id": "fc9ab482-44b6-8155-aacc-3a3c2db58aa9"
-        },
-        {
-          "Title": "Arcilla",
-          "Description": "Arcilla especializada para esculturas",
-          "Price": "90",
-          "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuA4R8XD6c6WVyW2SXE_O5PdLIx2rfKtGZw&s",
-          "State": "Public",
-          "filter": "mostrar",
-          "tags": [
-            {
-              "tagName": "Arcilla",
-              "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
-            },
-            {
-              "tagName": "Esculturas",
-              "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
-            }
-          ],
-          "id": "11eefcb3-86b4-8855-aaf0-7fcaafee39ec"
+          "tags": [],
+          "id": "d56523b1-b765-89a6-3440-230c86b0f14f"
         }
       ],
       "tags": [
         {
-          "tagName": "Tradicional",
-          "id": "628995f6-6075-ec57-045c-f072c71ed15f"
+          "tagName": "Tag 1",
+          "id": "268788b3-be23-87f3-4a4e-0ec9ef226e01"
         },
         {
-          "tagName": "Lapices",
-          "id": "32f88086-3420-17bd-0909-aaa3c375ea7b"
+          "tagName": "Tag 2",
+          "id": "46869cff-9d7f-37bd-eb0d-0400fab012f6"
         },
         {
-          "tagName": "Carboncillos",
-          "id": "29cc050b-f7ab-dfe0-97f0-d5725fda3f22"
-        },
-        {
-          "tagName": "Lienzos",
-          "id": "35ec3c25-bbfc-5808-86fc-c88de2fcd600"
-        },
-        {
-          "tagName": "Arcilla",
-          "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
-        },
-        {
-          "tagName": "Esculturas",
-          "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
-        },
-        {
-          "tagName": "paquetes",
-          "id": "c6cb0034-d847-d50e-e029-b69cbbd3f8ce"
+          "tagName": "Tag 3",
+          "id": "c7aabd31-7acf-3041-625a-21f4b72d3fd4"
         }
       ]
     },
     {
-      "id": "e16a",
+      "id": "9111",
       "info": {
         "name": "Maria",
         "email": "maria@gmail.com",
-        "password": "123"
+        "password": "123",
+        "perfil": "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
       },
       "posts": [
         {
-          "Description": "Posteado por otro usuario",
-          "State": "Public",
-          "Img": "https://static.demilked.com/wp-content/uploads/2023/07/funny-photos-cursed-images-1.jpg",
-          "id": "a572df4c-5a98-7dc5-574c-935ae3d5fa26"
+          "user": [
+            "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg",
+            "Maria"
+          ],
+          "Description": "iojaija",
+          "State": "Private",
+          "Img": "",
+          "id": "87ccf3f9-e4a3-8133-255c-1e0140487a6c"
         }
       ],
       "products": [],
@@ -187,141 +83,63 @@
   ],
   "Public": [
     {
-      "id": "d7d4",
+      "id": "24d0",
       "user": [
         "Luis",
-        "ad96"
+        "1181"
       ],
       "post": {
-        "Description": "iwojdoije",
+        "user": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s",
+          "Luis"
+        ],
+        "Description": "Nuevo posts para esto",
         "State": "Public",
-        "Img": "lwswm",
-        "id": "7b497135-3333-5c66-b326-7c59543b701e"
+        "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI1larNiJhFAYdfNOwmQKShoS_dfYQ9s4OQ&s",
+        "id": "8de4491f-2040-f839-b245-3cf2fd652e0b"
       },
       "comments": [
         {
           "user": [
             "Luis",
-            "ad96"
+            "1181",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s"
           ],
-          "text": "Comentario hecho por luis",
-          "id": "d3d41491-fb1c-c87b-3dbe-5f281afc774e"
-        },
-        {
-          "user": [
-            "Luis",
-            "ad96"
-          ],
-          "text": "otro comentario",
-          "id": "1838d91a-4296-df09-f368-669857c51307"
+          "text": "Hola",
+          "id": "4482183d-5361-d8c0-f02a-32f70bf46596"
         },
         {
           "user": [
             "Maria",
-            "e16a"
+            "9111",
+            "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
           ],
-          "text": "poekfowijer",
-          "id": "245e03cb-b7ba-4020-bc74-9a2ee06cd54a"
-        },
-        {
-          "user": [
-            "Maria",
-            "e16a"
-          ],
-          "text": "wsinwkdi",
-          "id": "223f4322-766f-0eab-d50a-b7b2f7f2d3cf"
-        }
-      ]
-    },
-    {
-      "id": "e53d",
-      "user": [
-        "Maria",
-        "e16a"
-      ],
-      "post": {
-        "Description": "Posteado por otro usuario",
-        "State": "Public",
-        "Img": "https://static.demilked.com/wp-content/uploads/2023/07/funny-photos-cursed-images-1.jpg",
-        "id": "a572df4c-5a98-7dc5-574c-935ae3d5fa26"
-      },
-      "comments": [
-        {
-          "user": [
-            "Luis",
-            "ad96"
-          ],
-          "text": "Comentario por luis",
-          "id": "6a0909a0-3ba7-9d11-8a45-40a7f4e3aac4"
-        },
-        {
-          "user": [
-            "Maria",
-            "e16a"
-          ],
-          "text": "pokwdokwek",
-          "id": "a54e75dc-ac7f-14d5-a26d-bd009404701c"
+          "text": "hola",
+          "id": "fdc3ea1e-e219-c614-d92c-87a6df14ef05"
         }
       ]
     }
   ],
   "Products": [
     {
-      "id": "57a14fe3-3196-63ec-a47e-e204e8903f3b",
-      "Title": "Lapices para dibujo",
-      "Description": "Paquete basico de lapices para dibujo tradicional",
-      "Price": "80",
-      "Img": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/a6cba15a-e9fb-4ade-af3b-31317a6f2f8e.05f558319851c782170fb815b0e76c8c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "id": "30aa9376-21c7-3403-929a-5eb15441309e",
+      "Title": "okpokpokp",
+      "Description": "k´kpkkpkp",
+      "Price": "2000",
+      "Img": "´kpokp",
       "State": "Public",
       "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Tradicional",
-          "id": "628995f6-6075-ec57-045c-f072c71ed15f"
-        },
-        {
-          "tagName": "Lapices",
-          "id": "32f88086-3420-17bd-0909-aaa3c375ea7b"
-        }
-      ]
+      "tags": []
     },
     {
-      "id": "11eefcb3-86b4-8855-aaf0-7fcaafee39ec",
-      "Title": "Arcilla",
-      "Description": "Arcilla especializada para esculturas",
-      "Price": "90",
-      "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeuA4R8XD6c6WVyW2SXE_O5PdLIx2rfKtGZw&s",
+      "id": "d56523b1-b765-89a6-3440-230c86b0f14f",
+      "Title": "numero 2",
+      "Description": "numero 3",
+      "Price": "40",
+      "Img": "kwcnec",
       "State": "Public",
       "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Arcilla",
-          "id": "a447e66e-fdb7-08c3-8c13-9089434d5b71"
-        },
-        {
-          "tagName": "Esculturas",
-          "id": "dbb70eee-6b43-3a66-5797-8428130eb561"
-        }
-      ]
-    },
-    {
-      "id": "e4dd3aec-6821-8edc-de93-b1a9f116cf07",
-      "Title": "Carboncillos",
-      "Description": "Carboncillos para trazos gruesos",
-      "Price": "30",
-      "Img": "https://dhb3yazwboecu.cloudfront.net/270/nitram/NITRAMcat_l.jpg",
-      "State": "Public",
-      "filter": "mostrar",
-      "tags": [
-        {
-          "tagName": "Carboncillos",
-          "id": "29cc050b-f7ab-dfe0-97f0-d5725fda3f22"
-        },
-        {
-          "tagName": "Tradicional",
-          "id": "628995f6-6075-ec57-045c-f072c71ed15f"
-        }
-      ]
+      "tags": []
     }
   ]
 }

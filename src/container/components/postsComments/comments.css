@@ -1,11 +1,169 @@
-.userName{
-    margin: 0;
+.userName {
+  margin: 0;
+  color: white;
 }
 
-.text{
-    margin: 0;
+.text {
+  margin: 0;
 }
 
-.commentContainer{
-    margin-bottom: 20px;
+.commentContainer {
+  margin-bottom: 20px;
+}
+.modalC {
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #282c35;
+}
+
+.commentModal {
+  background-color: #282c35;
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-rows: 10% auto 15%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.commentsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #252932;
+  cursor: pointer;
+}
+
+.commentsBtn:hover {
+  background-color: #282c35;
+}
+
+.commentImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.commentPerfil {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.userCinfo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+}
+
+.eliminateComment {
+  align-self: flex-end;
+}
+
+.commentTextarea {
+  resize: none;
+  height: 70px;
+  font-size: 20px;
+  color: #979da6;
+  background-color: #282c35;
+  border: none;
+  margin-top: 10px;
+}
+
+.addCommentsInp {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #384155;
+  color: white;
+}
+
+.addCommentsInp::placeholder {
+  color: white;
+}
+.addCommentsInp:focus {
+  outline: none;
+  border: 1px solid #8bb4f8;
+}
+.addCommenstArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.sendBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #282c35;
+  cursor: pointer;
+}
+
+.sendBtn:hover {
+  background-color: #384155;
+}
+
+.addcommentsForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cArea {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.eliminarCBtn {
+  margin-top: 5px;
+  background-color: #282c35;
+  border: none;
+  cursor: pointer;
+}
+
+.eliminarCBtn:hover {
+  .eliminarC {
+    fill: white;
+  }
+}
+
+.closeArea {
+  display: flex;
+  justify-content: end;
+}
+
+.closeCbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c35;
+  border: none;
+  cursor: pointer;
+}
+
+.closeCbtn:hover {
+  .closeIcon {
+    fill: white;
+  }
 }

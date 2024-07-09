@@ -27,6 +27,7 @@ export class Posts_Tools {
         name,
         email,
         password,
+        perfil: ''
       },
       posts: [],
       products: [],

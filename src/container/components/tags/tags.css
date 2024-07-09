@@ -108,8 +108,6 @@
   padding-right: 5px;
 }
 
-
-
 .tagsTextSelector {
   display: flex;
   justify-content: center;
@@ -179,21 +177,80 @@
 .emptyTags {
   margin-left: 80px;
   margin-bottom: 10px;
-  
 }
 
-.emptyTagsText{
-color: #979da6;
+.emptyTagsText {
+  color: #979da6;
 }
 /**/
 .addTagModal {
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #202124;
 }
 
 .addT_Content {
+  display: grid;
+  grid-template-rows: 15% auto;
+  background-color: #202124;
+  padding: 10px;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .addTagInp {
+  background-color: #282c35;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.addTagInp:focus{
+outline: none;
+border: #8bb4f8 1px solid;
+}
+
+.addTagInp::placeholder {
+  color: white;
 }
 
 .addTagBtn {
+  background-color: #8bb4f8;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.closeTagArea {
+  margin: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.addTagForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  gap: 15px;
+}
+
+.closeTag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202124;
+  border: none;
+  cursor: pointer;
+}
+
+.closeTag:hover{
+.XiconTags{
+fill: white;
+}
 }

@@ -1,8 +1,19 @@
-.Private_Post {
+.Public_Post {
   display: grid;
-  grid-template-rows: 50% 50%;
-  height: 380px;
-  width: 300px;
+  grid-template-rows: 60% 40%;
+  height: 550px;
+  width: 650px;
+  margin: 20px;
+  background-color: #252932;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.Public_PostNoimage{
+display: grid;
+  grid-template-rows: auto;
+  height: 250px;
+  width: 650px;
   margin: 20px;
   background-color: #252932;
   border-radius: 15px;
@@ -11,7 +22,7 @@
 
 
 
-.info {
+.infoP {
   background-color: #252932;
   resize: none;
   border: none;
@@ -19,27 +30,32 @@
   color: #979da6;
   height: 95%;
   margin: 5px;
- 
+  font-size: 20px;
+  
 }
 
-.UserInfo {
+.UserInfoP {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #8bb4f8;
 }
 
-.info_Post_Area{
+.info_Post_Area_Public{
 height: 100%;
 display: grid;
-grid-template-rows: 80% 20%;
+grid-template-rows: 70% 30%;
 }
 
 
-.Btns_AreaP{
+.Btns_AreaPublic{
 display: flex;
-background-color: #979da6;
+justify-content: space-between;
+gap: 20px;
+
 }
+
+
 
 .Publish_BTN{
   display: flex;
@@ -56,11 +72,51 @@ background-color: #979da6;
   margin: 0;
 }
 
-.textPost_Inp{
-  resize: none;
-}
 
-.userPostImg{
+.userPostImgP{
   height: 100%;
   width: 100%;
 }
+
+.userProfile_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.commentsArea{
+  display: flex;
+  justify-content: center;
+}
+
+.commentsBtn{
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+
+  
+}
+
+
+.userName{
+  margin-left: 10px;
+}
+.profileCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #979da6;
+  border-radius: 100px;
+   margin-left: 10px;
+}
+
+.profileImg{
+height: 100%;
+width: 100%;
+border-radius: 100px;
+}
+
+

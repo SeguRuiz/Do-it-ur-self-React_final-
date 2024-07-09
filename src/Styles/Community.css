@@ -5,8 +5,12 @@
  
 }
 
-.Community_Posts_Area {
-  border: solid black 1px;
+.EmptyPosts{
   display: grid;
   justify-content: center;
+}
+.Community_Posts_Area {
+  display: grid;
+  place-items: center;
+  align-items: center;
 }
