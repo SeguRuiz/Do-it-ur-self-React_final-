@@ -67,10 +67,21 @@ const EditUserPost = ({ id }) => {
   };
   return (
     <>
-      <dialog ref={postsDlgEdit}>
-        <div>
-          <div>
-            <button onClick={Close}>close</button>
+      <dialog ref={postsDlgEdit} className="addPostDlg">
+        <div className="addPostContent">
+          <div className="postCloseArea">
+            <button onClick={Close} className="closeBtn">
+             <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#979da6"
+                className="Xicon"
+              >
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg>
+            </button>
           </div>
           <form
             name="form_User"
@@ -94,7 +105,7 @@ const EditUserPost = ({ id }) => {
               ref={img_InpRef_Edit}
               onInput={seeImg_Value}
             />
-            <button type="submit">Add</button>
+            <button className="submitArea" type="submit" >Add</button>
           </form>
         </div>
       </dialog>

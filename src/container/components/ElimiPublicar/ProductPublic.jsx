@@ -27,7 +27,7 @@ const ProductPublic = ({ id }) => {
 
       userCopy.products = productsCopy;
 
-      console.log(userCopy);
+
 
       let newUpdate = new Put_Tools(userCopy);
 

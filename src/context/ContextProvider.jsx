@@ -80,16 +80,19 @@ export const ContextProvider = ({ children }) => {
 
       setPuData(public_Data);
 
-      if (userValidate == AdminInfo.id) {
+      if (userValidate == findAdmin.id) {
         loggedRef.current = true;
         setAdminLogged(true);
       }
       
 
-      if (userValidate != AdminInfo.id) {
+      if (userValidate != findAdmin.id) {
+        
         loggedRef.current = false;
         setAdminLogged(false);
       }
+
+      
       
       
       if (activeTag == "defecto") {
