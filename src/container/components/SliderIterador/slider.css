@@ -1,0 +1,16 @@
+.sliderContainer{
+    display: grid;
+    grid-template-rows: 60% auto;
+    height: 400px;
+    width: 350px;
+    background-color: #8bb4f8;
+
+}
+
+.imgArea{
+
+}
+
+.DescriptionArea{
+background-color: #3c4a63 ;
+}

@@ -92,6 +92,7 @@
   border: none;
   background-color: #384155;
   color: white;
+  padding-left: 5px;
 }
 
 .addCommentsInp::placeholder {

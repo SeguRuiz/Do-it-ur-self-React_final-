@@ -15,7 +15,7 @@ const ProductTags = () => {
     setValue(x.target.value);
   };
 
-  const { user_Products, userInfo, data, updateData } = useTheContext();
+  const {  userInfo, data, updateData } = useTheContext();
 
   const closeModal = () => {
     tagModal.current.close();
