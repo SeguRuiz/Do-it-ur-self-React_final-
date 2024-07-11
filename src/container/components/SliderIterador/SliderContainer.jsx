@@ -1,12 +1,16 @@
-import "./slider.css"
+import "./slider.css";
 
-const sliderContainer = ({Title, Img, text}) => {
+const sliderContainer = ({ Title, Img, text }) => {
   return (
     <div className="sliderContainer">
-    <div className="imgArea">img</div>
-    <div className="DescriptionArea">Description</div>
+      <div className="imgArea">
+        <img src={Img} alt="" className="sliderImg" />
+      </div>
+      <div className="DescriptionArea">
+        <textarea className="descriptionS" disabled value={text}></textarea>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default sliderContainer
+export default sliderContainer;
