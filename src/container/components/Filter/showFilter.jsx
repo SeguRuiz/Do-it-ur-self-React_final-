@@ -6,7 +6,7 @@ const ShowFilter = () => {
   const selectRef = useRef();
 
   const [value, setValue] = useState("hola");
-
+  //Seteo el estado nuevo de la etiqueta activa al contexto
   const changeSelect = (o) => {
     setValue(o.target.value);
     setActiveTag(o.target.value);

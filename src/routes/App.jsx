@@ -20,16 +20,17 @@ import "../Styles/home.css"
 import "../Styles/proucts_modal/addProducts.css"
 import "../Styles/ConfirmStyles/confirm.css"
 import { useTheContext } from "../context/ContextProvider";
-import { ContextProvider } from "../context/ContextProvider";
+
+import { Navigate } from "react-router-dom";
 
 const App = () => {
-  
+const {userInfo} = useTheContext()
 
   return (
     <>
     
     <Routes>
-      <Route path="/Home" element={<Home />} />
+      <Route path="/Home" element={userInfo != false ? <Home /> : <Navigate to={'/'}/>} />
       <Route path="/Home/Profile" element={<UserCrud />} />
       <Route path="/Home/Community" element={<Comunnity />} />
       <Route path="/Home/Products" element={<Products />} />

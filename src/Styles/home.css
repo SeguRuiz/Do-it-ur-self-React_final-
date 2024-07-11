@@ -134,8 +134,30 @@
   background-color: #d0defd;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
 }
 
+.artArea{
+height: 100%;
+width: 350px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.artImg{
+  height: 100%;
+  width: 100%;
+}
+.ArtText{
+
+height: 100%;
+width: 600px;
+margin-top: 20px;
+}
 .communityInfoArea {
   height: 500px;
 

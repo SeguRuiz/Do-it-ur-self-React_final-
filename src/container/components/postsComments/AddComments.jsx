@@ -20,6 +20,7 @@ const AddComments = ({ id, closeModal }) => {
     let commentValue = inpRef.current.value.trim();
 
     if (commentValue != "") {
+      //Dependiendo del id de su post padre manara comentarios a su array
       let dataCopy = [...publicData];
       let thePost = dataCopy.find((posts) => posts.id == id);
       let id_Comment = uuid();
@@ -53,7 +54,7 @@ const AddComments = ({ id, closeModal }) => {
           onInput={changeValue}
           className="addCommentsInp"
         />
-        
+
         <button className="sendBtn">
           <svg
             xmlns="http://www.w3.org/2000/svg"

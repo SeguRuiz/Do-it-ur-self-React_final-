@@ -24,6 +24,7 @@ const Register = () => {
 
   let Change_User_Inp_Value = (x) => {
     set_User_Value(x.target.value);
+
   };
 
   let Change_Email_Inp_Value = (x) => {
@@ -56,6 +57,21 @@ const Register = () => {
       }));
     }
 
+    if (user_Value == "" || email_Value == "" || pass_Value == "") {
+      set_Registered_User((userState) => ({
+        ...userState,
+        user: null,
+        error: true,
+        info_To_User: "Rellena los espacios en blanco",
+      }));
+      setTimeout(() => {
+        set_Registered_User((userState) => ({
+        ...userState,
+        info_To_User: "Registro",
+      }));
+      }, 1500);
+    }
+
     if (
       user_Value != "" &&
       email_Value != "" &&
@@ -70,7 +86,10 @@ const Register = () => {
             ...userState,
             user: user_Value,
             info_To_User: "Has sido registrado " + user_Value,
-          }))
+          })
+          
+          )
+          
         : set_Registered_User((userState) => ({
             ...userState,
             user: null,
@@ -99,7 +118,7 @@ const Register = () => {
           <br />
           <Inpts
             type={"text"}
-            placeholder={"User"}
+            
             ref={user_Inp}
             value={user_Inp_Modified}
             Change_Value={Change_User_Inp_Value}
@@ -110,7 +129,7 @@ const Register = () => {
           <br />
           <Inpts
             type={"email"}
-            placeholder={"Email"}
+            
             ref={email_Inp}
             value={email_Inp_Modified}
             Change_Value={Change_Email_Inp_Value}
@@ -121,7 +140,7 @@ const Register = () => {
           <br />
           <Inpts
             type={"password"}
-            placeholder={"Password"}
+            
             ref={pass_Inp}
             value={pass_Inp_Modified}
             Change_Value={Change_Pass_Inp_Value}
@@ -129,7 +148,17 @@ const Register = () => {
           <br />
           <br />
           <button className="submit_Btn" type="submit">
-            sing in
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30px"
+              viewBox="0 -960 960 960"
+              width="30px"
+              fill="#979da6"
+              className="iconLOg"
+            >
+              <path d="M480.67-120v-66.67h292.66v-586.66H480.67V-840h292.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H480.67Zm-63.34-176.67-47-48 102-102H120v-66.66h351l-102-102 47-48 184 184-182.67 182.66Z" />
+            </svg>
+            <p>Registrate</p>
           </button>
         </form>
       </div>

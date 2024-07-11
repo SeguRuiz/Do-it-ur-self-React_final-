@@ -2,6 +2,7 @@ import "../../../Styles/ConfirmStyles/confirm.css"
 import { forwardRef } from 'react'
 
 const ConfirmModal = forwardRef(({text, acceptFunction}, ref)=>{
+  //Es un modal que reutilizo para las confirmaciones
     const closeModal = () => {
         ref.current.close()
        }

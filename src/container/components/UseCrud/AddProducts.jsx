@@ -81,6 +81,7 @@ const AddProducts = () => {
      }, 200); 
       set_prodValue("");
       setDescription("");
+      setImg('')
       setPrice(0);
       modalRef.current.close();
     }
