@@ -6,11 +6,14 @@ import "../tags/tags.css";
 const AddImg = () => {
 const {userInfo, data, updateData} = useTheContext()
 
+//Referencias de input
 const dlgRef = useRef()
 const inpRef = useRef()
 
 const [inpValue, setValue] = useState("")
 
+
+//Funciones para manipularlas
 const seeValue = (o) => {
 setValue(o.target.value)
 }
@@ -32,10 +35,12 @@ if (img_Value != '') {
     let copyUser = {...userInfo}
 
     copyUser.info.perfil = img_Value
-
+    
+    //Utilizo put tools para actualizar el usuario con su imagen nueva
     let newUpdate = new Put_Tools(copyUser)
     newUpdate.put_The_Data(copyUser.id, newUpdate.data_For_Puts)
     
+    //Mando a renderizar
     setTimeout(() => {
         updateData(data + 1)
     }, 200);

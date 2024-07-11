@@ -5,7 +5,7 @@ import EliminarC from './EliminarC'
 const CommentCont = ({userId, userName, text, key,  post_Id, comment_Id, img}) => {
 const {userInfo} = useTheContext()
 
-
+//Machote de los comentarios
   return (
     <>
     <div key={key} className='commentContainer'>

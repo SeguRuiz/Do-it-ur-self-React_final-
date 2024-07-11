@@ -8,18 +8,7 @@
         "password": "123",
         "perfil": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s"
       },
-      "posts": [
-        {
-          "user": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s",
-            "Luis"
-          ],
-          "Description": "Nuevo posts para esto",
-          "State": "Public",
-          "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI1larNiJhFAYdfNOwmQKShoS_dfYQ9s4OQ&s",
-          "id": "8de4491f-2040-f839-b245-3cf2fd652e0b"
-        }
-      ],
+      "posts": [],
       "products": [
         {
           "Title": "Carboncillos",
@@ -235,45 +224,7 @@
       "tags": []
     }
   ],
-  "Public": [
-    {
-      "id": "24d0",
-      "user": [
-        "Luis",
-        "1181"
-      ],
-      "post": {
-        "user": [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s",
-          "Luis"
-        ],
-        "Description": "Nuevo posts para esto",
-        "State": "Public",
-        "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI1larNiJhFAYdfNOwmQKShoS_dfYQ9s4OQ&s",
-        "id": "8de4491f-2040-f839-b245-3cf2fd652e0b"
-      },
-      "comments": [
-        {
-          "user": [
-            "Maria",
-            "9111",
-            "https://ih1.redbubble.net/image.3126908423.9763/raf,360x360,075,t,fafafa:ca443f4786.u1.jpg"
-          ],
-          "text": "hola",
-          "id": "fdc3ea1e-e219-c614-d92c-87a6df14ef05"
-        },
-        {
-          "user": [
-            "Luis",
-            "1181",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQxulfRj_5T1s5NrCvuOQNbcOl1YrolvBSg&s"
-          ],
-          "text": "AYYY BYEE DECIA HOLAAA ESO Q VV PONTE FECHAAAAAAAAAAAA",
-          "id": "18c40097-cdbc-d8ef-4d4f-449cb7c52704"
-        }
-      ]
-    }
-  ],
+  "Public": [],
   "Products": [
     {
       "id": "f7f24dbe-3e9b-47f6-e7de-df381dcdc71d",

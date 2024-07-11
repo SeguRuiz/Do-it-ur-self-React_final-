@@ -7,7 +7,7 @@ const UnselectedList = ({ product_id }) => {
 
   const [unActiveTags, setUnactiveTags] = useState([]);
   const unActiveTagsRef = useRef([]);
-
+  //Revisara el las categorias del producto y el admin para verificar cual esta disponible
   useEffect(() => {
     let userCopy = {...userInfo}
    

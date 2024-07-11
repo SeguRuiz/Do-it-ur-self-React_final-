@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const UserCrud = () => {
-  const { usersPage, setPage, data, updateData, AdminLogged, loggedRef } =
+  const { usersPage, setPage, data, updateData, AdminLogged, loggedRef, userInfo } =
     useTheContext();
   const go_to_Log = useNavigate();
 
@@ -53,7 +53,7 @@ const UserCrud = () => {
               <div className="User_Navigate">
                 <div className="greeting">
                   <p className="tittle_G">Bienvenido</p>
-                  <p className="extra_info">User</p>
+                  <p className="extra_info">{userInfo.info.name}</p>
                 </div>
               </div>
               <div className="navigate">

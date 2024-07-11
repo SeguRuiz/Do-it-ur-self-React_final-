@@ -5,7 +5,7 @@ import ConfirmModal from "../Confirm/confirmModal";
 import ProductPublic from "./ProductPublic";
 import EditBtn from "../Edit/EditBtn";
 import "../ElimiPublicar/Eliminar.css"
-
+//Componnte para eliminar productos
 const ElimiPublish = ({ id, publicId }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
   const confirmModal = useRef();
@@ -13,15 +13,16 @@ const ElimiPublish = ({ id, publicId }) => {
 
   const eliminate = async () => {
     if (userInfo != "") {
+      //Hago copias de la informacion que actualizare
       let productsCopy = [...user_Products];
       let userCopy = { ...userInfo };
-
+      
       let products_Filtered = productsCopy.filter(
         (products) => products.id != id
       );
 
       userCopy.products = products_Filtered;
-
+       //Luego de filtrada la mando al json 
       let newUpdate = new Put_Tools(userCopy);
 
       newUpdate.put_The_Data(userCopy.id, newUpdate.data_For_Puts);

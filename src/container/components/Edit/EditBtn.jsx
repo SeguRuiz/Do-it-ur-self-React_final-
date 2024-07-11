@@ -2,9 +2,12 @@ import { useRef, useState } from "react";
 import { useTheContext } from "../../../context/ContextProvider";
 import { Put_Tools } from "../../../utils/Fetchs/classes";
 import "../Edit/edit.css";
+//Editar para productos privados
 const EditBtn = ({ id }) => {
+//Tomo informacion del contexto que rodea todo
   const { userInfo, data, updateData } = useTheContext();
-   
+
+
   const modalRef2 = useRef();
 
   const product_Inp = useRef();
@@ -41,6 +44,7 @@ const EditBtn = ({ id }) => {
   const replicate_Value = () => {
     updateData(data + 1);
     setTimeout(() => {
+      //Con el timeOut seteo despues los valores de los inputs iguales a su tarea utilizando find
       let theProduct = userInfo.products.find((products) => products.id == id);
       set_prodValue(theProduct.Title);
       setDescription(theProduct.Description);
@@ -69,7 +73,7 @@ const EditBtn = ({ id }) => {
           e.Img = img_value;
         }
       });
-
+      //Luego mando la actualizacion y renderizo
       let newUpdate = new Put_Tools(userCopy);
       newUpdate.put_The_Data(userCopy.id, newUpdate.data_For_Puts);
 

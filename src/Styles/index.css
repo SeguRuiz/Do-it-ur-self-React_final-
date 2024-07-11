@@ -127,23 +127,70 @@ body {
 }
 
 .inpts {
-  background-color: white;
+  background-color: #202124;
   border: rgba(0, 0, 0, 0.3) solid 1px;
   font-size: 20px;
   padding: 5px;
+  border: #8bb4f8 solid 1px;
   border-radius: 5px;
   margin-right: 10px;
+  color: white;
+}
+
+.inpts::placeholder{
+color: white;
 }
 
 .submit_Btn {
-  background-color: white;
-  border: rgba(0, 0, 0, 0.3) solid 1px;
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
   cursor: pointer;
+  background-color: #202124;
+  border: none;
+  gap: 10px;
+  color: #979da6;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.submit_Btn:hover{
+color: white;
+background-color: #8bb4f8;
+.iconLOg{
+fill: white;
+}
 }
 
 .inpts:focus {
   outline: none;
+}
+
+.navLog1{
+margin-top: 20px;
+
+}
+
+.navLog11{
+margin-top: 20px;
+color: #8bb4f8;
+}
+
+.navLog1:hover{
+color: #8bb4f8;
+}
+
+.navLog2{
+margin-top: 20px;
+
+}
+
+.navLog22{
+margin-top: 20px;
+color: #8bb4f8;
+}
+
+.navLog2:hover{
+color: #8bb4f8;
 }

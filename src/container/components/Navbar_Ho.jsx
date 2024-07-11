@@ -14,7 +14,7 @@ const Navbar_Ho = () => {
             go_To("/Home");
           }}
         >
-          Tittle
+          Inicio
         </h2>
 
         <p
@@ -23,7 +23,7 @@ const Navbar_Ho = () => {
             go_To("/Home/Community");
           }}
         >
-          Community
+          Comunidad
         </p>
         <p
           className="Products_link"
@@ -31,7 +31,7 @@ const Navbar_Ho = () => {
             go_To("/Home/Products");
           }}
         >
-          Products
+          Productos
         </p>
       </div>
       <div className="User_Area">
@@ -44,7 +44,7 @@ const Navbar_Ho = () => {
                 go_To("/Home/Profile");
               }}
             >
-              <p>Profile</p>
+              <p>Perfil</p>
             </div>
 
             <p
@@ -53,7 +53,7 @@ const Navbar_Ho = () => {
                 go_To("/Home/AboutUs");
               }}
             >
-              About us
+              Sobre nosotros
             </p>
           </div>
         ) : (
@@ -64,7 +64,7 @@ const Navbar_Ho = () => {
                   go_To("/");
                 }}
               >
-                Log in
+                Logeate
               </p>
             </div>
 
@@ -74,7 +74,7 @@ const Navbar_Ho = () => {
                 go_To("/Home/AboutUs");
               }}
             >
-              About us
+              Sobre nosotros
             </p>
           </div>
         )}

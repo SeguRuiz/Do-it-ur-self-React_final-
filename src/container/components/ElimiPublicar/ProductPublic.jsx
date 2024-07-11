@@ -7,7 +7,7 @@ import {
 import ConfirmModal from "../Confirm/confirmModal";
 import { useEffect, useRef, useState } from "react";
 import "./Publicar.css";
-
+//Publicar y privatizar productos
 const ProductPublic = ({ id }) => {
   const { user_Products, userInfo, data, updateData } = useTheContext();
   const confirmModal = useRef();
@@ -18,7 +18,8 @@ const ProductPublic = ({ id }) => {
     if (userInfo != "" && btnFunction == "Publicar") {
       let productsCopy = [...user_Products];
       let userCopy = { ...userInfo };
-
+       
+      //Cambio el estado de la copia de la informacion
       productsCopy.forEach((e) => {
         if (e.id == id) {
           e.State = "Public";
@@ -27,8 +28,8 @@ const ProductPublic = ({ id }) => {
 
       userCopy.products = productsCopy;
 
-
-
+ 
+      //Luego lo mando al json
       let newUpdate = new Put_Tools(userCopy);
 
       newUpdate.put_The_Data(userCopy.id, newUpdate.data_For_Puts);
@@ -38,13 +39,14 @@ const ProductPublic = ({ id }) => {
       let newUpdateP = new Products_Posts_Tools(theProduct);
 
       newUpdateP.post_The_Data(newUpdateP.data_For_Posts);
-
+     //y renderizo
       setTimeout(() => {
         updateData(data + 1);
       }, 200);
 
       confirmModal.current.close();
     } else if (userInfo != "" && btnFunction == "Privatizar") {
+      //si el estado de la funcion del boton cambia a privatizar, hara lo contrario
       let productsCopy = [...user_Products];
       let userCopy = { ...userInfo };
 
@@ -83,6 +85,7 @@ const ProductPublic = ({ id }) => {
     confirmModal.current.showModal();
   };
 
+//Se encarga de verificar que estado debe tener el boton en ese mometo, si privatizar o publicar
   useEffect(() => {
     let theProduct =
       user_Products.find((products) => products.id == id) ?? false;

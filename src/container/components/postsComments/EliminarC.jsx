@@ -3,6 +3,7 @@ import { PublicPut_Tools } from "../../../utils/Fetchs/classes";
 import ConfirmModal from "../Confirm/confirmModal";
 import { useTheContext } from "../../../context/ContextProvider";
 const EliminarC = ({ post_id, comment_Id }) => {
+  //Para eliminar comentarios es la misma formula, nada mas que compara el id del comentario con su posts
   const { publicData, data, updateData } = useTheContext();
 
   const modalRef = useRef();
