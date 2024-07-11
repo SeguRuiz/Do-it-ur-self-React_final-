@@ -22,58 +22,192 @@
       ],
       "products": [
         {
-          "Title": "okpokpokp",
-          "Description": "k´kpkkpkp",
-          "Price": "2000",
-          "Img": "´kpokp",
+          "Title": "Carboncillos",
+          "Description": "Carboncillos hechos para sombrear, dar profundidas a tus ilustraciones en tradicional",
+          "Price": "30",
+          "Img": "https://www.ttamayo.com/wp-content/uploads/2020/10/shutterstock_218403865.jpg",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [],
-          "id": "30aa9376-21c7-3403-929a-5eb15441309e"
+          "tags": [
+            {
+              "tagName": "Carboncillos",
+              "id": "10f72656-6a5e-f3ca-8a5d-bb7643f5c577"
+            }
+          ],
+          "id": "f7f24dbe-3e9b-47f6-e7de-df381dcdc71d"
         },
         {
-          "Title": "numero 2",
-          "Description": "numero 3",
-          "Price": "40",
-          "Img": "kwcnec",
+          "Title": "Lienzo 30X30",
+          "Description": "Lienzo para pintura acriquilica y en base de aceite",
+          "Price": "80",
+          "Img": "https://polipapel.vteximg.com.br/arquivos/ids/172576-1000-1000/Y11995.png?v=638131949599100000",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [],
-          "id": "d56523b1-b765-89a6-3440-230c86b0f14f"
+          "tags": [
+            {
+              "tagName": "Lienzos",
+              "id": "6ff27ed0-55a6-a4c4-74f6-c8389fde7baa"
+            }
+          ],
+          "id": "d4b93b0c-9de8-afc4-b135-d8f580e42aa6"
         },
         {
-          "Title": "jiwociqp",
-          "Description": "wowkpok12",
-          "Price": "400",
-          "Img": "pkceojewoj",
+          "Title": "Arcilla",
+          "Description": "Arcilla para modelar esculturas",
+          "Price": "100",
+          "Img": "https://images.mundo-artistas.es/out/pictures/generated/250_250/484369/Arcilla+de+cocci%C3%B3n+P%C3%A9b%C3%A9o.jpg",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [],
-          "id": "8f08aa33-4020-7566-a823-271e859d9fd6"
+          "tags": [
+            {
+              "tagName": "Arcillas",
+              "id": "1fce250c-1b45-1a95-1c34-602214f45061"
+            }
+          ],
+          "id": "27cd58aa-ab83-8851-ecf2-e9ef3442ee01"
         },
         {
-          "Title": "powdoj2",
-          "Description": "kwdoiwejojid",
-          "Price": "700",
-          "Img": "nnwejnc",
+          "Title": "Borradores F.C",
+          "Description": "Borradore especializados para lapices de grafito, carboncillo etc..",
+          "Price": "10",
+          "Img": "https://practistore.com/wp-content/uploads/2022/01/142.png",
           "State": "Public",
           "filter": "mostrar",
-          "tags": [],
-          "id": "2f80802a-394f-ea32-3e26-3df7a68ba5bc"
+          "tags": [
+            {
+              "tagName": "Borradores",
+              "id": "52938662-f80b-f796-9cd8-74c0ebc2fcd2"
+            }
+          ],
+          "id": "5f903f2f-23b1-367c-b616-27baf0c7d15e"
+        },
+        {
+          "Title": "Difuminadores",
+          "Description": "Difuminadores para sombreo de dibujo tradicional, util para cuando empiezas en el arte del sombreo tradicional.",
+          "Price": "10",
+          "Img": "https://lamonsterapaper.com/cdn/shop/products/difumino-n-3-8mm_a0c4f081-6723-4d66-988d-bcf063e04984_600x600.webp?v=1678272577",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Difuminadores",
+              "id": "cc0a0fb7-fc90-0970-4bca-873c05b108e1"
+            }
+          ],
+          "id": "e034176c-e66b-65d6-c28b-bb1038821f07"
+        },
+        {
+          "Title": "Borrador Moldeable",
+          "Description": "Borrador moldeable para borrar esos pequeños detalles en tus obras tradicionales y sekechts.",
+          "Price": "50",
+          "Img": "https://www.faber-castell.com.mx/-/media/Products/Product-Repository/Miscellaneous-kneadable-eraser/24-24-22-Eraser/127220-Kneadable-eraser-grey-wplastic-box-of-18/Images/127220_10_PM2.ashx?bc=ffffff&as=0&h=900&w=900&sc_lang=es-MX&hash=419D8D160723113368CB13E5DEF39500",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Borradores",
+              "id": "52938662-f80b-f796-9cd8-74c0ebc2fcd2"
+            }
+          ],
+          "id": "44c169e9-7bc1-c60e-3bf7-d6e83c5dedf7"
+        },
+        {
+          "Title": "Pinturas",
+          "Description": "Paquete de pinturas a base de oleo",
+          "Price": "200",
+          "Img": "https://panafargo.com/wp-content/uploads/2022/01/Pinturas-Faber-Castell-En-Set-De-Acrilico-Y-Oleo-De-12-ML-Pintura-Oleo.jpg",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Pinturas",
+              "id": "b3382bf1-6e77-9998-3752-64d07983235a"
+            }
+          ],
+          "id": "789f3a14-c8bb-a29a-9e61-8f7b416ba330"
+        },
+        {
+          "Title": "Pinturas pastel",
+          "Description": "Pinturas pastel a base de oleo, paquete ergonomico y hecho para lienzos de cualquien tamaño.",
+          "Price": "350",
+          "Img": "https://escritoriomoderno.com.mx/cdn/shop/products/IMG_20201031_105925_1024x1024@2x.png?v=1679095565",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Pinturas",
+              "id": "b3382bf1-6e77-9998-3752-64d07983235a"
+            }
+          ],
+          "id": "e6f61dd7-cc38-07f9-9973-40c361d05dc4"
+        },
+        {
+          "Title": "Paquete de lienzo",
+          "Description": "Lienzos de varios tamaños para las diferentes obras de arte que tienes pensado crear!",
+          "Price": "250",
+          "Img": "https://m.media-amazon.com/images/I/71xJes+JPaL.jpg",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Lienzos",
+              "id": "6ff27ed0-55a6-a4c4-74f6-c8389fde7baa"
+            }
+          ],
+          "id": "a88dc69d-06a3-c5e1-6cc8-26d1d98e6c0b"
+        },
+        {
+          "Title": "Guante",
+          "Description": "Guante para no mancar tu sckechts y dibujos cuando utilizas mucho carboncillo",
+          "Price": "20",
+          "Img": "https://cdnx.jumpseller.com/globo/image/16123216/81gxJ2o0TJL._AC_SX569_.jpg?1621377983",
+          "State": "Public",
+          "filter": "mostrar",
+          "tags": [
+            {
+              "tagName": "Accesorios",
+              "id": "bca49d7f-e2d2-dbed-c326-92d9d5fc83a7"
+            }
+          ],
+          "id": "4f6f4453-1f34-67e9-27d2-ed9bc1faeae9"
         }
       ],
       "tags": [
         {
-          "tagName": "Tag 1",
-          "id": "268788b3-be23-87f3-4a4e-0ec9ef226e01"
+          "tagName": "Accesorios",
+          "id": "bca49d7f-e2d2-dbed-c326-92d9d5fc83a7"
         },
         {
-          "tagName": "Tag 2",
-          "id": "46869cff-9d7f-37bd-eb0d-0400fab012f6"
+          "tagName": "Lienzos",
+          "id": "6ff27ed0-55a6-a4c4-74f6-c8389fde7baa"
         },
         {
-          "tagName": "Tag 3",
-          "id": "c7aabd31-7acf-3041-625a-21f4b72d3fd4"
+          "tagName": "Lapices",
+          "id": "3699979b-02cc-23bc-aae2-00312b8b86d8"
+        },
+        {
+          "tagName": "Carboncillos",
+          "id": "113145f5-c9bc-3696-a7ae-85705e513a38"
+        },
+        {
+          "tagName": "Pinturas",
+          "id": "b3382bf1-6e77-9998-3752-64d07983235a"
+        },
+        {
+          "tagName": "Arcillas",
+          "id": "1fce250c-1b45-1a95-1c34-602214f45061"
+        },
+        {
+          "tagName": "Carboncillos",
+          "id": "10f72656-6a5e-f3ca-8a5d-bb7643f5c577"
+        },
+        {
+          "tagName": "Borradores",
+          "id": "52938662-f80b-f796-9cd8-74c0ebc2fcd2"
+        },
+        {
+          "tagName": "Difuminadores",
+          "id": "cc0a0fb7-fc90-0970-4bca-873c05b108e1"
         }
       ]
     },
@@ -142,44 +276,154 @@
   ],
   "Products": [
     {
-      "id": "30aa9376-21c7-3403-929a-5eb15441309e",
-      "Title": "okpokpokp",
-      "Description": "k´kpkkpkp",
-      "Price": "2000",
-      "Img": "´kpokp",
+      "id": "f7f24dbe-3e9b-47f6-e7de-df381dcdc71d",
+      "Title": "Carboncillos",
+      "Description": "Carboncillos hechos para sombrear, dar profundidas a tus ilustraciones en tradicional",
+      "Price": "30",
+      "Img": "https://www.ttamayo.com/wp-content/uploads/2020/10/shutterstock_218403865.jpg",
       "State": "Public",
       "filter": "mostrar",
-      "tags": []
+      "tags": [
+        {
+          "tagName": "Carboncillos",
+          "id": "10f72656-6a5e-f3ca-8a5d-bb7643f5c577"
+        }
+      ]
     },
     {
-      "id": "d56523b1-b765-89a6-3440-230c86b0f14f",
-      "Title": "numero 2",
-      "Description": "numero 3",
-      "Price": "40",
-      "Img": "kwcnec",
+      "id": "d4b93b0c-9de8-afc4-b135-d8f580e42aa6",
+      "Title": "Lienzo 30X30",
+      "Description": "Lienzo para pintura acriquilica y en base de aceite",
+      "Price": "80",
+      "Img": "https://polipapel.vteximg.com.br/arquivos/ids/172576-1000-1000/Y11995.png?v=638131949599100000",
       "State": "Public",
       "filter": "mostrar",
-      "tags": []
+      "tags": [
+        {
+          "tagName": "Lienzos",
+          "id": "6ff27ed0-55a6-a4c4-74f6-c8389fde7baa"
+        }
+      ]
     },
     {
-      "id": "2f80802a-394f-ea32-3e26-3df7a68ba5bc",
-      "Title": "powdoj2",
-      "Description": "kwdoiwejojid",
-      "Price": "700",
-      "Img": "nnwejnc",
+      "id": "27cd58aa-ab83-8851-ecf2-e9ef3442ee01",
+      "Title": "Arcilla",
+      "Description": "Arcilla para modelar esculturas",
+      "Price": "100",
+      "Img": "https://images.mundo-artistas.es/out/pictures/generated/250_250/484369/Arcilla+de+cocci%C3%B3n+P%C3%A9b%C3%A9o.jpg",
       "State": "Public",
       "filter": "mostrar",
-      "tags": []
+      "tags": [
+        {
+          "tagName": "Arcillas",
+          "id": "1fce250c-1b45-1a95-1c34-602214f45061"
+        }
+      ]
     },
     {
-      "id": "8f08aa33-4020-7566-a823-271e859d9fd6",
-      "Title": "jiwociqp",
-      "Description": "wowkpok12",
-      "Price": "400",
-      "Img": "pkceojewoj",
+      "id": "5f903f2f-23b1-367c-b616-27baf0c7d15e",
+      "Title": "Borradores F.C",
+      "Description": "Borradore especializados para lapices de grafito, carboncillo etc..",
+      "Price": "10",
+      "Img": "https://practistore.com/wp-content/uploads/2022/01/142.png",
       "State": "Public",
       "filter": "mostrar",
-      "tags": []
+      "tags": [
+        {
+          "tagName": "Borradores",
+          "id": "52938662-f80b-f796-9cd8-74c0ebc2fcd2"
+        }
+      ]
+    },
+    {
+      "id": "e034176c-e66b-65d6-c28b-bb1038821f07",
+      "Title": "Difuminadores",
+      "Description": "Difuminadores para sombreo de dibujo tradicional, util para cuando empiezas en el arte del sombreo tradicional.",
+      "Price": "10",
+      "Img": "https://lamonsterapaper.com/cdn/shop/products/difumino-n-3-8mm_a0c4f081-6723-4d66-988d-bcf063e04984_600x600.webp?v=1678272577",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Difuminadores",
+          "id": "cc0a0fb7-fc90-0970-4bca-873c05b108e1"
+        }
+      ]
+    },
+    {
+      "id": "44c169e9-7bc1-c60e-3bf7-d6e83c5dedf7",
+      "Title": "Borrador Moldeable",
+      "Description": "Borrador moldeable para borrar esos pequeños detalles en tus obras tradicionales y sekechts.",
+      "Price": "50",
+      "Img": "https://www.faber-castell.com.mx/-/media/Products/Product-Repository/Miscellaneous-kneadable-eraser/24-24-22-Eraser/127220-Kneadable-eraser-grey-wplastic-box-of-18/Images/127220_10_PM2.ashx?bc=ffffff&as=0&h=900&w=900&sc_lang=es-MX&hash=419D8D160723113368CB13E5DEF39500",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Borradores",
+          "id": "52938662-f80b-f796-9cd8-74c0ebc2fcd2"
+        }
+      ]
+    },
+    {
+      "id": "789f3a14-c8bb-a29a-9e61-8f7b416ba330",
+      "Title": "Pinturas",
+      "Description": "Paquete de pinturas a base de oleo",
+      "Price": "200",
+      "Img": "https://panafargo.com/wp-content/uploads/2022/01/Pinturas-Faber-Castell-En-Set-De-Acrilico-Y-Oleo-De-12-ML-Pintura-Oleo.jpg",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Pinturas",
+          "id": "b3382bf1-6e77-9998-3752-64d07983235a"
+        }
+      ]
+    },
+    {
+      "id": "a88dc69d-06a3-c5e1-6cc8-26d1d98e6c0b",
+      "Title": "Paquete de lienzo",
+      "Description": "Lienzos de varios tamaños para las diferentes obras de arte que tienes pensado crear!",
+      "Price": "250",
+      "Img": "https://m.media-amazon.com/images/I/71xJes+JPaL.jpg",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Lienzos",
+          "id": "6ff27ed0-55a6-a4c4-74f6-c8389fde7baa"
+        }
+      ]
+    },
+    {
+      "id": "4f6f4453-1f34-67e9-27d2-ed9bc1faeae9",
+      "Title": "Guante",
+      "Description": "Guante para no mancar tu sckechts y dibujos cuando utilizas mucho carboncillo",
+      "Price": "20",
+      "Img": "https://cdnx.jumpseller.com/globo/image/16123216/81gxJ2o0TJL._AC_SX569_.jpg?1621377983",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Accesorios",
+          "id": "bca49d7f-e2d2-dbed-c326-92d9d5fc83a7"
+        }
+      ]
+    },
+    {
+      "id": "e6f61dd7-cc38-07f9-9973-40c361d05dc4",
+      "Title": "Pinturas pastel",
+      "Description": "Pinturas pastel a base de oleo, paquete ergonomico y hecho para lienzos de cualquien tamaño.",
+      "Price": "350",
+      "Img": "https://escritoriomoderno.com.mx/cdn/shop/products/IMG_20201031_105925_1024x1024@2x.png?v=1679095565",
+      "State": "Public",
+      "filter": "mostrar",
+      "tags": [
+        {
+          "tagName": "Pinturas",
+          "id": "b3382bf1-6e77-9998-3752-64d07983235a"
+        }
+      ]
     }
   ]
 }

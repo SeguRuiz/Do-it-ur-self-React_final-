@@ -1,26 +1,8 @@
-.home_grid {
-  display: grid;
-  grid-template-rows: 7.5% auto;
-  background-color: #eff4fe;
-  height: 1000px;
-}
-
-.home_area {
-  display: grid;
-  grid-template-rows: 30% auto;
-}
-
-.PrincipalArea{
-  background-color: #d0defd;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
 .Tittle_Home {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #8bb4f8;
-  
+
   padding: 0;
 }
 
@@ -79,8 +61,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
- 
 }
 
 .community_Link {
@@ -107,4 +87,165 @@
 }
 .small_TextHome {
   font-size: 30px;
+}
+
+/**/
+
+.home_grid {
+  display: grid;
+  grid-template-rows: 3.5% auto;
+  background-color: #eff4fe;
+  height: 2000px;
+  color: #2a3242;
+}
+
+.home_area {
+  display: grid;
+  grid-template-rows: 20% auto auto auto;
+  background-color: #eff4fe;
+  gap: 30px;
+}
+
+.featuredArea {
+  display: grid;
+  grid-template-rows: 20% auto;
+}
+
+.featuredText {
+  margin-left: 15px;
+}
+
+.featuredInfo {
+  font-size: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #2a3242;
+}
+
+.SliderArea {
+  padding-bottom: 200px;
+  background-color: #d0defd;
+  border-radius: 20px;
+  position: relative;
+}
+
+.PrincipalArea {
+  background-color: #d0defd;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.communityInfoArea {
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 10px;
+}
+
+.communityLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CommunityInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.communityIlustration {
+  height: 95%;
+  width: 95%;
+  background-color: #d0defd;
+  border-radius: 20px;
+}
+
+.communityText {
+  height: 95%;
+  width: 95%;
+
+  border-radius: 20px;
+}
+
+.TitleInfo {
+  font-size: 40px;
+}
+
+.SubText {
+  font-size: 20px;
+}
+
+.footerArea {
+  background-color: #e0e9fd;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: grid;
+  grid-template-rows: 50% auto;
+}
+
+.MayorText {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textFoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.EmailIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  align-self: center;
+  gap: 5px;
+}
+
+.iconsArea {
+  height: 60px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 25px;
+}
+
+.communityImg {
+  height: 100%;
+  width: 100%;
+}
+
+.ComunnityBtn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  gap: 5px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  background-color: #e0e9fd;
+  cursor: pointer;
+}
+
+.ComunnityBtn:hover{
+background-color: #8bb4f8;
+}
+.forumIcon {
 }

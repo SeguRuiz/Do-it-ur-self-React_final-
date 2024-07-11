@@ -14,9 +14,7 @@ const CategoriModal = ({ product_Id, className }) => {
     modalRef.current.close();
   };
 
-  const SeeId = () => {
-    console.log(product_Id);
-  };
+ 
   return (
     <>
       <dialog ref={modalRef} className="CategoriModal">
